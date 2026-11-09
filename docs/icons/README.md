@@ -71,38 +71,162 @@ Karena itu kami membuat ITIHIX: tempat warga saling melapor, saling memverifikas
 
 ## Fitur
 
-### <img src="docs/icons/home.svg" alt="Beranda" width="32" align="absmiddle"> Beranda (feed komunitas)
+<table>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/home.svg" alt="Beranda" width="56">
+
+</td>
+<td valign="top">
+
+**Beranda (feed komunitas)**
+
 Laporan penipuan terbaru dalam tiga tab: *Untuk kamu*, *Terbaru*, dan *Terverifikasi*. Setiap laporan bisa disukai, di-repost, disimpan, dibagikan, dan dikomentari.
 
-### <img src="docs/icons/compass.svg" alt="Jelajahi" width="32" align="absmiddle"> Jelajahi
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/compass.svg" alt="Jelajahi" width="56">
+
+</td>
+<td valign="top">
+
+**Jelajahi**
+
 Cari laporan lewat top hashtag, kategori, jenis modus, atau pencarian. Label bisa diklik seperti hashtag.
 
-### <img src="docs/icons/itihscan.png" alt="ItihScan AI" width="32" align="absmiddle"> ItihScan AI
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/itihscan.png" alt="ItihScan AI" width="56">
+
+</td>
+<td valign="top">
+
+**ItihScan AI**
+
 Fitur unggulan. Tempel teks pesan atau unggah gambar (tangkapan layar chat, SMS, poster), lalu ItihScan menganalisisnya: apakah ini penipuan, mencurigakan, atau aman, lengkap dengan alasan dan langkah yang sebaiknya kamu lakukan. Hasilnya otomatis jadi caption yang bisa kamu edit lalu terbitkan sebagai laporan berlabel *ItihScan AI*. Tanpa API key AI, ItihScan tetap berjalan memakai mesin aturan lokal (deteksi kata kunci dan pola modus).
 
-### <img src="docs/icons/itistant.png" alt="iTISTANT" width="32" align="absmiddle"> iTISTANT (Chat AI)
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/itistant.png" alt="iTISTANT" width="56">
+
+</td>
+<td valign="top">
+
+**iTISTANT (Chat AI)**
+
 Asisten untuk bertanya soal keamanan digital, bisa melampirkan file atau gambar. Riwayat obrolan tersimpan.
 
-### <img src="docs/icons/film.svg" alt="SafeSnaps" width="32" align="absmiddle"> SafeSnaps
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/film.svg" alt="SafeSnaps" width="56">
+
+</td>
+<td valign="top">
+
+**SafeSnaps**
+
 Feed ringkas bergaya reels untuk konten edukasi dan peringatan. Unggahan masuk antrean moderasi lebih dulu.
 
-### <img src="docs/icons/flag.svg" alt="Laporan" width="32" align="absmiddle"> Laporan dan label
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/flag.svg" alt="Laporan" width="56">
+
+</td>
+<td valign="top">
+
+**Laporan dan label**
+
 Kirim laporan lengkap dengan kategori dan jenis modus. Satu laporan boleh punya beberapa label: **Penipuan**, **Mencurigakan**, **Klarifikasi**, dan **Edukasi**. Moderator memberi label akhir dan tanda "✓ Diverifikasi moderator". Laporan yang sudah dikirim bisa diedit.
 
-### <img src="docs/icons/scam-or-real.png" alt="Scam or Real?" width="32" align="absmiddle"> Kuis Scam or Real? (Asli/Palsu)
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/scam-or-real.png" alt="Scam or Real?" width="56">
+
+</td>
+<td valign="top">
+
+**Kuis Scam or Real? (Asli/Palsu)**
+
 Latihan membedakan pesan asli dan palsu bergaya chat WhatsApp, lengkap dengan penjelasan dan tanda bahayanya, plus streak dan riwayat.
 
-### <img src="docs/icons/mask-of-deception.png" alt="Mask of Deception 2P" width="32" align="absmiddle"> Mask of Deception 2P
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/mask-of-deception.png" alt="Mask of Deception 2P" width="56">
+
+</td>
+<td valign="top">
+
+**Mask of Deception 2P**
+
 Game 2 pemain berbentuk chat: satu pemain berperan sebagai penipu atau bukan, pemain lain menebak. Ada pencarian lawan otomatis, ruangan publik atau privat, batas waktu tiap giliran, dan riwayat match.
 
-### <img src="docs/icons/trophy.svg" alt="Profil" width="32" align="absmiddle"> Profil, level, dan XP
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/trophy.svg" alt="Profil" width="56">
+
+</td>
+<td valign="top">
+
+**Profil, level, dan XP**
+
 Setiap aktivitas menambah XP. Level maksimal 110 dengan gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Ada profil, follow, pesan langsung (DM), notifikasi, dan pengaturan privasi.
 
-### <img src="docs/icons/key.svg" alt="Akun" width="32" align="absmiddle"> Akun
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/key.svg" alt="Akun" width="56">
+
+</td>
+<td valign="top">
+
+**Akun**
+
 Daftar dengan email (kode verifikasi 6 digit) atau Google, plus fitur lupa dan reset kata sandi.
 
-### <img src="docs/icons/square-check.svg" alt="Moderasi" width="32" align="absmiddle"> Moderasi dan admin
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/square-check.svg" alt="Moderasi" width="56">
+
+</td>
+<td valign="top">
+
+**Moderasi dan admin**
+
 Antrean moderasi (setujui, minta klarifikasi, atau tolak), dashboard admin, kelola pengguna dan peran, serta log aktivitas.
+
+</td>
+</tr>
+</table>
 
 ### Peran
 
@@ -385,7 +509,7 @@ Penggunaan template, framework, library, aset, maupun kode sumber pihak ketiga d
 | Sumber daya | Kegunaan | Lisensi | Keterangan |
 |---|---|---|---|
 | PHP dan MySQL/MariaDB | Bahasa server dan basis data | PHP License / GPL | Runtime, bukan kode yang disalin |
-| [Font Awesome Free 6](https://fontawesome.com) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline (`includes/icons.php`, `assets/js/icons.js`) | Ikon: [CC BY 4.0](https://fontawesome.com/license/free) | Atribusi: Font Awesome by Fonticons, Inc. Ikon dipilih sebagian dan diwarnai lewat `currentColor`. Ikon fitur di README (`docs/icons/*.svg`) juga berasal dari sini, diberi warna merah dan latar putih |
+| [Font Awesome Free 6](https://fontawesome.com) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline (`includes/icons.php`, `assets/js/icons.js`) | Ikon: [CC BY 4.0](https://fontawesome.com/license/free) | Atribusi: Font Awesome by Fonticons, Inc. Ikon dipilih sebagian dan diwarnai lewat `currentColor`. Ikon fitur di README (`docs/icons/*.svg`) juga berasal dari sini, diberi warna hitam dan latar putih |
 | [Lucide](https://lucide.dev) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline di SafeSnaps (`safesnaps.php`) | [ISC](https://github.com/lucide-icons/lucide/blob/main/LICENSE) | Hak cipta: Lucide Contributors (dan Cole Bemis untuk bagian turunan Feather) |
 | Google OAuth 2.0 / OpenID Connect | Login dengan Google (opsional) | Ketentuan layanan Google | Layanan eksternal via API |
 | Penyedia AI kompatibel OpenAI atau Anthropic | ItihScan AI dan Chat AI (opsional) | Ketentuan penyedia API | Layanan eksternal |
