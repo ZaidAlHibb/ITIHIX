@@ -913,3 +913,42 @@
   window.ITIHIX = window.ITIHIX || {};
   window.ITIHIX.refreshFeed = url => load(url || location.href, true, true);   // dipakai tombol Beranda saat sudah di Beranda
 })();
+
+/* Tab profil: ganti isi tanpa reload halaman */
+(function () {
+  const page = document.getElementById('page-profile');
+  const tabs = page && page.querySelector('.profile-tabs');
+  if (!tabs || !window.fetch || !history.pushState) return;
+  let seq = 0;
+  const area = () => page.querySelector('.profile-tabs').parentElement;
+
+  function load(url, push) {
+    const my = ++seq, y = window.scrollY;
+    const body = [...page.children].filter(el => el.compareDocumentPosition(tabs) & Node.DOCUMENT_POSITION_PRECEDING);
+    body.forEach(el => { el.style.opacity = '.5'; el.style.transition = 'opacity .12s'; });
+    fetch(url, { credentials: 'same-origin', headers: { 'X-Requested-With': 'fetch' } })
+      .then(r => { if (!r.ok) throw 0; return r.text(); })
+      .then(html => {
+        if (my !== seq) return;
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        const np = doc.getElementById('page-profile'); if (!np) throw 0;
+        const nt = np.querySelector('.profile-tabs');
+        // ganti tab + semua yang ada di bawahnya
+        tabs.innerHTML = nt.innerHTML;
+        while (tabs.nextSibling) tabs.nextSibling.remove();
+        let n = nt.nextSibling;
+        while (n) { tabs.parentNode.appendChild(document.importNode(n, true)); n = n.nextSibling; }
+        if (push) history.pushState({ pfTab: 1 }, '', url);
+        window.scrollTo(0, y);
+      })
+      .catch(() => { location.href = url; });
+  }
+
+  page.addEventListener('click', ev => {
+    const a = ev.target.closest('.profile-tabs a.tab, .pf-stat, .fl-pager a, a.tag[href*="tab="]');
+    if (!a || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button) return;
+    ev.preventDefault();
+    load(a.href, true);
+  });
+  window.addEventListener('popstate', () => { if (document.querySelector('#page-profile .profile-tabs')) load(location.href, false); });
+})();
