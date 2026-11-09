@@ -82,7 +82,7 @@ Karena itu kami membuat ITIHIX: tempat warga saling melapor, saling memverifikas
 
 **Beranda (feed komunitas)**
 
-Laporan penipuan terbaru dalam tiga tab: *Untuk kamu*, *Terbaru*, dan *Terverifikasi*. Setiap laporan bisa disukai, di-repost, disimpan, dibagikan, dan dikomentari.
+Laporan penipuan yang sudah terbit dalam tiga tab: *Untuk kamu*, *Terbaru*, dan *Mengikuti* (khusus yang sudah masuk). Laporan yang sudah diperiksa moderator bertanda terverifikasi. Setiap laporan bisa disukai, di-repost, disimpan, dibagikan, dan dikomentari.
 
 </td>
 </tr>
@@ -201,6 +201,20 @@ Setiap aktivitas menambah XP. Level maksimal 110 dengan gelar dari *Pemula Waspa
 <tr>
 <td width="80" align="center" valign="top">
 
+<img src="docs/icons/target.svg" alt="Misi Harian" width="56">
+
+</td>
+<td valign="top">
+
+**Misi Harian (Quest)**
+
+Tiga misi yang di-reset tiap hari: kerjakan 5 soal kuis, selesaikan 1 ronde Mask of Deception 2P, dan buat 1 laporan. Selesaikan ketiganya untuk bonus **+250 XP**. Kemajuannya tampil di kartu *Misi hari ini* pada kolom kanan.
+
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
 <img src="docs/icons/key.svg" alt="Akun" width="56">
 
 </td>
@@ -232,6 +246,7 @@ Antrean moderasi (setujui, minta klarifikasi, atau tolak), dashboard admin, kelo
 
 | Peran | Bisa apa |
 |---|---|
+| Guest (tamu) | Belum masuk. Hanya bisa membaca laporan yang sudah terbit di Beranda dan halaman detail laporan, serta mendaftar atau masuk. |
 | User | Semua fitur komunitas. Laporan masuk antrean moderasi. |
 | Terpercaya (`trusted`) | Fitur user, tetapi laporannya **langsung terbit** tanpa antrean dan diberi lencana *Pelapor Terverifikasi*. XP "laporan disetujui" langsung didapat. |
 | Moderator | Fitur user + antrean moderasi. Laporannya langsung terbit. Bisa memberi atau mencabut status Terpercaya pada user. |
@@ -251,8 +266,21 @@ XP untuk naik dari level L = `100 + 10×(L−1)`.
 | Analisis AI | +5 (maks. 5/hari) |
 | Komentar | +2 (maks. 5/hari) |
 | Moderasi | +2 |
+| Misi Harian lengkap | +250 (sekali per hari, di luar batas harian) |
 
 Gelar: Pemula Waspada → Penjaga Komunitas (10) → Pelindung Siber (30) → Pakar Anti-Penipuan (60) → Tameng Digital (90) → Legenda ITIHIX (110).
+
+### Misi Harian (Quest)
+
+Kartu **Misi hari ini** di kolom kanan menampilkan tiga misi. Kemajuan dihitung dari aktivitas hari ini dan kembali ke nol keesokan harinya.
+
+| Misi | Syarat selesai |
+|---|---|
+| Mainkan kuis keamanan | Kerjakan 5 soal di **Scam or Real?** (+10 XP per jawaban benar) |
+| Mainkan Mask of Deception | Selesaikan 1 ronde bersama pemain lain |
+| Buat 1 laporan | Kirim 1 laporan (+5 XP, +20 XP bila disetujui) |
+
+Kalau ketiganya selesai, kamu mendapat bonus **+250 XP** satu kali per hari. Bonus ini terpisah dari batas XP harian: XP dari semua fitur (laporan, kuis, ItihScan, komentar, game) dibatasi maksimal **250 per hari**.
 
 ### Keamanan
 
@@ -300,21 +328,41 @@ flowchart TD
 
 ### Alur per peran
 
-Peran bertambah dari kiri ke kanan: Terpercaya punya semua kemampuan User, Moderator menambah wewenang moderasi, dan Admin menambah pengelolaan seluruh sistem.
+Guest adalah pengunjung yang belum masuk. Dari kiri ke kanan, kemampuan bertambah: User punya akun, Terpercaya punya semua kemampuan User, Moderator menambah wewenang moderasi, dan Admin menambah pengelolaan seluruh sistem.
 
-| Kemampuan | User | Terpercaya | Moderator | Admin |
-|---|:---:|:---:|:---:|:---:|
-| Baca, komentar, DM, kuis, game, ItihScan, iTISTANT | ✓ | ✓ | ✓ | ✓ |
-| Mengirim laporan | ✓ | ✓ | ✓ | ✓ |
-| Laporan langsung terbit (tanpa antrean) | – | ✓ | ✓ | ✓ |
-| Lencana pada laporan | – | Pelapor Terverifikasi | Oleh Moderator | Oleh Admin |
-| Meninjau antrean moderasi | – | – | ✓ | ✓ |
-| Memberi atau mencabut status Terpercaya | – | – | ✓ | ✓ |
-| Menangguhkan atau mengaktifkan akun | – | – | User dan Terpercaya | Semua akun |
-| Menghapus postingan dan komentar orang lain | – | – | User dan Terpercaya | Semua |
-| Menangani laporan pengguna dan komentar | – | – | ✓ | ✓ |
-| Mengubah peran dan membuat akun | – | – | – | ✓ |
-| Dashboard, semua postingan (hapus/pulihkan), log aktivitas | – | – | – | ✓ |
+| Kemampuan | Guest | User | Terpercaya | Moderator | Admin |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Membaca laporan terbit di Beranda dan halaman detail | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Mendaftar atau masuk | ✓ | – | – | – | – |
+| Suka, komentar, tab Mengikuti, Jelajahi, SafeSnaps | – | ✓ | ✓ | ✓ | ✓ |
+| DM, kuis, game, ItihScan, iTISTANT | – | ✓ | ✓ | ✓ | ✓ |
+| Mengirim laporan | – | ✓ | ✓ | ✓ | ✓ |
+| Laporan langsung terbit (tanpa antrean) | – | – | ✓ | ✓ | ✓ |
+| Lencana pada laporan | – | – | Pelapor Terverifikasi | Oleh Moderator | Oleh Admin |
+| Meninjau antrean moderasi | – | – | – | ✓ | ✓ |
+| Memberi atau mencabut status Terpercaya | – | – | – | ✓ | ✓ |
+| Menangguhkan atau mengaktifkan akun | – | – | – | User dan Terpercaya | Semua akun |
+| Menghapus postingan dan komentar orang lain | – | – | – | User dan Terpercaya | Semua |
+| Menangani laporan pengguna dan komentar | – | – | – | ✓ | ✓ |
+| Mengubah peran dan membuat akun | – | – | – | – | ✓ |
+| Dashboard, semua postingan (hapus/pulihkan), log aktivitas | – | – | – | – | ✓ |
+
+#### Alur Guest
+
+```mermaid
+flowchart LR
+    A[Buka ITIHIX<br/>tanpa akun] --> B[Beranda<br/>tab Untuk kamu dan Terbaru]
+    B --> C[Buka detail laporan<br/>yang sudah terbit]
+    B --> D{Coba suka, komentar,<br/>atau buka menu lain}
+    C --> D
+    D --> E[Muncul ajakan<br/>masuk atau daftar]
+    E --> F[Daftar atau masuk<br/>kode email 6 digit atau Google]
+    F --> G[Menjadi User]
+    classDef guest fill:#e5e7eb,stroke:#4b5563,color:#111111
+    class A,B,C,D,E,F,G guest
+```
+
+Sidebar Guest hanya berisi menu Beranda dan kartu ajakan "Gabung ITIHIX". Semua menu lain mengharuskan masuk.
 
 #### Alur User
 
@@ -328,8 +376,10 @@ flowchart LR
     F --> D
     D -->|Ditolak| G[Tidak terbit]
     B --> H[Laporkan pengguna<br/>atau komentar bermasalah]
+    B --> M[Misi Harian<br/>5 soal kuis, 1 ronde game,<br/>1 laporan]
+    M --> N[Bonus +250 XP<br/>sekali per hari]
     classDef user fill:#dbeafe,stroke:#1d4ed8,color:#111111
-    class A,B,C,D,E,F,G,H user
+    class A,B,C,D,E,F,G,H,M,N user
 ```
 
 #### Alur Terpercaya
@@ -380,7 +430,7 @@ flowchart LR
 
 | Kelompok | Menu | Fungsi |
 |---|---|---|
-| **Menu utama** | Beranda | Feed laporan (tab Untuk kamu, Terbaru, Terverifikasi) |
+| **Menu utama** | Beranda | Feed laporan (tab Untuk kamu, Terbaru, Mengikuti) |
 | | Jelajahi | Cari lewat hashtag, kategori, jenis modus |
 | | SafeSnaps | Feed ringkas bergaya reels untuk edukasi dan peringatan |
 | **Perlindungan Digital** | ItihScan AI | Periksa pesan atau gambar mencurigakan |
@@ -410,11 +460,11 @@ Kelompok **Moderasi** hanya tampil untuk moderator dan admin.
 ## Coba yuk ITIHIX!
 
 1. Buka [itihix.my.id](https://itihix.my.id), lalu **daftar** akun baru (email dikirimi kode 6 digit) atau masuk dengan Google.
-2. Di **Beranda**, buka tab *Terverifikasi* untuk melihat laporan yang sudah diperiksa moderator.
+2. Di **Beranda**, lihat tab *Untuk kamu* dan *Terbaru*. Laporan yang sudah diperiksa moderator bertanda terverifikasi. Tanpa akun pun kamu bisa membaca Beranda sebagai tamu.
 3. Buka **ItihScan**, tempel pesan seperti *"Selamat! Anda menang undian Rp50 juta. Klik link ini dan transfer biaya admin"*, lalu lihat hasil analisis dan caption otomatisnya.
 4. Edit caption, pilih kategori dan label, lalu kirim sebagai laporan. Laporan masuk antrean moderasi.
 5. Di **Jelajahi**, coba cari lewat hashtag atau klik label *Penipuan*.
-6. Coba **Kuis Scam or Real?** untuk mendapatkan XP, lalu ajak temanmu main **Mask of Deception 2P**.
+6. Coba **Kuis Scam or Real?** untuk mendapatkan XP, lalu ajak temanmu main **Mask of Deception 2P**. Pantau kemajuanmu di kartu **Misi hari ini** (kolom kanan), dan selesaikan ketiga misi untuk bonus +250 XP.
 7. Tanya **iTISTANT** hal seperti "Bagaimana cara tahu link bank palsu?".
 8. Untuk mencoba `moderator.php` dan `admin.php`, ubah peran akunmu lewat database (lihat langkah 8 di bagian [Menjalankan di komputer sendiri](#menjalankan-di-komputer-sendiri)).
 
