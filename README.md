@@ -266,6 +266,9 @@ XP untuk naik dari level L = `100 + 10×(L−1)`.
 | Analisis AI | +5 (maks. 5/hari) |
 | Komentar | +2 (maks. 5/hari) |
 | Moderasi | +2 |
+| Misi Harian (kuis 5 soal, 1 ronde game, 1 laporan) | +250 (sekali per hari) |
+
+XP dari semua fitur dibatasi maksimal 250 per hari. Hadiah Misi Harian dihitung di luar batas itu.
 | Misi Harian lengkap | +250 (sekali per hari, di luar batas harian) |
 
 Gelar: Pemula Waspada → Penjaga Komunitas (10) → Pelindung Siber (30) → Pakar Anti-Penipuan (60) → Tameng Digital (90) → Legenda ITIHIX (110).
@@ -298,15 +301,16 @@ Kalau ketiganya selesai, kamu mendapat bonus **+250 XP** satu kali per hari. Bon
 ### Perjalanan pengguna
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
 flowchart TD
-    A([Buka ITIHIX]) --> B[Daftar atau masuk<br/>kode email 6 digit atau Google]
+    A([Buka ITIHIX]) --> B[Daftar atau masuk<br/>kode email 6 digit<br/>atau Google]
     B --> C[Beranda<br/>baca laporan terbaru]
     C --> D{Mau apa?}
     D -->|Ada pesan mencurigakan| E[ItihScan AI<br/>analisis teks atau gambar]
-    D -->|Ingin bertanya| F[iTISTANT AI<br/>tanya soal keamanan digital]
+    D -->|Ingin bertanya| F[iTISTANT AI<br/>tanya soal<br/>keamanan digital]
     D -->|Ingin berlatih| G[Scam or Real?<br/>atau Mask of Deception 2P]
     D -->|Tahu modus penipuan| H
-    E --> H[Buat laporan<br/>edit caption, pilih kategori dan label]
+    E --> H[Buat laporan<br/>edit caption,<br/>pilih kategori<br/>dan label]
     H --> I[Masuk alur moderasi<br/>lihat diagram di bawah]
     G --> J[XP bertambah<br/>naik level]
     H -.-> J
@@ -315,6 +319,7 @@ flowchart TD
 ### Alur laporan dan moderasi
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
 flowchart TD
     A[Laporan dikirim] --> B{Peran pelapor}
     B -->|Terpercaya, Moderator, Admin| F
@@ -350,13 +355,14 @@ Guest adalah pengunjung yang belum masuk. Dari kiri ke kanan, kemampuan bertamba
 #### Alur Guest
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
 flowchart LR
-    A[Buka ITIHIX<br/>tanpa akun] --> B[Beranda<br/>tab Untuk kamu dan Terbaru]
+    A[Buka ITIHIX<br/>tanpa akun] --> B[Beranda<br/>tab Untuk kamu<br/>dan Terbaru]
     B --> C[Buka detail laporan<br/>yang sudah terbit]
     B --> D{Coba suka, komentar,<br/>atau buka menu lain}
     C --> D
     D --> E[Muncul ajakan<br/>masuk atau daftar]
-    E --> F[Daftar atau masuk<br/>kode email 6 digit atau Google]
+    E --> F[Daftar atau masuk<br/>kode email 6 digit<br/>atau Google]
     F --> G[Menjadi User]
     classDef guest fill:#e5e7eb,stroke:#4b5563,color:#111111
     class A,B,C,D,E,F,G guest
@@ -366,31 +372,109 @@ Sidebar Guest hanya berisi menu Beranda dan kartu ajakan "Gabung ITIHIX". Semua 
 
 #### Alur User
 
+User punya akses ke semua menu. Alurnya dipecah per kelompok fitur supaya jelas apa yang terjadi di tiap menu.
+
+**1. Komunitas** (Beranda, Jelajahi, SafeSnaps, Pesan, Notifikasi, Profil)
+
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
 flowchart LR
-    A[Daftar atau masuk] --> B[Pakai fitur komunitas<br/>baca, komentar, DM, kuis,<br/>game, ItihScan]
-    B --> C[Buat laporan<br/>+5 XP]
-    C --> D[Antrean moderasi<br/>status menunggu]
-    D -->|Disetujui| E[Terbit di Beranda<br/>+20 XP]
-    D -->|Klarifikasi| F[Revisi laporan]
-    F --> D
-    D -->|Ditolak| G[Tidak terbit]
-    B --> H[Laporkan pengguna<br/>atau komentar bermasalah]
-    B --> M[Misi Harian<br/>5 soal kuis, 1 ronde game,<br/>1 laporan]
-    M --> N[Bonus +250 XP<br/>sekali per hari]
+    A[Daftar<br/>atau masuk] --> B[Beranda]
+    A --> C[Jelajahi]
+    A --> D[SafeSnaps]
+    A --> E[Pesan]
+    A --> F[Notifikasi]
+    A --> G[Profil]
+    B --> B1[Baca laporan:<br/>Untuk kamu,<br/>Terbaru, Mengikuti]
+    B1 --> B2[Suka, komentar,<br/>repost, simpan,<br/>bagikan]
+    C --> C1[Cari lewat hashtag,<br/>kategori, jenis<br/>modus]
+    D --> D1[Tonton video<br/>edukasi]
+    D --> D2[Unggah video,<br/>masuk antrean<br/>moderasi]
+    E --> E1[Kirim DM ke<br/>pengguna lain]
+    F --> F1[Lihat suka, komentar,<br/>keputusan moderator]
+    G --> G1[Follow pengguna,<br/>lihat level dan XP]
     classDef user fill:#dbeafe,stroke:#1d4ed8,color:#111111
-    class A,B,C,D,E,F,G,H,M,N user
+    class A,B,C,D,E,F,G,B1,B2,C1,D1,D2,E1,F1,G1 user
+```
+
+**2. Perlindungan Digital: ItihScan AI dan iTISTANT AI**
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
+flowchart LR
+    A[ItihScan AI] --> B[Tempel teks pesan<br/>atau unggah gambar]
+    B --> C[Analisis AI atau<br/>mesin aturan lokal<br/>+5 XP]
+    C --> D[Hasil: Penipuan,<br/>Mencurigakan,<br/>atau Aman]
+    D --> E[Alasan dan langkah<br/>yang disarankan]
+    E --> F[Caption otomatis,<br/>bisa diedit]
+    F --> G[Terbitkan sebagai<br/>laporan berlabel<br/>ItihScan AI]
+    H[iTISTANT AI] --> I[Tanya soal<br/>keamanan digital]
+    I --> J[Lampirkan file<br/>atau gambar]
+    I --> K[Riwayat obrolan<br/>tersimpan]
+    classDef user fill:#dbeafe,stroke:#1d4ed8,color:#111111
+    class A,B,C,D,E,F,G,H,I,J,K user
+```
+
+**3. Perlindungan Digital: Scam or Real? dan Mask of Deception 2P**
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
+flowchart LR
+    A[Scam or Real?] --> B[Baca pesan bergaya<br/>chat WhatsApp]
+    B --> C[Tebak: asli<br/>atau penipuan]
+    C --> D[Penjelasan dan<br/>tanda bahaya]
+    D --> E[+10 sampai +20 XP,<br/>streak dan riwayat]
+    F[Mask of Deception 2P] --> G[Cari lawan otomatis<br/>atau ruangan<br/>publik dan privat]
+    G --> H[Main bergiliran<br/>dengan batas waktu]
+    H --> I[Satu pemain jadi<br/>penipu atau bukan,<br/>lawan menebak]
+    I --> J[Riwayat match]
+    classDef user fill:#dbeafe,stroke:#1d4ed8,color:#111111
+    class A,B,C,D,E,F,G,H,I,J user
+```
+
+**4. Buat laporan dan laporkan pengguna**
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
+flowchart LR
+    A[Buat laporan<br/>+5 XP] --> B[Antrean moderasi<br/>status menunggu]
+    B -->|Disetujui| C[Terbit di Beranda<br/>+20 XP]
+    B -->|Klarifikasi| D[Revisi laporan]
+    D --> B
+    B -->|Ditolak| E[Tidak terbit]
+    F[Laporkan pengguna<br/>atau komentar] --> G[Moderator menangani<br/>di tab Laporan<br/>pengguna]
+    classDef user fill:#dbeafe,stroke:#1d4ed8,color:#111111
+    class A,B,C,D,E,F,G user
+```
+
+**5. Misi Harian dan XP**
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
+flowchart LR
+    A[Misi Harian] --> B[5 soal kuis]
+    A --> C[1 ronde Mask<br/>of Deception]
+    A --> D[1 laporan]
+    B --> E{Ketiga misi<br/>selesai?}
+    C --> E
+    D --> E
+    E -->|Ya| F[+250 XP<br/>sekali per hari]
+    F --> G[XP bertambah,<br/>naik level]
+    H[XP dari fitur lain<br/>maks. 250 per hari] --> G
+    classDef user fill:#dbeafe,stroke:#1d4ed8,color:#111111
+    class A,B,C,D,E,F,G,H user
 ```
 
 #### Alur Terpercaya
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
 flowchart LR
     A[Moderator atau admin<br/>memberi status Terpercaya] --> B[Buat laporan]
-    B --> C[Langsung terbit di Beranda<br/>tanpa antrean moderasi]
-    C --> D[Lencana Pelapor Terverifikasi]
+    B --> C[Langsung terbit<br/>di Beranda tanpa<br/>antrean moderasi]
+    C --> D[Lencana Pelapor<br/>Terverifikasi]
     C --> E[+5 XP dan +20 XP langsung<br/>maks. 5 laporan per hari]
-    A -.-> F[Status bisa dicabut kapan saja<br/>oleh moderator atau admin]
+    A -.-> F[Status bisa dicabut<br/>kapan saja oleh<br/>moderator atau admin]
     classDef trusted fill:#dcfce7,stroke:#15803d,color:#111111
     class A,B,C,D,E,F trusted
 ```
@@ -398,11 +482,12 @@ flowchart LR
 #### Alur Moderator
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
 flowchart LR
     A[Buka Antrean moderasi] --> B[Antrean<br/>laporan dari User]
     A --> C[Riwayat keputusan]
     A --> D[Laporan pengguna<br/>selesaikan, abaikan,<br/>hapus komentar]
-    A --> E[Kelola akun<br/>tangguhkan atau aktifkan,<br/>beri atau cabut Terpercaya]
+    A --> E[Kelola akun<br/>tangguhkan atau<br/>aktifkan, beri atau<br/>cabut Terpercaya]
     B --> F{Keputusan}
     F -->|Setujui| G[Terbit dengan label akhir]
     F -->|Klarifikasi| H[Dikembalikan ke pelapor]
@@ -416,8 +501,9 @@ Moderator hanya bisa mengelola akun User dan Terpercaya, tidak bisa menyentuh se
 #### Alur Admin
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
 flowchart LR
-    A[Buka Dashboard admin] --> B[Dashboard<br/>perlu moderasi, laporan terbuka,<br/>login gagal 24 jam, akun ditangguhkan]
+    A[Buka Dashboard admin] --> B[Dashboard<br/>perlu moderasi,<br/>laporan terbuka,<br/>login gagal 24 jam,<br/>akun ditangguhkan]
     A --> C[Pengguna dan moderator<br/>ubah peran, tangguhkan,<br/>buat akun]
     A --> D[Semua postingan<br/>hapus atau pulihkan,<br/>tinjau yang menunggu]
     A --> E[Log aktivitas<br/>audit semua aksi]
@@ -473,11 +559,12 @@ Kelompok **Moderasi** hanya tampil untuk moderator dan admin.
 ## Cara kerjanya
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
 flowchart LR
     A[Browser<br/>HTML, CSS, JavaScript] -->|HTTPS| S
     S[Server PHP 8.1+<br/>Apache atau Nginx] --> D[(MySQL / MariaDB)]
     S --> U[Folder uploads/]
-    S -->|API, opsional| G[Model AI<br/>kompatibel OpenAI atau Anthropic]
+    S -->|API, opsional| G[Model AI kompatibel<br/>OpenAI atau Anthropic]
     S -->|OAuth, opsional| O[Google Login]
     S -->|SMTP, opsional| M[Email verifikasi]
 ```
