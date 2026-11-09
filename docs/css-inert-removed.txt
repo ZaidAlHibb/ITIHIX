@@ -1,0 +1,176 @@
+# rule/selektor yang dibuang oleh css_merge.py --inert --write --log docs/css-inert-removed.txt
+rule   main:3  .upload-zone
+rule   main:3  .upload-zone b
+rule   main:3  .result-box
+rule   main:3  .result-box h4
+rule   main:3  .result-box p
+rule   main:3  .profile-hero
+rule   main:3  .profile-hero h2
+rule   main:3  .profile-stats
+rule   main:3  .profile-stats strong
+rule   main:3  .profile-stats small
+rule   main:13  body.dark .upload-zone
+entry  main:14  dibuang dari daftar: body.dark .upload-zone b
+rule   main:16  body.dark .result-box
+rule   main:16  body.dark .result-box h4
+rule   main:16  body.dark .result-box p
+rule   main:17  body.dark .profile-hero
+rule   main:25  #page-reels .reels-heading
+rule   main:38  .reel-scene
+rule   main:38  .scene-otp
+rule   main:38  .scene-invest
+rule   main:38  .scene-link
+rule   main:38  .scene-glow
+rule   main:38  .scene-kicker
+rule   main:38  .scene-emoji
+rule   main:38  .scene-title
+rule   main:38  .scene-subtitle
+rule   main:38  .fake-message , .invest-card , .link-steps
+rule   main:38  .fake-message b
+rule   main:38  .fake-message p
+rule   main:38  .fake-message span
+rule   main:38  .scene-footer
+rule   main:38  .invest-card
+rule   main:38  .invest-card span , .invest-card small
+rule   main:38  .invest-card strong
+rule   main:38  .invest-warning
+rule   main:38  .link-steps
+rule   main:38  .link-steps div
+rule   main:38  .link-steps b
+rule   main:38  .reel-hashtag
+rule   main:38  .reel-audio
+rule   main:38  .reel-disc
+rule   main:38  .reels-note
+entry  main:38  dibuang dari daftar: .reel-disc:focus-visible
+rule   main:39  body.dark .reels-note
+rule   main:43  .explore-search-results
+entry  main:49  dibuang dari daftar: body:has(#page-reels:not(.hidden)) .sidebar .nav-item
+rule   main:62  #page-reels .reels-note
+rule   main:67  .reel-scene
+rule   main:67  .scene-title
+rule   main:67  .scene-footer
+rule   main:67  .profile-stats
+rule   main:72  .short-moderation-note
+rule   main:73  .moderation-note-icon
+rule   main:74  .short-moderation-note strong
+rule   main:75  .short-moderation-note p
+rule   main:92  .short-moderation-note
+entry  main:219  dibuang dari daftar: body:has(#page-reels:not(.hidden)) .mobile-nav
+entry  main:253  dibuang dari daftar: #page-upload .upload-zone
+rule   main:256  #page-upload .upload-zone
+rule   main:261  #page-upload .upload-zone > span
+rule   main:266  #page-upload .upload-zone > b
+rule   main:267  #page-upload .upload-zone #reportFileName
+rule   main:270  #page-upload .upload-zone
+entry  main:303  dibuang dari daftar: body.dark #page-detect .result-box , body.dark #page-chat .card
+entry  main:306  dibuang dari daftar: body.dark #page-chat .field , body.dark #page-chat input
+rule   main:311  body.dark #page-chat #chatMessages
+rule   main:312  body.dark #page-chat .warning-box
+rule   main:313  body.dark #page-chat .warning-box strong
+rule   main:314  body.dark #page-chat .warning-box span
+rule   main:315  body.dark #page-chat .warning-box div
+rule   main:316  body.dark #page-chat .bubble
+rule   main:317  body.dark #page-chat .bubble.out
+rule   main:318  body.dark #page-detect .upload-zone
+entry  main:319  dibuang dari daftar: body.dark #page-chat .sub
+rule   main:399  body:has(#page-chat:not(.hidden)) .main
+rule   main:403  #page-chat:not(.hidden)
+rule   main:408  #page-chat .page-heading
+rule   main:409  #page-chat > .card
+rule   main:414  #page-chat > .card > div:first-child
+rule   main:415  #page-chat #chatMessages
+rule   main:421  #page-chat #chatMessages::-webkit-scrollbar
+rule   main:422  #page-chat #chatMessages::-webkit-scrollbar-track
+rule   main:423  #page-chat #chatMessages::-webkit-scrollbar-thumb
+rule   main:424  #page-chat #chatMessages::-webkit-scrollbar-thumb:hover
+rule   main:425  body.dark #page-chat #chatMessages
+rule   main:426  body.dark #page-chat #chatMessages::-webkit-scrollbar-track
+rule   main:427  body.dark #page-chat #chatMessages::-webkit-scrollbar-thumb
+rule   main:428  body.dark #page-chat #chatMessages::-webkit-scrollbar-thumb:hover
+rule   main:429  #page-chat > .card > form
+rule   main:430  #page-chat > .sub
+rule   main:433  #page-chat:not(.hidden)
+rule   main:434  #page-chat > .card
+rule   main:435  #page-chat #chatMessages
+rule   main:436  body.dark #page-chat #chatMessages
+rule   main:442  #page-detect label.upload-zone , #page-upload label.upload-zone
+rule   main:461  #page-detect label.upload-zone > div , #page-upload label.upload-zone > div
+rule   main:470  #page-detect label.upload-zone > b , #page-upload label.upload-zone > b
+rule   main:482  #page-detect label.upload-zone > span , #page-upload label.upload-zone > span
+rule   main:496  #page-detect label.upload-zone #detectFileName , #page-upload label.upload-zone #reportFileName
+rule   main:506  #page-detect label.upload-zone input[type="file"] , #page-upload label.upload-zone input[type="file"]
+rule   main:511  #page-detect label.upload-zone , #page-upload label.upload-zone
+rule   main:653  .mp-item
+rule   main:654  .mp-item img , .mp-item video
+rule   main:655  .mp-del
+rule   main:656  .mp-del:hover
+rule   main:657  .mp-badge
+rule   main:658  .mp-count
+rule   main:760  .result-box.danger
+rule   main:760  .result-box.warn
+rule   main:761  .result-box ul
+rule   main:775  .gate-icon
+rule   main:846  .reel-video
+rule   main:1016  .dt-actions .btn.is-saved
+rule   main:1080  #page-upload label.upload-zone.dt-drop
+rule   main:1081  #page-upload label.upload-zone.dt-drop > div
+rule   main:1082  #page-upload label.upload-zone.dt-drop > b
+rule   main:1083  #page-upload label.upload-zone.dt-drop > span
+rule   main:1084  #page-upload label.upload-zone.dt-drop:hover , #page-upload label.upload-zone.dt-drop.drag
+rule   main:1088  #page-upload .media-preview .mp-badge
+rule   main:1117  .lv-more
+rule   main:1118  .lv-more summary
+rule   main:1119  .lv-more summary::-webkit-details-marker
+rule   main:1120  .lv-more summary:before
+rule   main:1121  .lv-more[open] summary:before
+rule   main:1122  .lv-link
+rule   main:1123  .lv-link:hover
+rule   main:1124  .lv-hero
+rule   main:1125  .lv-hero-ico
+rule   main:1126  .lv-hero-main
+rule   main:1127  .lv-hero-main h2
+rule   main:1128  .lv-card
+rule   main:1129  .lv-xp-list
+rule   main:1130  .lv-xp-list li
+rule   main:1131  .lv-xp-list li:last-child
+rule   main:1132  .lv-xp-list li span
+rule   main:1133  .lv-xp-list b
+rule   main:1134  .lv-xp-list small
+rule   main:1135  .lv-xp-list small
+rule   main:1155  .lv-toggle
+rule   main:1156  .lv-toggle .lv-t-open
+rule   main:1157  .lv-card-d[open] .lv-t-open
+rule   main:1158  .lv-card-d[open] .lv-t-closed
+rule   main:1159  .lv-chev
+rule   main:1160  .lv-card-d[open] .lv-chev
+rule   main:1175  .gm-grid
+rule   main:1176  .gm-grid
+rule   main:1180  .gm-steps
+rule   main:1220  .gm-chat
+rule   main:1444  .home-reel-ph
+rule   main:1448  .grid-post .thumb .thumb-ph
+rule   main:1656  .pf-role
+rule   main:1719  .pfe-croprow
+rule   main:1720  .pfe-croprow .btn
+rule   main:1867  #gmRoot>.gm-grid
+rule   main:1868  #gmRoot>.gm-grid>.card
+rule   main:1869  .gm-grid>.card:last-child
+rule   main:1870  .gm-grid>.card:last-child>*
+rule   main:1871  .gm-grid>.card:last-child>.gm-rooms
+rule   main:1872  .gm-grid>.card:last-child>.gm-empty
+rule   main:1873  .gm-grid>.card:last-child h3
+rule   main:1874  .gm-grid>.card:last-child .gm-or
+rule   main:1875  .gm-grid>.card:last-child .gm-sub
+rule   main:1876  .gm-how summary
+rule   main:1877  .gm-how summary::-webkit-details-marker
+rule   main:1878  .gm-how summary h3
+rule   main:1879  .gm-how summary::after
+rule   main:1880  .gm-how:not([open]) summary h3
+rule   main:1881  .gm-how:not([open]) summary::after
+rule   main:1941  #gmRoot>.gm-grid
+rule   main:1942  #gmRoot>.gm-grid>.card
+rule   main:1943  .gm-grid>.card:last-child
+rule   main:1944  .gm-grid>.card:last-child>.gm-rooms
+entry  main:2297  dibuang dari daftar: .pcm-to
+rule   main:2399  .profile-hero
+rule   main:2400  .profile-stats

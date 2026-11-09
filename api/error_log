@@ -1,0 +1,414 @@
+[08-Nov-2026 13:39:08 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:39:22 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 13:39:22 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 13:39:23 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:39:26 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:39:30 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 13:39:30 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 13:39:31 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:39:34 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:39:38 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:39:42 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:39:45 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:39:50 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:39:56 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:39:56 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:43:06 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:43:11 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:43:18 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:43:18 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:43:25 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:43:32 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:43:39 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:43:46 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:43:51 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:43:55 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:02 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:09 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:10 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 13:44:10 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 13:44:16 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:16 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:17 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:19 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 13:44:19 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 13:44:19 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:22 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:23 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:27 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:28 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:30 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:35 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:40 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:42 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:47 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:48 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:52 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:59 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:44:59 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:45:02 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:46:50 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:46:52 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 13:46:52 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 13:46:53 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:46:58 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:47:04 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:47:05 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:47:12 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:47:19 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:47:26 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:47:33 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:47:33 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:47:37 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:47:41 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:47:48 Asia/Makassar] [ITIHIX game] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'm.is_auto' in 'SELECT'
+[08-Nov-2026 13:50:51 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 13:50:51 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 13:51:07 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 13:51:07 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 13:56:04 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 13:56:04 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 13:57:00 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 13:57:00 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 13:59:23 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 13:59:23 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 14:04:46 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 14:04:46 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 14:10:29 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 14:10:29 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 14:15:00 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 14:15:00 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 14:15:14 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 14:15:14 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 14:33:41 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 14:33:41 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 22:26:22 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 22:26:22 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 22:30:50 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 22:30:50 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 22:33:01 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 22:33:01 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 22:42:28 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 22:42:28 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 23:10:54 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 23:10:54 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 23:28:02 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 23:28:02 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 23:28:07 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 23:28:07 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 23:28:21 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 23:28:21 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 23:35:37 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 23:35:37 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 23:35:45 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 23:35:45 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[08-Nov-2026 23:41:40 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[08-Nov-2026 23:41:40 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 00:05:00 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 00:05:00 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 10:46:26 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 10:46:26 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 10:48:42 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 10:48:42 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 10:48:52 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 10:48:52 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 10:48:53 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 10:48:53 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 11:06:33 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 11:06:33 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 11:06:35 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 11:06:35 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 11:07:29 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 11:07:29 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 11:11:30 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 11:11:30 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 11:11:32 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 11:11:32 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 11:11:33 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 11:11:33 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 11:11:35 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 11:11:35 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 11:11:37 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 11:11:37 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 11:23:48 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 11:23:48 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 11:24:42 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 11:24:42 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 11:48:09 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 11:48:09 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 12:34:56 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 12:34:56 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 12:39:21 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 12:39:21 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37
+[09-Nov-2026 12:39:24 Asia/Makassar] [ITIHIX quiz seed] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'highlights' in 'INSERT INTO'
+[09-Nov-2026 12:39:24 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.session_id' in 'SELECT' in /home/yzeuxqiy/public_html/includes/bootstrap.php:37
+Stack trace:
+#0 /home/yzeuxqiy/public_html/includes/bootstrap.php(37): PDOStatement->execute(Array)
+#1 /home/yzeuxqiy/public_html/includes/bootstrap.php(42): q('SELECT a.id AS ...', Array)
+#2 /home/yzeuxqiy/public_html/api/quiz.php(192): qall('SELECT a.id AS ...', Array)
+#3 {main}
+  thrown in /home/yzeuxqiy/public_html/includes/bootstrap.php on line 37

@@ -1,0 +1,15 @@
+# Contoh pengaman untuk Nginx (sesuaikan root & fastcgi_pass)
+location ~ /\.(?!well-known) { deny all; }
+location ~* \.(sql|md|log|bak|ini|sh)$ { deny all; }
+location ~ ^/itihix/(migrations|tests|docs|vendor|includes)/ { deny all; }
+location ^~ /itihix/uploads/ {
+    location ~ \.(php|phtml|phar|php[0-9])$ { deny all; }
+}
+
+# Profil pengguna berbentuk /username (padanan aturan di .htaccess). Letakkan SETELAH location untuk halaman .php.
+# location / { try_files $uri $uri/ $uri.php @profile; }
+# location @profile {
+#     rewrite ^/([A-Za-z0-9_]{3,30})/?$ /profile.php?u=$1 last;
+#     rewrite ^/([A-Za-z0-9_]{3,30})/(followers|following)/?$ /profile.php?u=$1&tab=$2 last;
+#     return 404;
+# }

@@ -1,0 +1,72 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# /index.php -> /
+RewriteCond %{REQUEST_METHOD} =GET
+RewriteCond %{THE_REQUEST} \s/index\.php[\s?] [NC]
+RewriteRule ^ / [R=301,L]
+
+# /halaman.php -> /halaman (hanya GET; api/ dan google_callback tidak disentuh)
+RewriteCond %{REQUEST_METHOD} =GET
+RewriteCond %{THE_REQUEST} \s/+([^\s?]+?)\.php[\s?] [NC]
+RewriteCond %{REQUEST_URI} !^/api/ [NC]
+RewriteCond %{REQUEST_URI} !google_callback [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# /halaman -> halaman.php (diproses diam-diam oleh server)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^.]+)$ $1.php [L]
+
+# /username -> profile.php?u=username (profil pengguna)
+# /username/followers dan /username/following -> daftar pengikut / diikuti
+# Hanya berlaku bila bukan file/folder/halaman .php yang nyata, jadi /login, /admin, /api dll. tidak terganggu.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php !-f
+RewriteRule ^([A-Za-z0-9_]{3,30})/?$ profile.php?u=$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([A-Za-z0-9_]{3,30})/(followers|following)/?$ profile.php?u=$1&tab=$2 [L,QSA]
+</IfModule>
+
+# ITIHIX - pengaman web server (Apache). Untuk Nginx lihat docs/nginx.conf.example
+Options -Indexes
+
+# Tolak file tersembunyi (.env, .git, dll), dump SQL, log, dokumen dev, dan berkas konfigurasi
+<FilesMatch "^(\.|composer\.(json|lock)|phpunit\.xml.*|\.php-cs-fixer.*|config\.local\.php.*)">
+  Require all denied
+</FilesMatch>
+<FilesMatch "\.(sql|md|log|bak|dist|example|ini|sh|py)$">
+  Require all denied
+</FilesMatch>
+
+# Folder internal tidak boleh dibuka lewat browser
+RedirectMatch 404 ^/?.*/(migrations|tests|docs|tools|vendor|\.git)(/|$)
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php84” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php84___lsphp .php .php8 .phtml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

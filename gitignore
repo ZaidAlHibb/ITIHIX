@@ -1,0 +1,30 @@
+# ===== Rahasia (JANGAN PERNAH di-commit) =====
+.env
+*.env
+!.env.example
+config.local.php
+
+# ===== Log dan cache =====
+error_log
+*.log
+includes/mail.log
+includes/.schema_version
+.phpunit.result.cache
+.php-cs-fixer.cache
+
+# ===== Unggahan pengguna (hanya .htaccess yang ikut) =====
+uploads/*
+!uploads/.htaccess
+
+# ===== Khusus hosting / bukan bagian kode =====
+php.ini
+.user.ini
+google*.html
+.well-known/
+cgi-bin/
+*.zip
+
+# ===== Lain-lain =====
+vendor/
+.DS_Store
+Thumbs.db

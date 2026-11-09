@@ -1,0 +1,70 @@
+/* ITIHIX: halaman masuk/daftar. Tampil/sembunyi kata sandi + lampu sorot yang mengikuti kursor. */
+(function () {
+  // --- tampil / sembunyikan kata sandi ---
+  var toggles = document.querySelectorAll('.toggle');
+  Array.prototype.forEach.call(toggles, function (t) {
+    t.addEventListener('click', function () {
+      var input = t.parentNode.querySelector('input');
+      var show = input.type === 'password';
+      input.type = show ? 'text' : 'password';
+      t.textContent = show ? 'Sembunyikan' : 'Tampilkan';
+      t.setAttribute('aria-pressed', show ? 'true' : 'false');
+      t.setAttribute('aria-label', show ? 'Sembunyikan kata sandi' : 'Tampilkan kata sandi');
+    });
+  });
+
+  // --- lampu sorot: logo tersingkap hanya di area yang disinari ---
+  var stage = document.getElementById('stage');
+  if (!stage) return;
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var cur = { x: 0.5, y: 0.5 }, tgt = { x: 0.5, y: 0.5 };
+  var idle = !reduce, t0 = performance.now(), raf = 0;
+
+  function apply() {
+    var w = stage.clientWidth, h = stage.clientHeight;
+    var x = cur.x * w, y = cur.y * h;
+    var dx = x - w / 2, dy = Math.max(y, 1);
+    stage.style.setProperty('--lx', x + 'px');
+    stage.style.setProperty('--ly', y + 'px');
+    stage.style.setProperty('--ba', (-Math.atan2(dx, dy) * 180 / Math.PI) + 'deg');
+    stage.style.setProperty('--bh', (Math.sqrt(dx * dx + dy * dy) + Math.min(w, h) * 0.14) + 'px');
+  }
+  function loop(now) {
+    if (idle) { // tanpa kursor: lampu menyapu pelan melewati logo
+      var t = now - t0;
+      tgt.x = 0.5 + 0.27 * Math.sin(t / 1900);
+      tgt.y = 0.46 + 0.2 * Math.sin(t / 1300 + 1);
+    }
+    var ex = tgt.x - cur.x, ey = tgt.y - cur.y;
+    cur.x += ex * 0.13; cur.y += ey * 0.13;
+    apply();
+    raf = (idle || Math.abs(ex) > 0.0008 || Math.abs(ey) > 0.0008) ? requestAnimationFrame(loop) : 0;
+  }
+  function kick() { if (!raf) raf = requestAnimationFrame(loop); }
+
+  if (reduce) { // gerakan dikurangi: logo tampil utuh dan diam
+    stage.style.setProperty('--lr', '90vmin');
+    stage.style.setProperty('--fr', '90vmin');
+    stage.classList.add('still');
+    apply();
+    return;
+  }
+
+  cur.x = 0.18; cur.y = 0.1; // masuk dari kiri atas
+  window.addEventListener('pointermove', function (e) {
+    if (e.pointerType === 'touch') return;
+    var r = stage.getBoundingClientRect();
+    idle = false;
+    stage.classList.add('moved');
+    tgt.x = Math.min(0.97, Math.max(0.03, (e.clientX - r.left) / r.width));
+    tgt.y = Math.min(0.97, Math.max(0.1, (e.clientY - r.top) / r.height));
+    kick();
+  }, { passive: true });
+  document.documentElement.addEventListener('mouseleave', function () { // kursor keluar jendela
+    idle = true; t0 = performance.now(); kick();
+  });
+  window.addEventListener('resize', apply);
+
+  apply();
+  kick();
+})();

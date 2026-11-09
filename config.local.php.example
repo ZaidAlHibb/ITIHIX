@@ -1,0 +1,4 @@
+<?php
+// Salin menjadi config.local.php (sudah diabaikan git). Contoh override rahasia lokal:
+// define('AI_API_KEY', '...');
+// define('DB_PASS', '...');

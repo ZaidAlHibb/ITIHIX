@@ -1,0 +1,10 @@
+.env
+config.local.php
+includes/mail.log
+includes/.schema_version
+uploads/*
+!uploads/.htaccess
+vendor/
+.phpunit.result.cache
+.php-cs-fixer.cache
+.DS_Store
