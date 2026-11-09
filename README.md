@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/icons/logo.png" alt="Logo ITIHIX" width="120">
+
 # ITIHIX
 
 **Navigasi aman di dunia digital.**
@@ -69,37 +71,37 @@ Karena itu kami membuat ITIHIX: tempat warga saling melapor, saling memverifikas
 
 ## Fitur
 
-**Beranda (feed komunitas)**
+### <img src="docs/icons/home.svg" alt="Beranda" width="32" align="absmiddle"> Beranda (feed komunitas)
 Laporan penipuan terbaru dalam tiga tab: *Untuk kamu*, *Terbaru*, dan *Terverifikasi*. Setiap laporan bisa disukai, di-repost, disimpan, dibagikan, dan dikomentari.
 
-**Jelajahi**
+### <img src="docs/icons/compass.svg" alt="Jelajahi" width="32" align="absmiddle"> Jelajahi
 Cari laporan lewat top hashtag, kategori, jenis modus, atau pencarian. Label bisa diklik seperti hashtag.
 
-**ItihScan AI**
+### <img src="docs/icons/itihscan.png" alt="ItihScan AI" width="32" align="absmiddle"> ItihScan AI
 Fitur unggulan. Tempel teks pesan atau unggah gambar (tangkapan layar chat, SMS, poster), lalu ItihScan menganalisisnya: apakah ini penipuan, mencurigakan, atau aman, lengkap dengan alasan dan langkah yang sebaiknya kamu lakukan. Hasilnya otomatis jadi caption yang bisa kamu edit lalu terbitkan sebagai laporan berlabel *ItihScan AI*. Tanpa API key AI, ItihScan tetap berjalan memakai mesin aturan lokal (deteksi kata kunci dan pola modus).
 
-**iTISTANT (Chat AI)**
+### <img src="docs/icons/itistant.png" alt="iTISTANT" width="32" align="absmiddle"> iTISTANT (Chat AI)
 Asisten untuk bertanya soal keamanan digital, bisa melampirkan file atau gambar. Riwayat obrolan tersimpan.
 
-**SafeSnaps**
+### <img src="docs/icons/film.svg" alt="SafeSnaps" width="32" align="absmiddle"> SafeSnaps
 Feed ringkas bergaya reels untuk konten edukasi dan peringatan. Unggahan masuk antrean moderasi lebih dulu.
 
-**Laporan dan label**
+### <img src="docs/icons/flag.svg" alt="Laporan" width="32" align="absmiddle"> Laporan dan label
 Kirim laporan lengkap dengan kategori dan jenis modus. Satu laporan boleh punya beberapa label: **Penipuan**, **Mencurigakan**, **Klarifikasi**, dan **Edukasi**. Moderator memberi label akhir dan tanda "✓ Diverifikasi moderator". Laporan yang sudah dikirim bisa diedit.
 
-**Kuis Scam or Real? (Asli/Palsu)**
+### <img src="docs/icons/scam-or-real.png" alt="Scam or Real?" width="32" align="absmiddle"> Kuis Scam or Real? (Asli/Palsu)
 Latihan membedakan pesan asli dan palsu bergaya chat WhatsApp, lengkap dengan penjelasan dan tanda bahayanya, plus streak dan riwayat.
 
-**Tebak Scam 2P**
+### <img src="docs/icons/mask-of-deception.png" alt="Mask of Deception 2P" width="32" align="absmiddle"> Mask of Deception 2P
 Game 2 pemain berbentuk chat: satu pemain berperan sebagai penipu atau bukan, pemain lain menebak. Ada pencarian lawan otomatis, ruangan publik atau privat, batas waktu tiap giliran, dan riwayat match.
 
-**Profil, level, dan XP**
+### <img src="docs/icons/trophy.svg" alt="Profil" width="32" align="absmiddle"> Profil, level, dan XP
 Setiap aktivitas menambah XP. Level maksimal 110 dengan gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Ada profil, follow, pesan langsung (DM), notifikasi, dan pengaturan privasi.
 
-**Akun**
+### <img src="docs/icons/key.svg" alt="Akun" width="32" align="absmiddle"> Akun
 Daftar dengan email (kode verifikasi 6 digit) atau Google, plus fitur lupa dan reset kata sandi.
 
-**Moderasi dan admin**
+### <img src="docs/icons/square-check.svg" alt="Moderasi" width="32" align="absmiddle"> Moderasi dan admin
 Antrean moderasi (setujui, minta klarifikasi, atau tolak), dashboard admin, kelola pengguna dan peran, serta log aktivitas.
 
 ### Peran
@@ -107,8 +109,11 @@ Antrean moderasi (setujui, minta klarifikasi, atau tolak), dashboard admin, kelo
 | Peran | Bisa apa |
 |---|---|
 | User | Semua fitur komunitas. Laporan masuk antrean moderasi. |
-| Moderator | Fitur user + antrean moderasi. Laporannya langsung terbit. |
+| Terpercaya (`trusted`) | Fitur user, tetapi laporannya **langsung terbit** tanpa antrean dan diberi lencana *Pelapor Terverifikasi*. XP "laporan disetujui" langsung didapat. |
+| Moderator | Fitur user + antrean moderasi. Laporannya langsung terbit. Bisa memberi atau mencabut status Terpercaya pada user. |
 | Admin | Fitur moderator + dashboard, kelola akun dan peran, hapus/pulihkan postingan, lihat seluruh log. |
+
+Status Terpercaya diberikan oleh moderator atau admin lewat halaman profil pengguna atau halaman moderasi, dan bisa dicabut kapan saja.
 
 ### Level dan XP
 
@@ -139,24 +144,50 @@ Gelar: Pemula Waspada → Penjaga Komunitas (10) → Pelindung Siber (30) → Pa
 ## Alur pemakaian
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Buka ITIHIX] --> B[Daftar atau masuk<br/>email + kode verifikasi<br/>atau Google]
     B --> C[Beranda:<br/>baca laporan terbaru]
-    C --> D{Pilih menu}
-    D --> E[ItihScan:<br/>periksa pesan mencurigakan]
-    D --> F[Lapor penipuan]
-    D --> G[Kuis dan Game]
-    D --> H[Chat AI]
-    F --> I[Moderator<br/>memeriksa dan memberi label]
-    E --> F
-    I --> C
+    C --> D{Menu di sidebar}
+    D --> M1[Menu utama<br/>Beranda, Jelajahi, SafeSnaps]
+    D --> M2[Perlindungan Digital<br/>ItihScan AI, iTISTANT AI,<br/>Scam or Real?, Mask of Deception 2P]
+    D --> M3[Komunitas<br/>Buat laporan, Pesan, Notifikasi]
+    D --> M4[Moderasi<br/>Antrean moderasi, Dashboard admin]
+    D --> M5[Akun<br/>Profil saya, Pengaturan, Keluar]
+    M2 -->|hasil ItihScan jadi caption| M3
+    M3 -->|laporan dari User| Q[Antrean moderasi:<br/>moderator memeriksa dan memberi label]
+    M3 -->|laporan Terpercaya,<br/>Moderator, Admin| C
+    Q --> C
 ```
 
-1. Pengguna mendaftar atau masuk, lalu membaca laporan terbaru di Beranda.
-2. Kalau menerima pesan mencurigakan, pengguna memeriksanya lewat ItihScan AI.
-3. Hasil analisis bisa langsung diterbitkan sebagai laporan, atau pengguna membuat laporan sendiri.
-4. Laporan dari User masuk antrean moderasi. Moderator menyetujui dan memberi label akhir, lalu laporan tampil di feed dengan tanda terverifikasi.
-5. Pengguna mengumpulkan XP lewat laporan, kuis, dan game, lalu naik level.
+### Menu di sidebar
+
+| Kelompok | Menu | Fungsi |
+|---|---|---|
+| **Menu utama** | Beranda | Feed laporan (tab Untuk kamu, Terbaru, Terverifikasi) |
+| | Jelajahi | Cari lewat hashtag, kategori, jenis modus |
+| | SafeSnaps | Feed ringkas bergaya reels untuk edukasi dan peringatan |
+| **Perlindungan Digital** | ItihScan AI | Periksa pesan atau gambar mencurigakan |
+| | iTISTANT AI | Chat AI soal keamanan digital |
+| | Scam or Real? | Kuis membedakan pesan asli dan palsu |
+| | Mask of Deception 2P | Game tebak penipu untuk 2 pemain |
+| **Komunitas** | Buat laporan | Kirim laporan penipuan |
+| | Pesan | Pesan langsung (DM) |
+| | Notifikasi | Pemberitahuan aktivitas |
+| **Moderasi** | Antrean moderasi | Setujui, minta klarifikasi, atau tolak laporan (moderator dan admin) |
+| | Dashboard admin | Kelola pengguna, peran, postingan, dan log (admin) |
+| **Akun** | Profil saya | Profil, level, XP, dan riwayat |
+| | Pengaturan | Privasi dan preferensi |
+| | Keluar | Logout |
+
+Kelompok **Moderasi** hanya tampil untuk moderator dan admin.
+
+### Langkah-langkah
+
+1. Pengguna mendaftar atau masuk, lalu membaca laporan terbaru di **Beranda**.
+2. Kalau menerima pesan mencurigakan, pengguna memeriksanya lewat **ItihScan AI** (atau bertanya ke **iTISTANT AI**).
+3. Hasil analisis bisa langsung diterbitkan sebagai laporan, atau pengguna membuat laporan sendiri lewat **Buat laporan**.
+4. Laporan dari User masuk **Antrean moderasi**. Moderator menyetujui dan memberi label akhir, lalu laporan tampil di feed dengan tanda terverifikasi. Laporan dari pengguna Terpercaya, Moderator, dan Admin langsung terbit.
+5. Pengguna mengumpulkan XP lewat laporan, **Scam or Real?**, dan **Mask of Deception 2P**, lalu naik level.
 
 ## Coba yuk ITIHIX!
 
@@ -165,9 +196,9 @@ flowchart LR
 3. Buka **ItihScan**, tempel pesan seperti *"Selamat! Anda menang undian Rp50 juta. Klik link ini dan transfer biaya admin"*, lalu lihat hasil analisis dan caption otomatisnya.
 4. Edit caption, pilih kategori dan label, lalu kirim sebagai laporan. Laporan masuk antrean moderasi.
 5. Di **Jelajahi**, coba cari lewat hashtag atau klik label *Penipuan*.
-6. Coba **Kuis Scam or Real?** untuk mendapatkan XP, lalu ajak temanmu main **Tebak Scam 2P**.
+6. Coba **Kuis Scam or Real?** untuk mendapatkan XP, lalu ajak temanmu main **Mask of Deception 2P**.
 7. Tanya **iTISTANT** hal seperti "Bagaimana cara tahu link bank palsu?".
-8. Untuk mencoba `moderator.php` dan `admin.php`, ubah peran akunmu lewat database (lihat [langkah 8](#langkah-langkah) di bawah).
+8. Untuk mencoba `moderator.php` dan `admin.php`, ubah peran akunmu lewat database (lihat langkah 8 di bagian [Menjalankan di komputer sendiri](#menjalankan-di-komputer-sendiri)).
 
 ---
 
@@ -219,7 +250,7 @@ itihix/
 ├── assets/                                CSS, JavaScript, dan gambar
 ├── migrations/                            Riwayat perubahan skema database
 ├── uploads/                               File unggahan pengguna (isinya tidak ikut di Git)
-├── docs/                                  Contoh konfigurasi Nginx dan catatan CSS
+├── docs/                                  Contoh konfigurasi Nginx, catatan CSS, dan ikon untuk README (docs/icons)
 ├── database.sql                           Skema database terbaru
 ├── config.php                             Konfigurasi utama (membaca .env)
 ├── config.local.php.example               Contoh konfigurasi lokal
@@ -259,7 +290,7 @@ Yang kamu butuhkan:
    UPDATE users SET role = 'admin' WHERE email = 'emailkamu@contoh.com';
    ```
 
-   Nilai peran yang tersedia: `user`, `trusted`, `moderator`, `admin`.
+   Nilai peran yang tersedia: `user`, `trusted` (Terpercaya), `moderator`, `admin`.
 
 ### Isi file `.env`
 
@@ -354,7 +385,7 @@ Penggunaan template, framework, library, aset, maupun kode sumber pihak ketiga d
 | Sumber daya | Kegunaan | Lisensi | Keterangan |
 |---|---|---|---|
 | PHP dan MySQL/MariaDB | Bahasa server dan basis data | PHP License / GPL | Runtime, bukan kode yang disalin |
-| [Font Awesome Free 6](https://fontawesome.com) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline (`includes/icons.php`, `assets/js/icons.js`) | Ikon: [CC BY 4.0](https://fontawesome.com/license/free) | Atribusi: Font Awesome by Fonticons, Inc. Ikon dipilih sebagian dan diwarnai lewat `currentColor` |
+| [Font Awesome Free 6](https://fontawesome.com) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline (`includes/icons.php`, `assets/js/icons.js`) | Ikon: [CC BY 4.0](https://fontawesome.com/license/free) | Atribusi: Font Awesome by Fonticons, Inc. Ikon dipilih sebagian dan diwarnai lewat `currentColor`. Ikon fitur di README (`docs/icons/*.svg`) juga berasal dari sini, diberi warna merah dan latar putih |
 | [Lucide](https://lucide.dev) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline di SafeSnaps (`safesnaps.php`) | [ISC](https://github.com/lucide-icons/lucide/blob/main/LICENSE) | Hak cipta: Lucide Contributors (dan Cole Bemis untuk bagian turunan Feather) |
 | Google OAuth 2.0 / OpenID Connect | Login dengan Google (opsional) | Ketentuan layanan Google | Layanan eksternal via API |
 | Penyedia AI kompatibel OpenAI atau Anthropic | ItihScan AI dan Chat AI (opsional) | Ketentuan penyedia API | Layanan eksternal |
@@ -365,6 +396,7 @@ Catatan:
 - Aplikasi **tidak memakai framework PHP/JS/CSS** dan tidak memasang paket lewat npm atau Composer. Tidak ada library, font, atau stylesheet yang dimuat lewat CDN; JavaScript dan CSS ditulis sendiri (`assets/js`, `assets/css`).
 - **Pengecualian: ikon.** Ikon Font Awesome dan Lucide tetap pustaka pihak ketiga. Bedanya, ikon yang dipakai disalin ke kode sebagai SVG inline, bukan dimuat dari luar, jadi lisensi dan atribusinya dicantumkan di tabel di atas.
 - Pengiriman email (SMTP), migrasi, rate limit, dan seluruh logika aplikasi ditulis sendiri oleh tim.
+- Logo dan ikon fitur di `docs/icons/*.png` adalah salinan kecil dari `assets/img/` (diberi latar putih supaya terlihat di tema gelap GitHub).
 - Aset gambar di `assets/img/` (`logo.png`, `iTIHSCAN.png`, `iTISTANT_Ai.png`, `mod2p.png`, `sor.png`): **[ISI: dibuat sendiri oleh tim / sumber dan lisensi bila dari pihak lain]**
 - Alat bantu pengembangan (mis. asisten AI) yang dipakai membuat kode atau aset: **[ISI: sebutkan alat yang dipakai, atau hapus baris ini bila tidak ada]**
 
