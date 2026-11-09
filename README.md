@@ -5,22 +5,33 @@
 **Navigasi aman di dunia digital.**
 Komunitas yang saling mengabari penipuan terbaru, dilengkapi ItihScan AI untuk memeriksa pesan mencurigakan sebelum kamu terlanjur percaya.
 
+[![Website](https://img.shields.io/badge/Coba_Website-Live-0e9f6e?style=for-the-badge)](https://itihix.my.id)
 ![PHP](https://img.shields.io/badge/PHP-8.1+-777BB4?style=for-the-badge)
 ![MySQL](https://img.shields.io/badge/MySQL-5.7+-00758F?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 </div>
 
-<!-- TODO: kalau website sudah online, tambahkan baris: **Website:** https://DOMAIN-KAMU -->
+## Coba sekarang
+
+| Versi | Cara buka |
+|---|---|
+| Website (sudah online) | [itihix.my.id](https://itihix.my.id) |
+| Di komputer sendiri | Ikuti bagian [Menjalankan di komputer sendiri](#menjalankan-di-komputer-sendiri) |
+
+Cukup buka website, daftar akun (atau masuk dengan Google), dan semua fitur bisa langsung dipakai. Ini versi uji coba, jadi jangan mengunggah data pribadi yang sensitif.
+
 
 ---
 
 ## Daftar isi
 
+- [Coba sekarang](#coba-sekarang)
 - [Kenapa ITIHIX dibuat?](#kenapa-itihix-dibuat)
 - [Untuk siapa?](#untuk-siapa)
 - [Fitur](#fitur)
 - [Alur pemakaian](#alur-pemakaian)
+- [Coba yuk ITIHIX!](#coba-yuk-itihix)
 - [Cara kerjanya](#cara-kerjanya)
 - [Teknologi](#teknologi)
 - [Isi folder](#isi-folder)
@@ -147,9 +158,9 @@ flowchart LR
 4. Laporan dari User masuk antrean moderasi. Moderator menyetujui dan memberi label akhir, lalu laporan tampil di feed dengan tanda terverifikasi.
 5. Pengguna mengumpulkan XP lewat laporan, kuis, dan game, lalu naik level.
 
-### Panduan mencoba
+## Coba yuk ITIHIX!
 
-1. Buka aplikasi, lalu **daftar** akun baru (email dikirimi kode 6 digit) atau masuk dengan Google.
+1. Buka [itihix.my.id](https://itihix.my.id), lalu **daftar** akun baru (email dikirimi kode 6 digit) atau masuk dengan Google.
 2. Di **Beranda**, buka tab *Terverifikasi* untuk melihat laporan yang sudah diperiksa moderator.
 3. Buka **ItihScan**, tempel pesan seperti *"Selamat! Anda menang undian Rp50 juta. Klik link ini dan transfer biaya admin"*, lalu lihat hasil analisis dan caption otomatisnya.
 4. Edit caption, pilih kategori dan label, lalu kirim sebagai laporan. Laporan masuk antrean moderasi.
@@ -286,7 +297,7 @@ MAIL_DEV_LOG=0
 | `ITIHIX_DB_*` | Koneksi database | Ya |
 | `ITIHIX_BASE_URL` | Folder URL aplikasi, tanpa slash di akhir. Kosongkan jika di root domain | Ya |
 | `AI_API_KEY`, `AI_PROVIDER`, `AI_BASE_URL`, `AI_MODEL` | AI sungguhan untuk ItihScan dan Chat AI (nama lama `ANTHROPIC_*` tetap dikenali) | Tidak |
-| `GOOGLE_*` | Login Google. Redirect URI = `https://DOMAIN/google_callback.php` (sesuaikan dengan folder aplikasi) | Tidak |
+| `GOOGLE_*` | Login Google. Redirect URI = `https://DOMAIN/google_callback.php` (contoh di server kami: `https://itihix.my.id/google_callback.php`) | Tidak |
 | `SMTP_*` | Kode verifikasi email. Untuk Gmail pakai *App Password* (butuh verifikasi 2 langkah) | Tidak |
 | `MAIL_DEV_LOG` | `1` = kode verifikasi ditulis ke `includes/mail.log` (hanya untuk uji lokal) | Tidak |
 
