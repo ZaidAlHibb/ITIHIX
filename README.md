@@ -298,6 +298,84 @@ flowchart TD
     D -->|Tolak| G[Tidak terbit<br/>pelapor dapat notifikasi]
 ```
 
+### Alur per peran
+
+Peran bertambah dari kiri ke kanan: Terpercaya punya semua kemampuan User, Moderator menambah wewenang moderasi, dan Admin menambah pengelolaan seluruh sistem.
+
+| Kemampuan | User | Terpercaya | Moderator | Admin |
+|---|:---:|:---:|:---:|:---:|
+| Baca, komentar, DM, kuis, game, ItihScan, iTISTANT | ✓ | ✓ | ✓ | ✓ |
+| Mengirim laporan | ✓ | ✓ | ✓ | ✓ |
+| Laporan langsung terbit (tanpa antrean) | – | ✓ | ✓ | ✓ |
+| Lencana pada laporan | – | Pelapor Terverifikasi | Oleh Moderator | Oleh Admin |
+| Meninjau antrean moderasi | – | – | ✓ | ✓ |
+| Memberi atau mencabut status Terpercaya | – | – | ✓ | ✓ |
+| Menangguhkan atau mengaktifkan akun | – | – | User dan Terpercaya | Semua akun |
+| Menghapus postingan dan komentar orang lain | – | – | User dan Terpercaya | Semua |
+| Menangani laporan pengguna dan komentar | – | – | ✓ | ✓ |
+| Mengubah peran dan membuat akun | – | – | – | ✓ |
+| Dashboard, semua postingan (hapus/pulihkan), log aktivitas | – | – | – | ✓ |
+
+#### Alur User
+
+```mermaid
+flowchart LR
+    A[Daftar atau masuk] --> B[Pakai fitur komunitas<br/>baca, komentar, DM, kuis,<br/>game, ItihScan]
+    B --> C[Buat laporan<br/>+5 XP]
+    C --> D[Antrean moderasi<br/>status menunggu]
+    D -->|Disetujui| E[Terbit di Beranda<br/>+20 XP]
+    D -->|Klarifikasi| F[Revisi laporan]
+    F --> D
+    D -->|Ditolak| G[Tidak terbit]
+    B --> H[Laporkan pengguna<br/>atau komentar bermasalah]
+    classDef user fill:#dbeafe,stroke:#1d4ed8,color:#111111
+    class A,B,C,D,E,F,G,H user
+```
+
+#### Alur Terpercaya
+
+```mermaid
+flowchart LR
+    A[Moderator atau admin<br/>memberi status Terpercaya] --> B[Buat laporan]
+    B --> C[Langsung terbit di Beranda<br/>tanpa antrean moderasi]
+    C --> D[Lencana Pelapor Terverifikasi]
+    C --> E[+5 XP dan +20 XP langsung<br/>maks. 5 laporan per hari]
+    A -.-> F[Status bisa dicabut kapan saja<br/>oleh moderator atau admin]
+    classDef trusted fill:#dcfce7,stroke:#15803d,color:#111111
+    class A,B,C,D,E,F trusted
+```
+
+#### Alur Moderator
+
+```mermaid
+flowchart LR
+    A[Buka Antrean moderasi] --> B[Antrean<br/>laporan dari User]
+    A --> C[Riwayat keputusan]
+    A --> D[Laporan pengguna<br/>selesaikan, abaikan,<br/>hapus komentar]
+    A --> E[Kelola akun<br/>tangguhkan atau aktifkan,<br/>beri atau cabut Terpercaya]
+    B --> F{Keputusan}
+    F -->|Setujui| G[Terbit dengan label akhir]
+    F -->|Klarifikasi| H[Dikembalikan ke pelapor]
+    F -->|Tolak| I[Tidak terbit]
+    classDef mod fill:#fef3c7,stroke:#b45309,color:#111111
+    class A,B,C,D,E,F,G,H,I mod
+```
+
+Moderator hanya bisa mengelola akun User dan Terpercaya, tidak bisa menyentuh sesama moderator atau admin.
+
+#### Alur Admin
+
+```mermaid
+flowchart LR
+    A[Buka Dashboard admin] --> B[Dashboard<br/>perlu moderasi, laporan terbuka,<br/>login gagal 24 jam, akun ditangguhkan]
+    A --> C[Pengguna dan moderator<br/>ubah peran, tangguhkan,<br/>buat akun]
+    A --> D[Semua postingan<br/>hapus atau pulihkan,<br/>tinjau yang menunggu]
+    A --> E[Log aktivitas<br/>audit semua aksi]
+    A --> F[Antrean moderasi<br/>semua kemampuan moderator]
+    classDef adm fill:#fee2e2,stroke:#b91c1c,color:#111111
+    class A,B,C,D,E,F adm
+```
+
 ### Menu di sidebar
 
 | Kelompok | Menu | Fungsi |
