@@ -2,6 +2,10 @@
 -- version 5.2.3
 -- https://www.phpmyadmin.net/
 --
+-- Versi ini sudah ditambah:
+--   quiz_questions.highlights  (TEXT NULL)
+--   quiz_attempts.session_id   (VARCHAR(16) NULL)
+--
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -387,7 +391,8 @@ CREATE TABLE `quiz_attempts` (
   `user_id` int(10) UNSIGNED NOT NULL,
   `question_id` int(10) UNSIGNED NOT NULL,
   `is_correct` tinyint(1) NOT NULL,
-  `created_at` datetime NOT NULL DEFAULT current_timestamp()
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `session_id` varchar(16) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -406,7 +411,8 @@ CREATE TABLE `quiz_questions` (
   `is_scam` tinyint(1) NOT NULL,
   `explanation` mediumtext NOT NULL,
   `red_flags` mediumtext NOT NULL,
-  `difficulty` tinyint(3) UNSIGNED NOT NULL DEFAULT 1
+  `difficulty` tinyint(3) UNSIGNED NOT NULL DEFAULT 1,
+  `highlights` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
