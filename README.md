@@ -30,6 +30,7 @@ Cukup buka website, daftar akun (atau masuk dengan Google), dan semua fitur bisa
 
 - [Coba sekarang](#coba-sekarang)
 - [Kenapa ITIHIX dibuat?](#kenapa-itihix-dibuat)
+- [Asal nama ITIHIX](#asal-nama-itihix)
 - [Untuk siapa?](#untuk-siapa)
 - [Fitur](#fitur)
 - [Alur pemakaian](#alur-pemakaian)
@@ -58,6 +59,17 @@ Masalah yang kami lihat:
 - Edukasi keamanan digital terasa membosankan, jadi sedikit yang mau belajar sebelum kejadian.
 
 Karena itu kami membuat ITIHIX: tempat warga saling melapor, saling memverifikasi, dan belajar mengenali penipuan. Laporan diperiksa moderator dan diberi label, sehingga pembaca tahu mana yang sudah terverifikasi. Kalau masih ragu, ItihScan AI bisa langsung menganalisis pesan atau gambar yang kamu terima.
+
+## Asal nama ITIHIX
+
+Nama **ITIHIX** terdiri dari dua bagian:
+
+| Bagian | Arti |
+|---|---|
+| **ITIHI** | Dari bahasa Banjar (bahasa daerah Kalimantan Selatan): artinya **"perhatikan dengan teliti"**. |
+| **X** | Huruf penutup yang memberi kesan **kuat dan tegas**. |
+
+Pesannya sejalan dengan tujuan aplikasi ini: sebelum percaya pada pesan, tautan, atau tawaran yang masuk, perhatikan dengan teliti dulu. Nama fitur unggulan **ItihScan** juga memakai akar kata yang sama.
 
 ## Untuk siapa?
 
@@ -244,13 +256,13 @@ Antrean moderasi (setujui, minta klarifikasi, atau tolak), dashboard admin, kelo
 
 ### Peran
 
-| Peran | Bisa apa |
-|---|---|
-| Guest (tamu) | Belum masuk. Hanya bisa membaca laporan yang sudah terbit di Beranda dan halaman detail laporan, serta mendaftar atau masuk. |
-| User | Semua fitur komunitas. Laporan masuk antrean moderasi. |
-| Terpercaya (`trusted`) | Fitur user, tetapi laporannya **langsung terbit** tanpa antrean dan diberi lencana *Pelapor Terverifikasi*. XP "laporan disetujui" langsung didapat. |
-| Moderator | Fitur user + antrean moderasi. Laporannya langsung terbit. Bisa memberi atau mencabut status Terpercaya pada user. |
-| Admin | Fitur moderator + dashboard, kelola akun dan peran, hapus/pulihkan postingan, lihat seluruh log. |
+| | Peran | Bisa apa |
+|:---:|---|---|
+| <img src="docs/icons/guest.svg" alt="Guest" width="40"> | Guest (tamu) | Belum masuk. Hanya bisa membaca laporan yang sudah terbit di Beranda dan halaman detail laporan, serta mendaftar atau masuk. |
+| <img src="docs/icons/user.svg" alt="User" width="40"> | User | Semua fitur komunitas. Laporan masuk antrean moderasi. |
+| <img src="docs/icons/trusted.svg" alt="Terpercaya" width="40"> | Terpercaya (`trusted`) | Fitur user, tetapi laporannya **langsung terbit** tanpa antrean dan diberi lencana *Pelapor Terverifikasi*. XP "laporan disetujui" langsung didapat. |
+| <img src="docs/icons/moderator.svg" alt="Moderator" width="40"> | Moderator | Fitur user + antrean moderasi. Laporannya langsung terbit. Bisa memberi atau mencabut status Terpercaya pada user. |
+| <img src="docs/icons/admin.svg" alt="Admin" width="40"> | Admin | Fitur moderator + dashboard, kelola akun dan peran, hapus/pulihkan postingan, lihat seluruh log. |
 
 Status Terpercaya diberikan oleh moderator atau admin lewat halaman profil pengguna atau halaman moderasi, dan bisa dicabut kapan saja.
 
@@ -740,7 +752,7 @@ Penggunaan template, framework, library, aset, maupun kode sumber pihak ketiga d
 | Sumber daya | Kegunaan | Lisensi | Keterangan |
 |---|---|---|---|
 | PHP dan MySQL/MariaDB | Bahasa server dan basis data | PHP License / GPL | Runtime, bukan kode yang disalin |
-| [Font Awesome Free 6](https://fontawesome.com) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline (`includes/icons.php`, `assets/js/icons.js`) | Ikon: [CC BY 4.0](https://fontawesome.com/license/free) | Atribusi: Font Awesome by Fonticons, Inc. Ikon dipilih sebagian dan diwarnai lewat `currentColor`. Ikon fitur di README (`docs/icons/*.svg`) juga berasal dari sini, diberi warna hitam dan latar putih |
+| [Font Awesome Free 6](https://fontawesome.com) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline (`includes/icons.php`, `assets/js/icons.js`) | Ikon: [CC BY 4.0](https://fontawesome.com/license/free) | Atribusi: Font Awesome by Fonticons, Inc. Ikon dipilih sebagian dan diwarnai lewat `currentColor`. Ikon fitur dan ikon peran di README (`docs/icons/*.svg`) juga berasal dari sini, diberi warna hitam dan latar putih |
 | [Lucide](https://lucide.dev) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline di SafeSnaps (`safesnaps.php`) | [ISC](https://github.com/lucide-icons/lucide/blob/main/LICENSE) | Hak cipta: Lucide Contributors (dan Cole Bemis untuk bagian turunan Feather) |
 | Google OAuth 2.0 / OpenID Connect | Login dengan Google (opsional) | Ketentuan layanan Google | Layanan eksternal via API |
 | Penyedia AI kompatibel OpenAI atau Anthropic | ItihScan AI dan Chat AI (opsional) | Ketentuan penyedia API | Layanan eksternal |
