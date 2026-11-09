@@ -1,85 +1,369 @@
-# ITIHIX — Navigasi Aman di Dunia Digital (PHP + MySQL)
+<div align="center">
 
-Versi multi-halaman dari prototipe UI `ITIHIX_jelajahi_top_hashtag_mobile_sidebar.html`.
-Tampilan (CSS) memakai file asli, jadi desainnya sama; yang berubah: tiap menu kini halaman PHP terpisah dan datanya masuk database.
+# ITIHIX
 
-## Kebutuhan
-PHP 8.1+ (ekstensi: pdo_mysql, fileinfo, curl, mbstring) dan MySQL 5.7+/MariaDB 10.3+. Contoh: XAMPP / Laragon.
+**Navigasi aman di dunia digital.**
+Komunitas yang saling mengabari penipuan terbaru, dilengkapi ItihScan AI untuk memeriksa pesan mencurigakan sebelum kamu terlanjur percaya.
 
-## Instalasi
-1. Salin folder `itihix/` ke `htdocs` (atau web root).
-2. Impor `database.sql` lewat phpMyAdmin (membuat database `itihix`, tabel, dan soal kuis).
-3. Salin `.env.example` menjadi `.env` lalu isi `ITIHIX_DB_USER`, `ITIHIX_DB_PASS`, `ITIHIX_BASE_URL`, dst.
-   **Lebih aman:** simpan sebagai `../itihix.env` (satu tingkat di atas folder aplikasi, di luar web root) atau tunjuk lewat variabel `ITIHIX_ENV_FILE`.
-4. (Opsional, lokal saja) isi `ITIHIX_ALLOW_SETUP=1` di `.env`, buka `http://localhost/itihix/setup.php` sekali untuk membuat akun demo + contoh postingan.
-   Sandi demo **acak dan hanya ditampilkan sekali**. Setelah itu set kembali ke `0` dan **hapus `setup.php`**. Halaman ini menolak akses dari luar localhost.
-5. Pastikan folder `uploads/` bisa ditulis oleh web server.
-6. Skema database dikelola lewat `migrations/` (lihat di bawah); tidak perlu langkah manual untuk instalasi baru.
+![PHP](https://img.shields.io/badge/PHP-8.1+-777BB4?style=for-the-badge)
+![MySQL](https://img.shields.io/badge/MySQL-5.7+-00758F?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-## Migrasi database
-- Perubahan skema = tambah file `migrations/NNN_deskripsi.php` (idempoten), lalu naikkan `SCHEMA_VERSION` di `config.php`.
-- Migrasi tertunda dijalankan otomatis (sekali per sesi baru) atau manual: `php migrate.php`.
-- `database.sql` selalu berisi skema terbaru untuk instalasi baru.
+</div>
 
-## Pengembangan
-- Tes: `php tests/run.php` (tanpa dependensi, tidak butuh database).
-- Gaya kode: `composer fix` (PHP-CS-Fixer, aturan di `.php-cs-fixer.dist.php`), `.editorconfig` untuk editor.
-- Rapikan CSS: `python3 tools/css_dedupe.py assets/css/main.css` menghapus deklarasi yang pasti kalah oleh aturan selektor sama yang dimuat belakangan (urutan muat: style.css lalu app.css). Hanya menulis file bila cascade akhir terbukti identik.
-- Kurangi `!important` tanpa mengubah cascade: `python3 tools/css_important.py --report` (dry-run) atau `--write`. Bukti statis per pasangan deklarasi; verifikasi browser lewat `tools/css-verify/` (lihat README di sana). Jalankan ulang `--report` setelah mengubah CSS, atau bila menambah `el.style.*` di JS (daftar `JS_INLINE` di tool harus ikut diperbarui).
-- Stylesheet utama adalah satu file, `assets/css/main.css` (hasil gabungan style.css + app.css; bagian dasar di atas, override/komponen di bawah, ditandai komentar). `python3 tools/css_merge.py [--write]` membuang deklarasi yang terbukti selalu kalah (mode prune). `python3 tools/css_important.py --inert` menampilkan rule yang selektornya tidak pernah cocok (id/class yang tak ada di file mana pun selain CSS); `python3 tools/css_merge.py --inert --write --log docs/css-inert-removed.txt` membuangnya. Daftar yang sudah dibuang ada di `docs/css-inert-removed.txt` (termasuk keluarga `#page-chat`, padahal id halaman chat adalah `page-aichat`: rule itu tidak pernah berlaku).
-- Skrip halaman terpisah: `assets/js/detect.js` (ItihScan), `assets/js/quiz.js` (Kuis); helper bersama diekspos `app.js` lewat `window.ITIHIX`.
+<!-- TODO: kalau website sudah online, tambahkan baris: **Website:** https://DOMAIN-KAMU -->
 
-## Opsional
-- **AI sungguhan**: isi `AI_API_KEY` (dan `AI_PROVIDER`/`AI_MODEL`) di `.env`. ItihScan AI (teks + gambar) dan Chat AI akan memakai Claude. Tanpa key, dipakai mesin aturan lokal (kata kunci/pola modus penipuan) dan basis jawaban bawaan.
-- **Login Google**: buat OAuth Client di Google Cloud Console, isi `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REDIRECT_URI` di `.env` (= `https://DOMAIN/itihix/google_callback.php`).
+---
 
-## Lupa kata sandi (kode 6 digit)
-Di halaman masuk ada tautan **Lupa kata sandi?** (`forgot_password.php` -> `reset_password.php`). Pengguna memasukkan email, menerima kode 6 digit (berlaku 10 menit, maks. 5 kali salah, kirim ulang tiap 60 detik), lalu membuat kata sandi baru. Tidak perlu migrasi database: kode disimpan sebagai hash di sesi, sama seperti verifikasi pendaftaran. Pesan di layar selalu sama baik email terdaftar maupun tidak. Batas: 3 kode/jam per email dan 10 permintaan/jam per IP. Akun yang hanya memakai Google menerima email berisi arahan untuk memakai tombol Google. Setelah berhasil, pengguna diminta masuk lagi (tidak auto-login).
+## Daftar isi
 
-## Verifikasi email saat daftar (kode 6 digit)
-Daftar dengan email kini minta kode yang dikirim ke emailnya (`verify_email.php`). Akun baru dibuat di database hanya setelah kode benar. Kode berlaku 10 menit, maks. 5 kali salah, kirim ulang tiap 60 detik. Login Google tidak berubah.
-Tambahkan ke `.env` (contoh Gmail; buat *App Password* di akun Google, butuh verifikasi 2 langkah):
-```
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_SECURE=tls
-SMTP_USER=emailkamu@gmail.com
-SMTP_PASS=abcdefghijklmnop
-```
-Untuk uji lokal tanpa SMTP, isi `MAIL_DEV_LOG=1`: kode ditulis ke `includes/mail.log` (jangan dipakai di server asli).
+- [Kenapa ITIHIX dibuat?](#kenapa-itihix-dibuat)
+- [Untuk siapa?](#untuk-siapa)
+- [Fitur](#fitur)
+- [Alur pemakaian](#alur-pemakaian)
+- [Cara kerjanya](#cara-kerjanya)
+- [Teknologi](#teknologi)
+- [Isi folder](#isi-folder)
+- [Menjalankan di komputer sendiri](#menjalankan-di-komputer-sendiri)
+- [Migrasi database](#migrasi-database)
+- [Deploy](#deploy)
+- [Keterbatasan](#keterbatasan)
+- [Sumber daya pihak ketiga dan lisensi](#sumber-daya-pihak-ketiga-dan-lisensi)
+- [Dokumentasi](#dokumentasi)
+- [Tim](#tim)
 
-## Halaman
-| File | Fungsi |
+---
+
+## Kenapa ITIHIX dibuat?
+
+Penipuan digital berkembang cepat: phishing lewat tautan palsu, telepon yang mengaku petugas bank, tawaran kerja yang meminta transfer dulu, sampai undian palsu. Modusnya selalu berganti, sementara kabar tentang modus terbaru biasanya cuma beredar di grup chat dan sering terlambat sampai ke orang yang akan jadi korban berikutnya.
+
+Masalah yang kami lihat:
+
+- Informasi penipuan tersebar di banyak tempat dan sulit dicari.
+- Orang sering ragu: "ini penipuan atau bukan?" dan tidak tahu harus bertanya ke siapa.
+- Edukasi keamanan digital terasa membosankan, jadi sedikit yang mau belajar sebelum kejadian.
+
+Karena itu kami membuat ITIHIX: tempat warga saling melapor, saling memverifikasi, dan belajar mengenali penipuan. Laporan diperiksa moderator dan diberi label, sehingga pembaca tahu mana yang sudah terverifikasi. Kalau masih ragu, ItihScan AI bisa langsung menganalisis pesan atau gambar yang kamu terima.
+
+## Untuk siapa?
+
+- **Pengguna umum** yang ingin tahu modus penipuan terbaru dan cara menghindarinya.
+- **Orang yang baru menerima pesan atau tawaran mencurigakan** dan butuh pendapat cepat sebelum bertindak.
+- **Korban atau saksi penipuan** yang ingin melapor supaya orang lain tidak mengalami hal yang sama.
+- **Pelajar dan keluarga** yang ingin belajar mengenali penipuan lewat kuis dan game.
+- **Relawan moderator** yang ingin ikut menjaga kualitas informasi di komunitas.
+
+---
+
+## Fitur
+
+**Beranda (feed komunitas)**
+Laporan penipuan terbaru dalam tiga tab: *Untuk kamu*, *Terbaru*, dan *Terverifikasi*. Setiap laporan bisa disukai, di-repost, disimpan, dibagikan, dan dikomentari.
+
+**Jelajahi**
+Cari laporan lewat top hashtag, kategori, jenis modus, atau pencarian. Label bisa diklik seperti hashtag.
+
+**ItihScan AI**
+Fitur unggulan. Tempel teks pesan atau unggah gambar (tangkapan layar chat, SMS, poster), lalu ItihScan menganalisisnya: apakah ini penipuan, mencurigakan, atau aman, lengkap dengan alasan dan langkah yang sebaiknya kamu lakukan. Hasilnya otomatis jadi caption yang bisa kamu edit lalu terbitkan sebagai laporan berlabel *ItihScan AI*. Tanpa API key AI, ItihScan tetap berjalan memakai mesin aturan lokal (deteksi kata kunci dan pola modus).
+
+**iTISTANT (Chat AI)**
+Asisten untuk bertanya soal keamanan digital, bisa melampirkan file atau gambar. Riwayat obrolan tersimpan.
+
+**SafeSnaps**
+Feed ringkas bergaya reels untuk konten edukasi dan peringatan. Unggahan masuk antrean moderasi lebih dulu.
+
+**Laporan dan label**
+Kirim laporan lengkap dengan kategori dan jenis modus. Satu laporan boleh punya beberapa label: **Penipuan**, **Mencurigakan**, **Klarifikasi**, dan **Edukasi**. Moderator memberi label akhir dan tanda "✓ Diverifikasi moderator". Laporan yang sudah dikirim bisa diedit.
+
+**Kuis Scam or Real? (Asli/Palsu)**
+Latihan membedakan pesan asli dan palsu bergaya chat WhatsApp, lengkap dengan penjelasan dan tanda bahayanya, plus streak dan riwayat.
+
+**Tebak Scam 2P**
+Game 2 pemain berbentuk chat: satu pemain berperan sebagai penipu atau bukan, pemain lain menebak. Ada pencarian lawan otomatis, ruangan publik atau privat, batas waktu tiap giliran, dan riwayat match.
+
+**Profil, level, dan XP**
+Setiap aktivitas menambah XP. Level maksimal 110 dengan gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Ada profil, follow, pesan langsung (DM), notifikasi, dan pengaturan privasi.
+
+**Akun**
+Daftar dengan email (kode verifikasi 6 digit) atau Google, plus fitur lupa dan reset kata sandi.
+
+**Moderasi dan admin**
+Antrean moderasi (setujui, minta klarifikasi, atau tolak), dashboard admin, kelola pengguna dan peran, serta log aktivitas.
+
+### Peran
+
+| Peran | Bisa apa |
 |---|---|
-| `login.php`, `register.php`, `forgot_password.php`, `reset_password.php`, `google_login.php`, `google_callback.php`, `logout.php` | Auth (email + Google) |
-| `index.php` | Beranda/feed (Untuk kamu · Terbaru · Terverifikasi) |
-| `explore.php` | Jelajahi: top hashtag, kategori, pencarian, filter tagar |
-| `safesnaps.php` | SafeSnaps + unggah (masuk moderasi) |
-| `detect.php` | Deteksi penipuan teks/gambar → caption otomatis (bisa diedit) → jadi laporan berlabel ItihScan AI |
-| `chat.php` | Chat AI |
-| `game.php` | **Tebak Scam 2P**: game 2 pemain berbentuk chat (maks. 5 pesan per ronde: pengirim 3, penebak 2); pengirim berperan Penipu/Bukan, penebak menebak; benar → keduanya +XP. **Cari lawan otomatis** (matchmaking), ruangan **publik/privat**, **batas waktu** tiap giliran (buka chat 120 dtk, balas 45 dtk, tebak 45 dtk), tombol **Akhiri match**, dan **Riwayat match** (lengkap dengan transkrip). Tabel dibuat/di-upgrade otomatis (`game_rooms`, `game_rounds`, `game_messages`) |
-| `quiz.php` | Game Asli/Palsu bergaya chat WA, ada penjelasan & tanda bahaya |
-| `upload.php` | Buat laporan/poster + saran label → antrean moderasi |
-| `post.php` | Detail postingan + komentar |
-| `profile.php` | Profil (postingan, repost, disukai, komentar, tersimpan), level, follow, daftar Pengikut/Mengikuti, privasi. Alamat profil: `/username` (`/username?tab=followers`, `/username?tab=following`) |
-| `settings.php` | Akun, profil, privasi, preferensi, notifikasi |
-| `notifications.php` | Notifikasi |
-| `moderator.php` | Antrean moderasi: setujui (+label akhir) / minta klarifikasi / tolak, riwayat |
-| `admin.php` | Dashboard, kelola pengguna & peran, semua postingan (hapus/pulihkan), log aktivitas |
-| `api/*.php` | Endpoint AJAX: like, repost, simpan, bagikan, komentar, follow, chat, deteksi, kuis |
+| User | Semua fitur komunitas. Laporan masuk antrean moderasi. |
+| Moderator | Fitur user + antrean moderasi. Laporannya langsung terbit. |
+| Admin | Fitur moderator + dashboard, kelola akun dan peran, hapus/pulihkan postingan, lihat seluruh log. |
 
-## Peran
-- **User**: semua fitur komunitas; laporan masuk antrean.
-- **Moderator**: fitur user + antrean moderasi; laporannya langsung terbit. Postingan yang disetujui diberi label “✓ Diverifikasi moderator” (tertaut ke profil moderator).
-- **Admin**: fitur user + moderator + dashboard, kelola akun/peran/penangguhan, hapus postingan, lihat seluruh log.
+### Level dan XP
 
-## Level (maks. 110) & XP
-XP untuk naik dari level L = `100 + 10×(L−1)`. Level tampil di feed (bisa disembunyikan di Pengaturan → Privasi).
-Sumber XP: laporan terkirim +5 (maks. 5/hari), laporan disetujui +20, kuis benar +10..20, analisis AI +5 (maks. 5/hari), komentar +2 (maks. 5/hari), moderasi +2.
+XP untuk naik dari level L = `100 + 10×(L−1)`.
+
+| Aktivitas | XP |
+|---|---|
+| Laporan terkirim | +5 (maks. 5/hari) |
+| Laporan disetujui | +20 |
+| Kuis benar | +10 sampai +20 |
+| Analisis AI | +5 (maks. 5/hari) |
+| Komentar | +2 (maks. 5/hari) |
+| Moderasi | +2 |
+
 Gelar: Pemula Waspada → Penjaga Komunitas (10) → Pelindung Siber (30) → Pakar Anti-Penipuan (60) → Tameng Digital (90) → Legenda ITIHIX (110).
 
-## Keamanan yang sudah ada
-Prepared statements PDO, hash `password_hash`, token CSRF di semua POST, validasi MIME + ukuran upload, folder upload tanpa eksekusi PHP, rate limit berbasis database per IP/user/akun (login, chat, deteksi, komentar, laporan), `.htaccess` yang menolak `.env`/`.sql`/`.md`, cookie sesi `Secure` di HTTPS, soft-delete, log audit.
+### Keamanan
 
-## Catatan
-Perbaikan terbaru (migrasi, rate limit DB, pemecahan JS) belum dijalankan di PHP/MySQL sungguhan oleh pembuatnya. Jalankan `php tests/run.php` dan uji alur utama (login, unggah, kuis, ItihScan) di lokal sebelum deploy.
+- Prepared statements PDO (anti SQL injection) dan `password_hash` untuk sandi.
+- Token CSRF di semua permintaan POST.
+- Validasi tipe MIME dan ukuran file upload; folder `uploads/` tidak bisa menjalankan PHP.
+- Rate limit berbasis database per IP, pengguna, dan akun (login, chat, deteksi, komentar, laporan).
+- `.htaccess` menolak akses ke `.env`, `.sql`, `.md`, dan folder internal lain, plus header keamanan.
+- Cookie sesi `Secure` di HTTPS, soft-delete, dan log audit.
+
+---
+
+## Alur pemakaian
+
+```mermaid
+flowchart LR
+    A[Buka ITIHIX] --> B[Daftar atau masuk<br/>email + kode verifikasi<br/>atau Google]
+    B --> C[Beranda:<br/>baca laporan terbaru]
+    C --> D{Pilih menu}
+    D --> E[ItihScan:<br/>periksa pesan mencurigakan]
+    D --> F[Lapor penipuan]
+    D --> G[Kuis dan Game]
+    D --> H[Chat AI]
+    F --> I[Moderator<br/>memeriksa dan memberi label]
+    E --> F
+    I --> C
+```
+
+1. Pengguna mendaftar atau masuk, lalu membaca laporan terbaru di Beranda.
+2. Kalau menerima pesan mencurigakan, pengguna memeriksanya lewat ItihScan AI.
+3. Hasil analisis bisa langsung diterbitkan sebagai laporan, atau pengguna membuat laporan sendiri.
+4. Laporan dari User masuk antrean moderasi. Moderator menyetujui dan memberi label akhir, lalu laporan tampil di feed dengan tanda terverifikasi.
+5. Pengguna mengumpulkan XP lewat laporan, kuis, dan game, lalu naik level.
+
+### Panduan mencoba
+
+1. Buka aplikasi, lalu **daftar** akun baru (email dikirimi kode 6 digit) atau masuk dengan Google.
+2. Di **Beranda**, buka tab *Terverifikasi* untuk melihat laporan yang sudah diperiksa moderator.
+3. Buka **ItihScan**, tempel pesan seperti *"Selamat! Anda menang undian Rp50 juta. Klik link ini dan transfer biaya admin"*, lalu lihat hasil analisis dan caption otomatisnya.
+4. Edit caption, pilih kategori dan label, lalu kirim sebagai laporan. Laporan masuk antrean moderasi.
+5. Di **Jelajahi**, coba cari lewat hashtag atau klik label *Penipuan*.
+6. Coba **Kuis Scam or Real?** untuk mendapatkan XP, lalu ajak temanmu main **Tebak Scam 2P**.
+7. Tanya **iTISTANT** hal seperti "Bagaimana cara tahu link bank palsu?".
+8. Untuk mencoba `moderator.php` dan `admin.php`, ubah peran akunmu lewat database (lihat [langkah 8](#langkah-langkah) di bawah).
+
+---
+
+## Cara kerjanya
+
+```mermaid
+flowchart LR
+    A[Browser<br/>HTML, CSS, JavaScript] -->|HTTPS| S
+    S[Server PHP 8.1+<br/>Apache atau Nginx] --> D[(MySQL / MariaDB)]
+    S --> U[Folder uploads/]
+    S -->|API, opsional| G[Model AI<br/>kompatibel OpenAI atau Anthropic]
+    S -->|OAuth, opsional| O[Google Login]
+    S -->|SMTP, opsional| M[Email verifikasi]
+```
+
+- Satu aplikasi PHP melayani halaman dan endpoint AJAX (`api/*.php`).
+- API key dan kata sandi hanya ada di server (`.env`), tidak pernah dikirim ke browser.
+- Data disimpan di MySQL. Perubahan skema dikelola lewat `migrations/`.
+- Penyedia AI bisa diganti lewat `.env` (`AI_PROVIDER`, `AI_BASE_URL`, `AI_MODEL`) tanpa ubah kode. Tanpa API key, ItihScan dan Chat AI memakai mesin aturan lokal.
+
+---
+
+## Teknologi
+
+| Bagian | Yang dipakai |
+|---|---|
+| Backend | PHP 8.1+ (PDO, cURL, mbstring, fileinfo), tanpa framework |
+| Database | MySQL 5.7+ / MariaDB 10.3+ |
+| Frontend | HTML, CSS, JavaScript murni (tanpa framework dan tanpa CDN) |
+| AI | Model kompatibel OpenAI atau Anthropic (opsional) + mesin aturan lokal |
+| Login dan email | Google OAuth 2.0 (opsional), SMTP (opsional) |
+
+---
+
+## Isi folder
+
+```
+itihix/
+├── index.php, explore.php, safesnaps.php, safesnaps_upload.php,
+│   detect.php, chat.php, quiz.php, game.php, post.php, edit_report.php,
+│   upload.php, profile.php, settings.php, notifications.php,
+│   messages.php                           Halaman utama aplikasi
+├── login.php, register.php, verify_email.php, forgot_password.php,
+│   reset_password.php, google_login.php, google_callback.php,
+│   logout.php                             Autentikasi
+├── moderator.php, admin.php               Moderasi dan administrasi
+├── api/                                   Endpoint AJAX (reaksi, komentar, chat, deteksi, kuis, game, DM, dll.)
+├── includes/                              Logika inti (bootstrap, ai, posts, mail, migrate, dll.)
+├── assets/                                CSS, JavaScript, dan gambar
+├── migrations/                            Riwayat perubahan skema database
+├── uploads/                               File unggahan pengguna (isinya tidak ikut di Git)
+├── docs/                                  Contoh konfigurasi Nginx dan catatan CSS
+├── database.sql                           Skema database terbaru
+├── config.php                             Konfigurasi utama (membaca .env)
+├── config.local.php.example               Contoh konfigurasi lokal
+├── migrate.php                            Menjalankan migrasi secara manual
+└── .env.example                           Contoh isi .env
+```
+
+---
+
+## Menjalankan di komputer sendiri
+
+Yang kamu butuhkan:
+
+- **XAMPP atau Laragon** (sudah termasuk PHP 8.1+, Apache, dan MySQL/MariaDB). Unduh di [apachefriends.org](https://www.apachefriends.org) atau [laragon.org](https://laragon.org).
+- PHP dengan ekstensi `pdo_mysql`, `fileinfo`, `curl`, dan `mbstring` (sudah aktif di XAMPP/Laragon standar).
+- (Opsional) API key AI, kredensial Google OAuth, dan akun SMTP.
+
+### Langkah-langkah
+
+1. **Unduh kodenya.** Di halaman repo GitHub, klik tombol hijau **Code**, lalu **Download ZIP**. Atau pakai git:
+
+   ```bash
+   git clone https://github.com/USERNAME/itihix.git
+   ```
+
+2. **Taruh di web root.** Ekstrak dan salin foldernya ke `htdocs` (XAMPP) atau `www` (Laragon), sehingga namanya `htdocs/itihix`.
+3. **Nyalakan Apache dan MySQL** lewat panel XAMPP/Laragon.
+4. **Buat database dan impor skema.** Buka `http://localhost/phpmyadmin`, buat database baru bernama `itihix` dengan collation `utf8mb4_unicode_ci`, pilih database itu, lalu **Import** file `database.sql`.
+5. **Buat file `.env`.** Salin `.env.example` menjadi `.env`, lalu isi `ITIHIX_DB_USER`, `ITIHIX_DB_PASS`, dan `ITIHIX_BASE_URL` (di XAMPP biasanya user `root`, sandi kosong, base URL `/itihix`).
+   - Windows: pastikan namanya benar-benar `.env`, bukan `.env.txt`.
+   - **Lebih aman:** simpan sebagai `../itihix.env` (satu tingkat di atas folder aplikasi, di luar web root), atau tunjuk lewat variabel `ITIHIX_ENV_FILE`.
+6. **Pastikan folder `uploads/` bisa ditulis** oleh web server.
+7. Buka **http://localhost/itihix/** di browser, lalu daftar akun baru.
+8. **(Opsional) Jadikan akunmu admin atau moderator** lewat phpMyAdmin, tab SQL:
+
+   ```sql
+   UPDATE users SET role = 'admin' WHERE email = 'emailkamu@contoh.com';
+   ```
+
+   Nilai peran yang tersedia: `user`, `trusted`, `moderator`, `admin`.
+
+### Isi file `.env`
+
+```env
+ITIHIX_DB_HOST=localhost
+ITIHIX_DB_PORT=3306
+ITIHIX_DB_NAME=itihix
+ITIHIX_DB_USER=root
+ITIHIX_DB_PASS=
+ITIHIX_BASE_URL=/itihix
+
+# AI (opsional; kosongkan AI_API_KEY = pakai mesin aturan lokal)
+AI_PROVIDER=openai
+AI_BASE_URL=https://api.openai.com/v1
+AI_API_KEY=
+AI_MODEL=
+
+# Login Google (opsional)
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GOOGLE_REDIRECT_URI=
+
+# Email verifikasi (opsional)
+SMTP_HOST=
+SMTP_PORT=587
+SMTP_SECURE=tls
+SMTP_USER=
+SMTP_PASS=
+SMTP_FROM=
+MAIL_DEV_LOG=0
+```
+
+| Nama | Fungsi | Wajib |
+|---|---|---|
+| `ITIHIX_DB_*` | Koneksi database | Ya |
+| `ITIHIX_BASE_URL` | Folder URL aplikasi, tanpa slash di akhir. Kosongkan jika di root domain | Ya |
+| `AI_API_KEY`, `AI_PROVIDER`, `AI_BASE_URL`, `AI_MODEL` | AI sungguhan untuk ItihScan dan Chat AI (nama lama `ANTHROPIC_*` tetap dikenali) | Tidak |
+| `GOOGLE_*` | Login Google. Redirect URI = `https://DOMAIN/google_callback.php` (sesuaikan dengan folder aplikasi) | Tidak |
+| `SMTP_*` | Kode verifikasi email. Untuk Gmail pakai *App Password* (butuh verifikasi 2 langkah) | Tidak |
+| `MAIL_DEV_LOG` | `1` = kode verifikasi ditulis ke `includes/mail.log` (hanya untuk uji lokal) | Tidak |
+
+**Jangan pernah membagikan atau meng-commit file `.env`**, karena isinya kata sandi dan API key. File ini sudah ada di `.gitignore`.
+
+### Kalau ada masalah
+
+| Masalah | Yang bisa dicoba |
+|---|---|
+| Halaman tidak ditemukan atau CSS tidak muncul | Cek `ITIHIX_BASE_URL` di `.env`, harus sama dengan nama folder (mis. `/itihix`). |
+| Error koneksi database | Pastikan MySQL menyala, `database.sql` sudah diimpor ke database `itihix`, dan `ITIHIX_DB_USER` dan `ITIHIX_DB_PASS` benar. |
+| Upload gambar gagal | Pastikan folder `uploads/` bisa ditulis dan ukuran file tidak terlalu besar. |
+| Kode verifikasi email tidak sampai | Cek isi `SMTP_*`. Untuk uji lokal isi `MAIL_DEV_LOG=1`, lalu baca kodenya di `includes/mail.log`. |
+| ItihScan hanya memberi jawaban singkat | `AI_API_KEY` kosong atau salah, jadi dipakai mesin aturan lokal. |
+
+---
+
+## Migrasi database
+
+- Perubahan skema = tambah file `migrations/NNN_deskripsi.php` (idempoten), lalu naikkan `SCHEMA_VERSION` di `config.php`.
+- Migrasi tertunda dijalankan otomatis (sekali per sesi baru) atau manual: `php migrate.php`.
+- `database.sql` berisi skema terbaru untuk instalasi baru.
+- Soal kuis tidak ada di `database.sql`; aplikasi menyiapkannya sendiri saat fitur kuis dipakai (`api/quiz.php`).
+
+---
+
+## Deploy
+
+ITIHIX adalah aplikasi PHP + MySQL dengan file upload, jadi butuh hosting yang mendukung PHP dan database MySQL (shared hosting, VPS, atau container Docker PHP). Platform serverless seperti Vercel tidak cocok karena tidak menjalankan PHP secara native dan tidak menyimpan file upload secara permanen.
+
+1. Buat database di hosting dengan **user khusus** (jangan `root`) dan sandi kuat, lalu impor `database.sql`.
+2. Upload kode (tanpa `.env`).
+3. Buat `.env` **langsung di server**, idealnya di luar web root sebagai `../itihix.env`. Pastikan `MAIL_DEV_LOG=0`.
+4. Pastikan `uploads/` bisa ditulis dan `uploads/.htaccess` ikut ter-upload.
+5. Aktifkan **HTTPS**. Jika memakai login Google, perbarui `GOOGLE_REDIRECT_URI` ke domain asli.
+6. Untuk Nginx, pakai contoh pengaman di `docs/nginx.conf.example`.
+
+---
+
+## Keterbatasan
+
+- Tanpa API key, ItihScan dan Chat AI memakai mesin aturan lokal yang lebih sederhana dan tidak sepintar model AI.
+- Hasil analisis AI adalah **bantuan**, bukan kepastian. Selalu verifikasi lewat sumber resmi (bank, instansi, atau nomor resmi) sebelum mengambil tindakan.
+- Penyedia AI punya batas permintaan, dan ITIHIX membatasi pemakaian per hari lewat rate limit.
+- Pengiriman email bergantung pada konfigurasi SMTP (mis. Gmail App Password).
+- Belum ada tes otomatis; alur utama (login, unggah, kuis, ItihScan) diuji manual.
+
+---
+
+## Sumber daya pihak ketiga dan lisensi
+
+Penggunaan template, framework, library, aset, maupun kode sumber pihak ketiga dilakukan sesuai lisensi masing-masing. Sumber daya yang signifikan dicantumkan di bawah ini.
+
+| Sumber daya | Kegunaan | Lisensi | Keterangan |
+|---|---|---|---|
+| PHP dan MySQL/MariaDB | Bahasa server dan basis data | PHP License / GPL | Runtime, bukan kode yang disalin |
+| [Font Awesome Free 6](https://fontawesome.com) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline (`includes/icons.php`, `assets/js/icons.js`) | Ikon: [CC BY 4.0](https://fontawesome.com/license/free) | Atribusi: Font Awesome by Fonticons, Inc. Ikon dipilih sebagian dan diwarnai lewat `currentColor` |
+| [Lucide](https://lucide.dev) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline di SafeSnaps (`safesnaps.php`) | [ISC](https://github.com/lucide-icons/lucide/blob/main/LICENSE) | Hak cipta: Lucide Contributors (dan Cole Bemis untuk bagian turunan Feather) |
+| Google OAuth 2.0 / OpenID Connect | Login dengan Google (opsional) | Ketentuan layanan Google | Layanan eksternal via API |
+| Penyedia AI kompatibel OpenAI atau Anthropic | ItihScan AI dan Chat AI (opsional) | Ketentuan penyedia API | Layanan eksternal |
+| SMTP (mis. Gmail) | Kode verifikasi email (opsional) | Ketentuan penyedia | Layanan eksternal |
+
+Catatan:
+
+- Aplikasi **tidak memakai framework PHP/JS/CSS** dan tidak memasang paket lewat npm atau Composer. Tidak ada library, font, atau stylesheet yang dimuat lewat CDN; JavaScript dan CSS ditulis sendiri (`assets/js`, `assets/css`).
+- **Pengecualian: ikon.** Ikon Font Awesome dan Lucide tetap pustaka pihak ketiga. Bedanya, ikon yang dipakai disalin ke kode sebagai SVG inline, bukan dimuat dari luar, jadi lisensi dan atribusinya dicantumkan di tabel di atas.
+- Pengiriman email (SMTP), migrasi, rate limit, dan seluruh logika aplikasi ditulis sendiri oleh tim.
+- Aset gambar di `assets/img/` (`logo.png`, `iTIHSCAN.png`, `iTISTANT_Ai.png`, `mod2p.png`, `sor.png`): **[ISI: dibuat sendiri oleh tim / sumber dan lisensi bila dari pihak lain]**
+- Alat bantu pengembangan (mis. asisten AI) yang dipakai membuat kode atau aset: **[ISI: sebutkan alat yang dipakai, atau hapus baris ini bila tidak ada]**
+
+Kode ITIHIX sendiri dirilis dengan lisensi [MIT](LICENSE).
+
+## Dokumentasi
+
+- `README.md` (file ini): fitur utama, cara menjalankan, petunjuk penggunaan, peran, level, dan keamanan.
+- Dokumentasi teknis pendukung: `database.sql` (skema basis data), `migrations/` (riwayat skema), `docs/nginx.conf.example` (konfigurasi Nginx), serta `.env.example` dan `config.local.php.example` (contoh konfigurasi).
+
+## Tim
+
+**[ISI: nama tim, anggota, dan peran masing-masing]**
