@@ -640,7 +640,7 @@ Yang kamu butuhkan:
 1. **Unduh kodenya.** Di halaman repo GitHub, klik tombol hijau **Code**, lalu **Download ZIP**. Atau pakai git:
 
    ```bash
-   git clone https://github.com/USERNAME/itihix.git
+   git clone https://github.com/ZaidAlHibb/itihix.git
    ```
 
 2. **Taruh di web root.** Ekstrak dan salin foldernya ke `htdocs` (XAMPP) atau `www` (Laragon), sehingga namanya `htdocs/itihix`.
