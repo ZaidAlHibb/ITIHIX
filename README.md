@@ -773,7 +773,3 @@ Kode ITIHIX sendiri dirilis dengan lisensi [MIT](LICENSE).
 
 - `README.md` (file ini): fitur utama, cara menjalankan, petunjuk penggunaan, peran, level, dan keamanan.
 - Dokumentasi teknis pendukung: `database.sql` (skema basis data), `migrations/` (riwayat skema), `docs/nginx.conf.example` (konfigurasi Nginx), serta `.env.example` dan `config.local.php.example` (contoh konfigurasi).
-
-## Tim
-
-**[ISI: nama tim, anggota, dan peran masing-masing]**
