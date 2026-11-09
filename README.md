@@ -267,20 +267,35 @@ Gelar: Pemula Waspada → Penjaga Komunitas (10) → Pelindung Siber (30) → Pa
 
 ## Alur pemakaian
 
+### Perjalanan pengguna
+
 ```mermaid
 flowchart TD
-    A[Buka ITIHIX] --> B[Daftar atau masuk<br/>email + kode verifikasi<br/>atau Google]
-    B --> C[Beranda:<br/>baca laporan terbaru]
-    C --> D{Menu di sidebar}
-    D --> M1[Menu utama<br/>Beranda, Jelajahi, SafeSnaps]
-    D --> M2[Perlindungan Digital<br/>ItihScan AI, iTISTANT AI,<br/>Scam or Real?, Mask of Deception 2P]
-    D --> M3[Komunitas<br/>Buat laporan, Pesan, Notifikasi]
-    D --> M4[Moderasi<br/>Antrean moderasi, Dashboard admin]
-    D --> M5[Akun<br/>Profil saya, Pengaturan, Keluar]
-    M2 -->|hasil ItihScan jadi caption| M3
-    M3 -->|laporan dari User| Q[Antrean moderasi:<br/>moderator memeriksa dan memberi label]
-    M3 -->|laporan Terpercaya,<br/>Moderator, Admin| C
-    Q --> C
+    A([Buka ITIHIX]) --> B[Daftar atau masuk<br/>kode email 6 digit atau Google]
+    B --> C[Beranda<br/>baca laporan terbaru]
+    C --> D{Mau apa?}
+    D -->|Ada pesan mencurigakan| E[ItihScan AI<br/>analisis teks atau gambar]
+    D -->|Ingin bertanya| F[iTISTANT AI<br/>tanya soal keamanan digital]
+    D -->|Ingin berlatih| G[Scam or Real?<br/>atau Mask of Deception 2P]
+    D -->|Tahu modus penipuan| H
+    E --> H[Buat laporan<br/>edit caption, pilih kategori dan label]
+    H --> I[Masuk alur moderasi<br/>lihat diagram di bawah]
+    G --> J[XP bertambah<br/>naik level]
+    H -.-> J
+```
+
+### Alur laporan dan moderasi
+
+```mermaid
+flowchart TD
+    A[Laporan dikirim] --> B{Peran pelapor}
+    B -->|Terpercaya, Moderator, Admin| F
+    B -->|User| C[Antrean moderasi<br/>status menunggu]
+    C --> D{Keputusan moderator}
+    D -->|Setujui| F[Terbit di Beranda<br/>dengan label akhir dan<br/>tanda terverifikasi]
+    D -->|Klarifikasi| E[Pelapor dapat notifikasi,<br/>lalu merevisi laporan]
+    E --> C
+    D -->|Tolak| G[Tidak terbit<br/>pelapor dapat notifikasi]
 ```
 
 ### Menu di sidebar
@@ -305,13 +320,14 @@ flowchart TD
 
 Kelompok **Moderasi** hanya tampil untuk moderator dan admin.
 
-### Langkah-langkah
+### Ringkasan langkah
 
 1. Pengguna mendaftar atau masuk, lalu membaca laporan terbaru di **Beranda**.
-2. Kalau menerima pesan mencurigakan, pengguna memeriksanya lewat **ItihScan AI** (atau bertanya ke **iTISTANT AI**).
-3. Hasil analisis bisa langsung diterbitkan sebagai laporan, atau pengguna membuat laporan sendiri lewat **Buat laporan**.
-4. Laporan dari User masuk **Antrean moderasi**. Moderator menyetujui dan memberi label akhir, lalu laporan tampil di feed dengan tanda terverifikasi. Laporan dari pengguna Terpercaya, Moderator, dan Admin langsung terbit.
-5. Pengguna mengumpulkan XP lewat laporan, **Scam or Real?**, dan **Mask of Deception 2P**, lalu naik level.
+2. Kalau menerima pesan mencurigakan, pengguna memeriksanya lewat **ItihScan AI**. Kalau hanya ingin bertanya, pakai **iTISTANT AI**. Untuk berlatih, ada **Scam or Real?** dan **Mask of Deception 2P**.
+3. Hasil ItihScan otomatis menjadi caption laporan. Pengguna bisa mengeditnya, atau membuat laporan sendiri lewat **Buat laporan**.
+4. Laporan dari User masuk **Antrean moderasi**. Laporan dari pengguna Terpercaya, Moderator, dan Admin langsung terbit.
+5. Moderator memilih: **setujui** (laporan terbit dengan label akhir dan tanda terverifikasi), **minta klarifikasi** (pelapor merevisi, lalu laporan masuk antrean lagi), atau **tolak** (tidak terbit, pelapor diberi tahu).
+6. Setiap aktivitas (laporan, kuis, game, komentar) menambah XP sehingga pengguna naik level.
 
 ## Coba yuk ITIHIX!
 
@@ -531,3 +547,6 @@ Kode ITIHIX sendiri dirilis dengan lisensi [MIT](LICENSE).
 - `README.md` (file ini): fitur utama, cara menjalankan, petunjuk penggunaan, peran, level, dan keamanan.
 - Dokumentasi teknis pendukung: `database.sql` (skema basis data), `migrations/` (riwayat skema), `docs/nginx.conf.example` (konfigurasi Nginx), serta `.env.example` dan `config.local.php.example` (contoh konfigurasi).
 
+## Tim
+
+**[ISI: nama tim, anggota, dan peran masing-masing]**
