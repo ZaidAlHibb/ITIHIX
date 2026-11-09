@@ -30,6 +30,7 @@ Cukup buka website, daftar akun (atau masuk dengan Google), dan semua fitur bisa
 
 - [Coba sekarang](#coba-sekarang)
 - [Kenapa ITIHIX dibuat?](#kenapa-itihix-dibuat)
+- [Asal nama ITIHIX](#asal-nama-itihix)
 - [Untuk siapa?](#untuk-siapa)
 - [Fitur](#fitur)
 - [Alur pemakaian](#alur-pemakaian)
@@ -59,6 +60,17 @@ Masalah yang kami lihat:
 
 Karena itu kami membuat ITIHIX: tempat warga saling melapor, saling memverifikasi, dan belajar mengenali penipuan. Laporan diperiksa moderator dan diberi label, sehingga pembaca tahu mana yang sudah terverifikasi. Kalau masih ragu, ItihScan AI bisa langsung menganalisis pesan atau gambar yang kamu terima.
 
+## Asal nama ITIHIX
+
+Nama **ITIHIX** terdiri dari dua bagian:
+
+| Bagian | Arti |
+|---|---|
+| **ITIHI** | Dari bahasa Banjar (bahasa daerah Kalimantan Selatan): artinya **"perhatikan dengan teliti"**. |
+| **X** | Huruf penutup yang memberi kesan **kuat dan tegas**. |
+
+Pesannya sejalan dengan tujuan aplikasi ini: sebelum percaya pada pesan, tautan, atau tawaran yang masuk, perhatikan dengan teliti dulu. Nama fitur unggulan **ItihScan** juga memakai akar kata yang sama.
+
 ## Untuk siapa?
 
 - **Pengguna umum** yang ingin tahu modus penipuan terbaru dan cara menghindarinya.
@@ -82,7 +94,7 @@ Karena itu kami membuat ITIHIX: tempat warga saling melapor, saling memverifikas
 
 **Beranda (feed komunitas)**
 
-Laporan penipuan terbaru dalam tiga tab: *Untuk kamu*, *Terbaru*, dan *Terverifikasi*. Setiap laporan bisa disukai, di-repost, disimpan, dibagikan, dan dikomentari.
+Laporan penipuan yang sudah terbit dalam tiga tab: *Untuk kamu*, *Terbaru*, dan *Mengikuti* (khusus yang sudah masuk). Laporan yang sudah diperiksa moderator bertanda terverifikasi. Setiap laporan bisa disukai, di-repost, disimpan, dibagikan, dan dikomentari.
 
 </td>
 </tr>
@@ -201,6 +213,20 @@ Setiap aktivitas menambah XP. Level maksimal 110 dengan gelar dari *Pemula Waspa
 <tr>
 <td width="80" align="center" valign="top">
 
+<img src="docs/icons/target.svg" alt="Misi Harian" width="56">
+
+</td>
+<td valign="top">
+
+**Misi Harian (Quest)**
+
+Tiga misi yang di-reset tiap hari: kerjakan 5 soal kuis, selesaikan 1 ronde Mask of Deception 2P, dan buat 1 laporan. Selesaikan ketiganya untuk bonus **+250 XP**. Kemajuannya tampil di kartu *Misi hari ini* pada kolom kanan.
+
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
 <img src="docs/icons/key.svg" alt="Akun" width="56">
 
 </td>
@@ -230,12 +256,13 @@ Antrean moderasi (setujui, minta klarifikasi, atau tolak), dashboard admin, kelo
 
 ### Peran
 
-| Peran | Bisa apa |
-|---|---|
-| User | Semua fitur komunitas. Laporan masuk antrean moderasi. |
-| Terpercaya (`trusted`) | Fitur user, tetapi laporannya **langsung terbit** tanpa antrean dan diberi lencana *Pelapor Terverifikasi*. XP "laporan disetujui" langsung didapat. |
-| Moderator | Fitur user + antrean moderasi. Laporannya langsung terbit. Bisa memberi atau mencabut status Terpercaya pada user. |
-| Admin | Fitur moderator + dashboard, kelola akun dan peran, hapus/pulihkan postingan, lihat seluruh log. |
+| | Peran | Bisa apa |
+|:---:|---|---|
+| <img src="docs/icons/guest.svg" alt="Guest" width="40"> | Guest (tamu) | Belum masuk. Hanya bisa membaca laporan yang sudah terbit di Beranda dan halaman detail laporan, serta mendaftar atau masuk. |
+| <img src="docs/icons/user.svg" alt="User" width="40"> | User | Semua fitur komunitas. Laporan masuk antrean moderasi. |
+| <img src="docs/icons/trusted.svg" alt="Terpercaya" width="40"> | Terpercaya (`trusted`) | Fitur user, tetapi laporannya **langsung terbit** tanpa antrean dan diberi lencana *Pelapor Terverifikasi*. XP "laporan disetujui" langsung didapat. |
+| <img src="docs/icons/moderator.svg" alt="Moderator" width="40"> | Moderator | Fitur user + antrean moderasi. Laporannya langsung terbit. Bisa memberi atau mencabut status Terpercaya pada user. |
+| <img src="docs/icons/admin.svg" alt="Admin" width="40"> | Admin | Fitur moderator + dashboard, kelola akun dan peran, hapus/pulihkan postingan, lihat seluruh log. |
 
 Status Terpercaya diberikan oleh moderator atau admin lewat halaman profil pengguna atau halaman moderasi, dan bisa dicabut kapan saja.
 
@@ -251,8 +278,24 @@ XP untuk naik dari level L = `100 + 10×(L−1)`.
 | Analisis AI | +5 (maks. 5/hari) |
 | Komentar | +2 (maks. 5/hari) |
 | Moderasi | +2 |
+| Misi Harian (kuis 5 soal, 1 ronde game, 1 laporan) | +250 (sekali per hari) |
+
+XP dari semua fitur dibatasi maksimal 250 per hari. Hadiah Misi Harian dihitung di luar batas itu.
+| Misi Harian lengkap | +250 (sekali per hari, di luar batas harian) |
 
 Gelar: Pemula Waspada → Penjaga Komunitas (10) → Pelindung Siber (30) → Pakar Anti-Penipuan (60) → Tameng Digital (90) → Legenda ITIHIX (110).
+
+### Misi Harian (Quest)
+
+Kartu **Misi hari ini** di kolom kanan menampilkan tiga misi. Kemajuan dihitung dari aktivitas hari ini dan kembali ke nol keesokan harinya.
+
+| Misi | Syarat selesai |
+|---|---|
+| Mainkan kuis keamanan | Kerjakan 5 soal di **Scam or Real?** (+10 XP per jawaban benar) |
+| Mainkan Mask of Deception | Selesaikan 1 ronde bersama pemain lain |
+| Buat 1 laporan | Kirim 1 laporan (+5 XP, +20 XP bila disetujui) |
+
+Kalau ketiganya selesai, kamu mendapat bonus **+250 XP** satu kali per hari. Bonus ini terpisah dari batas XP harian: XP dari semua fitur (laporan, kuis, ItihScan, komentar, game) dibatasi maksimal **250 per hari**.
 
 ### Keamanan
 
@@ -267,27 +310,225 @@ Gelar: Pemula Waspada → Penjaga Komunitas (10) → Pelindung Siber (30) → Pa
 
 ## Alur pemakaian
 
+### Perjalanan pengguna
+
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
 flowchart TD
-    A[Buka ITIHIX] --> B[Daftar atau masuk<br/>email + kode verifikasi<br/>atau Google]
-    B --> C[Beranda:<br/>baca laporan terbaru]
-    C --> D{Menu di sidebar}
-    D --> M1[Menu utama<br/>Beranda, Jelajahi, SafeSnaps]
-    D --> M2[Perlindungan Digital<br/>ItihScan AI, iTISTANT AI,<br/>Scam or Real?, Mask of Deception 2P]
-    D --> M3[Komunitas<br/>Buat laporan, Pesan, Notifikasi]
-    D --> M4[Moderasi<br/>Antrean moderasi, Dashboard admin]
-    D --> M5[Akun<br/>Profil saya, Pengaturan, Keluar]
-    M2 -->|hasil ItihScan jadi caption| M3
-    M3 -->|laporan dari User| Q[Antrean moderasi:<br/>moderator memeriksa dan memberi label]
-    M3 -->|laporan Terpercaya,<br/>Moderator, Admin| C
-    Q --> C
+    A([Buka ITIHIX]) --> B[Daftar atau masuk<br/>kode email 6 digit<br/>atau Google]
+    B --> C[Beranda<br/>baca laporan terbaru]
+    C --> D{Mau apa?}
+    D -->|Ada pesan mencurigakan| E[ItihScan AI<br/>analisis teks atau gambar]
+    D -->|Ingin bertanya| F[iTISTANT AI<br/>tanya soal<br/>keamanan digital]
+    D -->|Ingin berlatih| G[Scam or Real?<br/>atau Mask of Deception 2P]
+    D -->|Tahu modus penipuan| H
+    E --> H[Buat laporan<br/>edit caption,<br/>pilih kategori<br/>dan label]
+    H --> I[Masuk alur moderasi<br/>lihat diagram di bawah]
+    G --> J[XP bertambah<br/>naik level]
+    H -.-> J
+```
+
+### Alur laporan dan moderasi
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
+flowchart TD
+    A[Laporan dikirim] --> B{Peran pelapor}
+    B -->|Terpercaya, Moderator, Admin| F
+    B -->|User| C[Antrean moderasi<br/>status menunggu]
+    C --> D{Keputusan moderator}
+    D -->|Setujui| F[Terbit di Beranda<br/>dengan label akhir dan<br/>tanda terverifikasi]
+    D -->|Klarifikasi| E[Pelapor dapat notifikasi,<br/>lalu merevisi laporan]
+    E --> C
+    D -->|Tolak| G[Tidak terbit<br/>pelapor dapat notifikasi]
+```
+
+### Alur per peran
+
+Guest adalah pengunjung yang belum masuk. Dari kiri ke kanan, kemampuan bertambah: User punya akun, Terpercaya punya semua kemampuan User, Moderator menambah wewenang moderasi, dan Admin menambah pengelolaan seluruh sistem.
+
+| Kemampuan | Guest | User | Terpercaya | Moderator | Admin |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Membaca laporan terbit di Beranda dan halaman detail | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Mendaftar atau masuk | ✓ | – | – | – | – |
+| Suka, komentar, tab Mengikuti, Jelajahi, SafeSnaps | – | ✓ | ✓ | ✓ | ✓ |
+| DM, kuis, game, ItihScan, iTISTANT | – | ✓ | ✓ | ✓ | ✓ |
+| Mengirim laporan | – | ✓ | ✓ | ✓ | ✓ |
+| Laporan langsung terbit (tanpa antrean) | – | – | ✓ | ✓ | ✓ |
+| Lencana pada laporan | – | – | Pelapor Terverifikasi | Oleh Moderator | Oleh Admin |
+| Meninjau antrean moderasi | – | – | – | ✓ | ✓ |
+| Memberi atau mencabut status Terpercaya | – | – | – | ✓ | ✓ |
+| Menangguhkan atau mengaktifkan akun | – | – | – | User dan Terpercaya | Semua akun |
+| Menghapus postingan dan komentar orang lain | – | – | – | User dan Terpercaya | Semua |
+| Menangani laporan pengguna dan komentar | – | – | – | ✓ | ✓ |
+| Mengubah peran dan membuat akun | – | – | – | – | ✓ |
+| Dashboard, semua postingan (hapus/pulihkan), log aktivitas | – | – | – | – | ✓ |
+
+#### Alur Guest
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
+flowchart LR
+    A[Buka ITIHIX<br/>tanpa akun] --> B[Beranda<br/>tab Untuk kamu<br/>dan Terbaru]
+    B --> C[Buka detail laporan<br/>yang sudah terbit]
+    B --> D{Coba suka, komentar,<br/>atau buka menu lain}
+    C --> D
+    D --> E[Muncul ajakan<br/>masuk atau daftar]
+    E --> F[Daftar atau masuk<br/>kode email 6 digit<br/>atau Google]
+    F --> G[Menjadi User]
+    classDef guest fill:#e5e7eb,stroke:#4b5563,color:#111111
+    class A,B,C,D,E,F,G guest
+```
+
+Sidebar Guest hanya berisi menu Beranda dan kartu ajakan "Gabung ITIHIX". Semua menu lain mengharuskan masuk.
+
+#### Alur User
+
+User punya akses ke semua menu. Alurnya dipecah per kelompok fitur supaya jelas apa yang terjadi di tiap menu.
+
+**1. Komunitas** (Beranda, Jelajahi, SafeSnaps, Pesan, Notifikasi, Profil)
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
+flowchart LR
+    A[Daftar<br/>atau masuk] --> B[Beranda]
+    A --> C[Jelajahi]
+    A --> D[SafeSnaps]
+    A --> E[Pesan]
+    A --> F[Notifikasi]
+    A --> G[Profil]
+    B --> B1[Baca laporan:<br/>Untuk kamu,<br/>Terbaru, Mengikuti]
+    B1 --> B2[Suka, komentar,<br/>repost, simpan,<br/>bagikan]
+    C --> C1[Cari lewat hashtag,<br/>kategori, jenis<br/>modus]
+    D --> D1[Tonton video<br/>edukasi]
+    D --> D2[Unggah video,<br/>masuk antrean<br/>moderasi]
+    E --> E1[Kirim DM ke<br/>pengguna lain]
+    F --> F1[Lihat suka, komentar,<br/>keputusan moderator]
+    G --> G1[Follow pengguna,<br/>lihat level dan XP]
+    classDef user fill:#dbeafe,stroke:#1d4ed8,color:#111111
+    class A,B,C,D,E,F,G,B1,B2,C1,D1,D2,E1,F1,G1 user
+```
+
+**2. Perlindungan Digital: ItihScan AI dan iTISTANT AI**
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
+flowchart LR
+    A[ItihScan AI] --> B[Tempel teks pesan<br/>atau unggah gambar]
+    B --> C[Analisis AI atau<br/>mesin aturan lokal<br/>+5 XP]
+    C --> D[Hasil: Penipuan,<br/>Mencurigakan,<br/>atau Aman]
+    D --> E[Alasan dan langkah<br/>yang disarankan]
+    E --> F[Caption otomatis,<br/>bisa diedit]
+    F --> G[Terbitkan sebagai<br/>laporan berlabel<br/>ItihScan AI]
+    H[iTISTANT AI] --> I[Tanya soal<br/>keamanan digital]
+    I --> J[Lampirkan file<br/>atau gambar]
+    I --> K[Riwayat obrolan<br/>tersimpan]
+    classDef user fill:#dbeafe,stroke:#1d4ed8,color:#111111
+    class A,B,C,D,E,F,G,H,I,J,K user
+```
+
+**3. Perlindungan Digital: Scam or Real? dan Mask of Deception 2P**
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
+flowchart LR
+    A[Scam or Real?] --> B[Baca pesan bergaya<br/>chat WhatsApp]
+    B --> C[Tebak: asli<br/>atau penipuan]
+    C --> D[Penjelasan dan<br/>tanda bahaya]
+    D --> E[+10 sampai +20 XP,<br/>streak dan riwayat]
+    F[Mask of Deception 2P] --> G[Cari lawan otomatis<br/>atau ruangan<br/>publik dan privat]
+    G --> H[Main bergiliran<br/>dengan batas waktu]
+    H --> I[Satu pemain jadi<br/>penipu atau bukan,<br/>lawan menebak]
+    I --> J[Riwayat match]
+    classDef user fill:#dbeafe,stroke:#1d4ed8,color:#111111
+    class A,B,C,D,E,F,G,H,I,J user
+```
+
+**4. Buat laporan dan laporkan pengguna**
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
+flowchart LR
+    A[Buat laporan<br/>+5 XP] --> B[Antrean moderasi<br/>status menunggu]
+    B -->|Disetujui| C[Terbit di Beranda<br/>+20 XP]
+    B -->|Klarifikasi| D[Revisi laporan]
+    D --> B
+    B -->|Ditolak| E[Tidak terbit]
+    F[Laporkan pengguna<br/>atau komentar] --> G[Moderator menangani<br/>di tab Laporan<br/>pengguna]
+    classDef user fill:#dbeafe,stroke:#1d4ed8,color:#111111
+    class A,B,C,D,E,F,G user
+```
+
+**5. Misi Harian dan XP**
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
+flowchart LR
+    A[Misi Harian] --> B[5 soal kuis]
+    A --> C[1 ronde Mask<br/>of Deception]
+    A --> D[1 laporan]
+    B --> E{Ketiga misi<br/>selesai?}
+    C --> E
+    D --> E
+    E -->|Ya| F[+250 XP<br/>sekali per hari]
+    F --> G[XP bertambah,<br/>naik level]
+    H[XP dari fitur lain<br/>maks. 250 per hari] --> G
+    classDef user fill:#dbeafe,stroke:#1d4ed8,color:#111111
+    class A,B,C,D,E,F,G,H user
+```
+
+#### Alur Terpercaya
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
+flowchart LR
+    A[Moderator atau admin<br/>memberi status Terpercaya] --> B[Buat laporan]
+    B --> C[Langsung terbit<br/>di Beranda tanpa<br/>antrean moderasi]
+    C --> D[Lencana Pelapor<br/>Terverifikasi]
+    C --> E[+5 XP dan +20 XP langsung<br/>maks. 5 laporan per hari]
+    A -.-> F[Status bisa dicabut<br/>kapan saja oleh<br/>moderator atau admin]
+    classDef trusted fill:#dcfce7,stroke:#15803d,color:#111111
+    class A,B,C,D,E,F trusted
+```
+
+#### Alur Moderator
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
+flowchart LR
+    A[Buka Antrean moderasi] --> B[Antrean<br/>laporan dari User]
+    A --> C[Riwayat keputusan]
+    A --> D[Laporan pengguna<br/>selesaikan, abaikan,<br/>hapus komentar]
+    A --> E[Kelola akun<br/>tangguhkan atau<br/>aktifkan, beri atau<br/>cabut Terpercaya]
+    B --> F{Keputusan}
+    F -->|Setujui| G[Terbit dengan label akhir]
+    F -->|Klarifikasi| H[Dikembalikan ke pelapor]
+    F -->|Tolak| I[Tidak terbit]
+    classDef mod fill:#fef3c7,stroke:#b45309,color:#111111
+    class A,B,C,D,E,F,G,H,I mod
+```
+
+Moderator hanya bisa mengelola akun User dan Terpercaya, tidak bisa menyentuh sesama moderator atau admin.
+
+#### Alur Admin
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
+flowchart LR
+    A[Buka Dashboard admin] --> B[Dashboard<br/>perlu moderasi,<br/>laporan terbuka,<br/>login gagal 24 jam,<br/>akun ditangguhkan]
+    A --> C[Pengguna dan moderator<br/>ubah peran, tangguhkan,<br/>buat akun]
+    A --> D[Semua postingan<br/>hapus atau pulihkan,<br/>tinjau yang menunggu]
+    A --> E[Log aktivitas<br/>audit semua aksi]
+    A --> F[Antrean moderasi<br/>semua kemampuan moderator]
+    classDef adm fill:#fee2e2,stroke:#b91c1c,color:#111111
+    class A,B,C,D,E,F adm
 ```
 
 ### Menu di sidebar
 
 | Kelompok | Menu | Fungsi |
 |---|---|---|
-| **Menu utama** | Beranda | Feed laporan (tab Untuk kamu, Terbaru, Terverifikasi) |
+| **Menu utama** | Beranda | Feed laporan (tab Untuk kamu, Terbaru, Mengikuti) |
 | | Jelajahi | Cari lewat hashtag, kategori, jenis modus |
 | | SafeSnaps | Feed ringkas bergaya reels untuk edukasi dan peringatan |
 | **Perlindungan Digital** | ItihScan AI | Periksa pesan atau gambar mencurigakan |
@@ -305,22 +546,23 @@ flowchart TD
 
 Kelompok **Moderasi** hanya tampil untuk moderator dan admin.
 
-### Langkah-langkah
+### Ringkasan langkah
 
 1. Pengguna mendaftar atau masuk, lalu membaca laporan terbaru di **Beranda**.
-2. Kalau menerima pesan mencurigakan, pengguna memeriksanya lewat **ItihScan AI** (atau bertanya ke **iTISTANT AI**).
-3. Hasil analisis bisa langsung diterbitkan sebagai laporan, atau pengguna membuat laporan sendiri lewat **Buat laporan**.
-4. Laporan dari User masuk **Antrean moderasi**. Moderator menyetujui dan memberi label akhir, lalu laporan tampil di feed dengan tanda terverifikasi. Laporan dari pengguna Terpercaya, Moderator, dan Admin langsung terbit.
-5. Pengguna mengumpulkan XP lewat laporan, **Scam or Real?**, dan **Mask of Deception 2P**, lalu naik level.
+2. Kalau menerima pesan mencurigakan, pengguna memeriksanya lewat **ItihScan AI**. Kalau hanya ingin bertanya, pakai **iTISTANT AI**. Untuk berlatih, ada **Scam or Real?** dan **Mask of Deception 2P**.
+3. Hasil ItihScan otomatis menjadi caption laporan. Pengguna bisa mengeditnya, atau membuat laporan sendiri lewat **Buat laporan**.
+4. Laporan dari User masuk **Antrean moderasi**. Laporan dari pengguna Terpercaya, Moderator, dan Admin langsung terbit.
+5. Moderator memilih: **setujui** (laporan terbit dengan label akhir dan tanda terverifikasi), **minta klarifikasi** (pelapor merevisi, lalu laporan masuk antrean lagi), atau **tolak** (tidak terbit, pelapor diberi tahu).
+6. Setiap aktivitas (laporan, kuis, game, komentar) menambah XP sehingga pengguna naik level.
 
 ## Coba yuk ITIHIX!
 
 1. Buka [itihix.my.id](https://itihix.my.id), lalu **daftar** akun baru (email dikirimi kode 6 digit) atau masuk dengan Google.
-2. Di **Beranda**, buka tab *Terverifikasi* untuk melihat laporan yang sudah diperiksa moderator.
+2. Di **Beranda**, lihat tab *Untuk kamu* dan *Terbaru*. Laporan yang sudah diperiksa moderator bertanda terverifikasi. Tanpa akun pun kamu bisa membaca Beranda sebagai tamu.
 3. Buka **ItihScan**, tempel pesan seperti *"Selamat! Anda menang undian Rp50 juta. Klik link ini dan transfer biaya admin"*, lalu lihat hasil analisis dan caption otomatisnya.
 4. Edit caption, pilih kategori dan label, lalu kirim sebagai laporan. Laporan masuk antrean moderasi.
 5. Di **Jelajahi**, coba cari lewat hashtag atau klik label *Penipuan*.
-6. Coba **Kuis Scam or Real?** untuk mendapatkan XP, lalu ajak temanmu main **Mask of Deception 2P**.
+6. Coba **Kuis Scam or Real?** untuk mendapatkan XP, lalu ajak temanmu main **Mask of Deception 2P**. Pantau kemajuanmu di kartu **Misi hari ini** (kolom kanan), dan selesaikan ketiga misi untuk bonus +250 XP.
 7. Tanya **iTISTANT** hal seperti "Bagaimana cara tahu link bank palsu?".
 8. Untuk mencoba `moderator.php` dan `admin.php`, ubah peran akunmu lewat database (lihat langkah 8 di bagian [Menjalankan di komputer sendiri](#menjalankan-di-komputer-sendiri)).
 
@@ -329,11 +571,12 @@ Kelompok **Moderasi** hanya tampil untuk moderator dan admin.
 ## Cara kerjanya
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": false, "padding": 20}, "themeVariables": {"fontFamily": "Arial, Helvetica, sans-serif"}}}%%
 flowchart LR
     A[Browser<br/>HTML, CSS, JavaScript] -->|HTTPS| S
     S[Server PHP 8.1+<br/>Apache atau Nginx] --> D[(MySQL / MariaDB)]
     S --> U[Folder uploads/]
-    S -->|API, opsional| G[Model AI<br/>kompatibel OpenAI atau Anthropic]
+    S -->|API, opsional| G[Model AI kompatibel<br/>OpenAI atau Anthropic]
     S -->|OAuth, opsional| O[Google Login]
     S -->|SMTP, opsional| M[Email verifikasi]
 ```
@@ -509,7 +752,7 @@ Penggunaan template, framework, library, aset, maupun kode sumber pihak ketiga d
 | Sumber daya | Kegunaan | Lisensi | Keterangan |
 |---|---|---|---|
 | PHP dan MySQL/MariaDB | Bahasa server dan basis data | PHP License / GPL | Runtime, bukan kode yang disalin |
-| [Font Awesome Free 6](https://fontawesome.com) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline (`includes/icons.php`, `assets/js/icons.js`) | Ikon: [CC BY 4.0](https://fontawesome.com/license/free) | Atribusi: Font Awesome by Fonticons, Inc. Ikon dipilih sebagian dan diwarnai lewat `currentColor`. Ikon fitur di README (`docs/icons/*.svg`) juga berasal dari sini, diberi warna hitam dan latar putih |
+| [Font Awesome Free 6](https://fontawesome.com) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline (`includes/icons.php`, `assets/js/icons.js`) | Ikon: [CC BY 4.0](https://fontawesome.com/license/free) | Atribusi: Font Awesome by Fonticons, Inc. Ikon dipilih sebagian dan diwarnai lewat `currentColor`. Ikon fitur dan ikon peran di README (`docs/icons/*.svg`) juga berasal dari sini, diberi warna hitam dan latar putih |
 | [Lucide](https://lucide.dev) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline di SafeSnaps (`safesnaps.php`) | [ISC](https://github.com/lucide-icons/lucide/blob/main/LICENSE) | Hak cipta: Lucide Contributors (dan Cole Bemis untuk bagian turunan Feather) |
 | Google OAuth 2.0 / OpenID Connect | Login dengan Google (opsional) | Ketentuan layanan Google | Layanan eksternal via API |
 | Penyedia AI kompatibel OpenAI atau Anthropic | ItihScan AI dan Chat AI (opsional) | Ketentuan penyedia API | Layanan eksternal |
