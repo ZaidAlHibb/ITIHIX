@@ -30,6 +30,7 @@ Cukup buka website, daftar akun (atau masuk dengan Google), dan semua fitur bisa
 
 - [Coba sekarang](#coba-sekarang)
 - [Kenapa ITIHIX dibuat?](#kenapa-itihix-dibuat)
+- [Inspirasi ITIHIX](#inspirasi-itihix)
 - [Asal nama ITIHIX](#asal-nama-itihix)
 - [Untuk siapa?](#untuk-siapa)
 - [Fitur](#fitur)
@@ -60,6 +61,14 @@ Masalah yang kami lihat:
 
 Karena itu kami membuat ITIHIX: tempat warga saling melapor, saling memverifikasi, dan belajar mengenali penipuan. Laporan diperiksa moderator dan diberi label, sehingga pembaca tahu mana yang sudah terverifikasi. Kalau masih ragu, ItihScan AI bisa langsung menganalisis pesan atau gambar yang kamu terima.
 
+## Inspirasi ITIHIX
+
+ITIHIX terinspirasi dari kebiasaan banyak orang yang sangat betah, bahkan candu, memakai media sosial seperti **Reddit, X (Twitter), Instagram**, dan sejenisnya. Kekuatan platform-platform itu ada pada **komunitasnya**: orang kembali terus karena merasa ada teman yang saling berbagi, menanggapi, dan menjaga satu sama lain.
+
+Kami mengambil daya tarik yang sama, tetapi mengarahkannya ke hal yang berguna. ITIHIX dibuat dengan format yang akrab (feed, suka, komentar, repost, follow, DM), namun dengan aturan yang **ketat dan syarat khusus**: konten yang boleh diunggah hanya **laporan atau hal yang berkaitan dengan penipuan**. Tidak ada tempat untuk konten acak, sehingga setiap isi feed relevan dan bernilai.
+
+Dengan begitu, kebiasaan "scroll dan berinteraksi" berubah menjadi kebiasaan saling menjaga. Antar pengguna menjadi **guardian (penjaga) di dunia digital**: yang satu melapor, yang lain memverifikasi dan mengingatkan, sehingga calon korban berikutnya bisa terselamatkan.
+
 ## Asal nama ITIHIX
 
 Nama **ITIHIX** terdiri dari dua bagian:
@@ -83,176 +92,27 @@ Pesannya sejalan dengan tujuan aplikasi ini: sebelum percaya pada pesan, tautan,
 
 ## Fitur
 
-<table>
-<tr>
-<td width="80" align="center" valign="top">
+### Fitur unggulan
 
-<img src="docs/icons/home.svg" alt="Beranda" width="56">
+| | Fitur | Penjelasan singkat |
+|:---:|---|---|
+| <img src="docs/icons/itihscan.png" alt="ItihScan AI" width="40"> | **ItihScan AI** | Periksa pesan teks atau gambar (tangkapan layar chat, SMS, poster). Hasilnya: penipuan, mencurigakan, atau aman, lengkap dengan alasan dan langkah yang disarankan. Hasil otomatis jadi caption laporan berlabel *ItihScan AI* yang bisa diedit lalu diterbitkan. Tanpa API key AI, tetap jalan dengan mesin aturan lokal. |
+| <img src="docs/icons/itistant.png" alt="iTISTANT" width="40"> | **iTISTANT (Chat AI)** | Asisten untuk bertanya soal keamanan digital, bisa melampirkan file atau gambar. Riwayat obrolan tersimpan. |
+| <img src="docs/icons/scam-or-real.png" alt="Scam or Real?" width="40"> | **Kuis Scam or Real? (Asli/Palsu)** | Latihan membedakan pesan asli dan palsu bergaya chat WhatsApp, lengkap dengan penjelasan dan tanda bahayanya, plus streak dan riwayat. |
+| <img src="docs/icons/mask-of-deception.png" alt="Mask of Deception 2P" width="40"> | **Mask of Deception 2P** | Game chat untuk 2 pemain: satu pemain berperan sebagai penipu atau bukan, pemain lain menebak. Ada pencarian lawan otomatis, ruangan publik atau privat, batas waktu tiap giliran, dan riwayat match. |
 
-</td>
-<td valign="top">
+### Fitur lainnya
 
-**Beranda (feed komunitas)**
-
-Laporan penipuan yang sudah terbit dalam tiga tab: *Untuk kamu*, *Terbaru*, dan *Mengikuti* (khusus yang sudah masuk). Laporan yang sudah diperiksa moderator bertanda terverifikasi. Setiap laporan bisa disukai, di-repost, disimpan, dibagikan, dan dikomentari.
-
-</td>
-</tr>
-<tr>
-<td width="80" align="center" valign="top">
-
-<img src="docs/icons/compass.svg" alt="Jelajahi" width="56">
-
-</td>
-<td valign="top">
-
-**Jelajahi**
-
-Cari laporan lewat top hashtag, kategori, jenis modus, atau pencarian. Label bisa diklik seperti hashtag.
-
-</td>
-</tr>
-<tr>
-<td width="80" align="center" valign="top">
-
-<img src="docs/icons/itihscan.png" alt="ItihScan AI" width="56">
-
-</td>
-<td valign="top">
-
-**ItihScan AI**
-
-Fitur unggulan. Tempel teks pesan atau unggah gambar (tangkapan layar chat, SMS, poster), lalu ItihScan menganalisisnya: apakah ini penipuan, mencurigakan, atau aman, lengkap dengan alasan dan langkah yang sebaiknya kamu lakukan. Hasilnya otomatis jadi caption yang bisa kamu edit lalu terbitkan sebagai laporan berlabel *ItihScan AI*. Tanpa API key AI, ItihScan tetap berjalan memakai mesin aturan lokal (deteksi kata kunci dan pola modus).
-
-</td>
-</tr>
-<tr>
-<td width="80" align="center" valign="top">
-
-<img src="docs/icons/itistant.png" alt="iTISTANT" width="56">
-
-</td>
-<td valign="top">
-
-**iTISTANT (Chat AI)**
-
-Asisten untuk bertanya soal keamanan digital, bisa melampirkan file atau gambar. Riwayat obrolan tersimpan.
-
-</td>
-</tr>
-<tr>
-<td width="80" align="center" valign="top">
-
-<img src="docs/icons/film.svg" alt="SafeSnaps" width="56">
-
-</td>
-<td valign="top">
-
-**SafeSnaps**
-
-Feed ringkas bergaya reels untuk konten edukasi dan peringatan. Unggahan masuk antrean moderasi lebih dulu.
-
-</td>
-</tr>
-<tr>
-<td width="80" align="center" valign="top">
-
-<img src="docs/icons/flag.svg" alt="Laporan" width="56">
-
-</td>
-<td valign="top">
-
-**Laporan dan label**
-
-Kirim laporan lengkap dengan kategori dan jenis modus. Satu laporan boleh punya beberapa label: **Penipuan**, **Mencurigakan**, **Klarifikasi**, dan **Edukasi**. Moderator memberi label akhir dan tanda "✓ Diverifikasi moderator". Laporan yang sudah dikirim bisa diedit.
-
-</td>
-</tr>
-<tr>
-<td width="80" align="center" valign="top">
-
-<img src="docs/icons/scam-or-real.png" alt="Scam or Real?" width="56">
-
-</td>
-<td valign="top">
-
-**Kuis Scam or Real? (Asli/Palsu)**
-
-Latihan membedakan pesan asli dan palsu bergaya chat WhatsApp, lengkap dengan penjelasan dan tanda bahayanya, plus streak dan riwayat.
-
-</td>
-</tr>
-<tr>
-<td width="80" align="center" valign="top">
-
-<img src="docs/icons/mask-of-deception.png" alt="Mask of Deception 2P" width="56">
-
-</td>
-<td valign="top">
-
-**Mask of Deception 2P**
-
-Game 2 pemain berbentuk chat: satu pemain berperan sebagai penipu atau bukan, pemain lain menebak. Ada pencarian lawan otomatis, ruangan publik atau privat, batas waktu tiap giliran, dan riwayat match.
-
-</td>
-</tr>
-<tr>
-<td width="80" align="center" valign="top">
-
-<img src="docs/icons/trophy.svg" alt="Profil" width="56">
-
-</td>
-<td valign="top">
-
-**Profil, level, dan XP**
-
-Setiap aktivitas menambah XP. Level maksimal 110 dengan gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Ada profil, follow, pesan langsung (DM), notifikasi, dan pengaturan privasi.
-
-</td>
-</tr>
-<tr>
-<td width="80" align="center" valign="top">
-
-<img src="docs/icons/target.svg" alt="Misi Harian" width="56">
-
-</td>
-<td valign="top">
-
-**Misi Harian (Quest)**
-
-Tiga misi yang di-reset tiap hari: kerjakan 5 soal kuis, selesaikan 1 ronde Mask of Deception 2P, dan buat 1 laporan. Selesaikan ketiganya untuk bonus **+250 XP**. Kemajuannya tampil di kartu *Misi hari ini* pada kolom kanan.
-
-</td>
-</tr>
-<tr>
-<td width="80" align="center" valign="top">
-
-<img src="docs/icons/key.svg" alt="Akun" width="56">
-
-</td>
-<td valign="top">
-
-**Akun**
-
-Daftar dengan email (kode verifikasi 6 digit) atau Google, plus fitur lupa dan reset kata sandi.
-
-</td>
-</tr>
-<tr>
-<td width="80" align="center" valign="top">
-
-<img src="docs/icons/square-check.svg" alt="Moderasi" width="56">
-
-</td>
-<td valign="top">
-
-**Moderasi dan admin**
-
-Antrean moderasi (setujui, minta klarifikasi, atau tolak), dashboard admin, kelola pengguna dan peran, serta log aktivitas.
-
-</td>
-</tr>
-</table>
+| | Fitur | Penjelasan singkat |
+|:---:|---|---|
+| <img src="docs/icons/home.svg" alt="Beranda" width="40"> | **Beranda (feed komunitas)** | Laporan yang sudah terbit dalam tiga tab: *Untuk kamu*, *Terbaru*, dan *Mengikuti*. Laporan yang diperiksa moderator bertanda terverifikasi. Bisa disukai, di-repost, disimpan, dibagikan, dan dikomentari. |
+| <img src="docs/icons/compass.svg" alt="Jelajahi" width="40"> | **Jelajahi** | Cari laporan lewat top hashtag, kategori, jenis modus, atau pencarian. Label bisa diklik seperti hashtag. |
+| <img src="docs/icons/film.svg" alt="SafeSnaps" width="40"> | **SafeSnaps** | Feed ringkas bergaya reels untuk konten edukasi dan peringatan. Unggahan masuk antrean moderasi lebih dulu. |
+| <img src="docs/icons/flag.svg" alt="Laporan" width="40"> | **Laporan dan label** | Kirim laporan lengkap dengan kategori dan jenis modus. Satu laporan boleh punya beberapa label: **Penipuan**, **Mencurigakan**, **Klarifikasi**, dan **Edukasi**. Moderator memberi label akhir dan tanda "✓ Diverifikasi moderator". Laporan yang sudah dikirim bisa diedit. |
+| <img src="docs/icons/trophy.svg" alt="Profil" width="40"> | **Profil, level, dan XP** | Setiap aktivitas menambah XP. Level maksimal 110 dengan gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Ada profil, follow, pesan langsung (DM), notifikasi, dan pengaturan privasi. |
+| <img src="docs/icons/target.svg" alt="Misi Harian" width="40"> | **Misi Harian (Quest)** | Tiga misi yang di-reset tiap hari: 5 soal kuis, 1 ronde Mask of Deception 2P, dan 1 laporan. Selesaikan ketiganya untuk bonus **+250 XP**. Kemajuannya tampil di kartu *Misi hari ini* pada kolom kanan. |
+| <img src="docs/icons/key.svg" alt="Akun" width="40"> | **Akun** | Daftar dengan email (kode verifikasi 6 digit) atau Google, plus fitur lupa dan reset kata sandi. |
+| <img src="docs/icons/square-check.svg" alt="Moderasi" width="40"> | **Moderasi dan admin** | Antrean moderasi (setujui, minta klarifikasi, atau tolak), dashboard admin, kelola pengguna dan peran, serta log aktivitas. |
 
 ### Peran
 
