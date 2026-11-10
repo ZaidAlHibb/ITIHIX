@@ -111,7 +111,7 @@ Empat fitur ini adalah inti ITIHIX: dua untuk **melindungi diri sekarang** (Itih
 | <img src="docs/icons/compass.svg" alt="Jelajahi" width="64"> | **Jelajahi** | Cari laporan lewat top hashtag, kategori, jenis modus, atau pencarian. Label bisa diklik seperti hashtag. |
 | <img src="docs/icons/film.svg" alt="SafeSnaps" width="64"> | **SafeSnaps** | Feed ringkas bergaya reels untuk konten edukasi dan peringatan. Unggahan masuk antrean moderasi lebih dulu. |
 | <img src="docs/icons/flag.svg" alt="Laporan" width="64"> | **Laporan dan label** | Kirim laporan lengkap dengan kategori dan jenis modus. Satu laporan boleh punya beberapa label: **Penipuan**, **Mencurigakan**, **Klarifikasi**, dan **Edukasi**. Moderator memberi label akhir dan tanda "✓ Diverifikasi moderator". Laporan yang sudah dikirim bisa diedit. |
-| <img src="docs/icons/trophy.svg" alt="Profil" width="64"> | **Profil, level, dan XP** | Setiap aktivitas menambah XP. Level maksimal 110 dengan gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Ada profil, follow, pesan langsung (DM), notifikasi, dan pengaturan privasi. |
+| <img src="docs/icons/trophy.svg" alt="Profil" width="64"> | **Profil, level, dan XP** | Setiap aktivitas menambah XP. Level maksimal 110 dengan gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Level juga menjadi tanda kepercayaan pelapor yang terlihat oleh pembaca dan moderator. Ada profil, follow, pesan langsung (DM), notifikasi, dan pengaturan privasi. |
 | <img src="docs/icons/target.svg" alt="Misi Harian" width="64"> | **Misi Harian (Quest)** | Tiga misi yang di-reset tiap hari: 5 soal kuis, 1 ronde Mask of Deception 2P, dan 1 laporan. Selesaikan ketiganya untuk bonus **+250 XP**. Kemajuannya tampil di kartu *Misi hari ini* pada kolom kanan. |
 | <img src="docs/icons/key.svg" alt="Akun" width="64"> | **Akun** | Daftar dengan email (kode verifikasi 6 digit) atau Google, plus fitur lupa dan reset kata sandi. |
 | <img src="docs/icons/square-check.svg" alt="Moderasi" width="64"> | **Moderasi dan admin** | Antrean moderasi (setujui, minta klarifikasi, atau tolak), dashboard admin, kelola pengguna dan peran, serta log aktivitas. |
@@ -130,11 +130,12 @@ Status Terpercaya diberikan oleh moderator atau admin lewat halaman profil pengg
 
 ### Kenapa ada level dan Misi Harian?
 
-Komunitas hanya hidup kalau penggunanya aktif. Karena itu ITIHIX memakai dua mekanisme yang sudah terbukti membuat orang betah di media sosial dan game, tetapi diarahkan ke hal yang bermanfaat:
+Komunitas hanya hidup kalau penggunanya aktif, dan hanya berguna kalau isinya bisa dipercaya. Karena itu ITIHIX memakai level dan misi harian: dua mekanisme yang sudah terbukti membuat orang betah di media sosial dan game, tetapi diarahkan ke hal yang bermanfaat.
 
 | Mekanisme | Tujuan |
 |---|---|
 | **Level dan XP** | Memberi **semangat** bagi pengguna untuk aktif mengunggah laporan dan memakai berbagai fitur. Setiap aktivitas yang berguna (melapor, belajar lewat kuis, memeriksa pesan dengan ItihScan, berkomentar) dihargai dengan XP, lalu naik level dan mendapat gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Pengguna merasa usahanya diakui, sehingga lebih termotivasi menjaga komunitas. |
+| **Level sebagai tanda kepercayaan pelapor** | Level juga menjadi **gambaran rekam jejak** pelapor. Level dan gelar tampil di profil dan laporan, sehingga pembaca dan moderator bisa menilai seberapa berpengalaman seorang pelapor. XP terbesar datang dari laporan yang **disetujui moderator**, jadi level tinggi umumnya berarti pelapor aktif dan laporannya sering terbukti benar. |
 | **Misi Harian (Quest)** | Mendorong pengguna **berkunjung ke website setiap hari** dan mencoba fitur yang ada: kuis, game, dan membuat laporan. Misi di-reset tiap hari dan ada bonus +250 XP bila ketiganya selesai, sehingga muncul kebiasaan harian yang membuat pengguna rutin belajar dan melapor. |
 
 Agar tetap sehat, XP dari semua fitur dibatasi maksimal 250 per hari. Jadi yang dihargai adalah keaktifan yang konsisten, bukan spam.
@@ -149,12 +150,21 @@ Agar tetap sehat, XP dari semua fitur dibatasi maksimal 250 per hari. Jadi yang 
 | Analisis AI | +5 (maks. 5/hari) |
 | Komentar | +2 (maks. 5/hari) |
 | Moderasi | +2 |
-| Misi Harian (kuis 5 soal, 1 ronde game, 1 laporan) | +250 (sekali per hari) |
+| Misi Harian lengkap (kuis 5 soal, 1 ronde game, 1 laporan) | +250 (sekali per hari, di luar batas harian) |
 
 XP dari semua fitur dibatasi maksimal 250 per hari. Hadiah Misi Harian dihitung di luar batas itu.
-| Misi Harian lengkap | +250 (sekali per hari, di luar batas harian) |
 
 Gelar: Pemula Waspada → Penjaga Komunitas (10) → Pelindung Siber (30) → Pakar Anti-Penipuan (60) → Tameng Digital (90) → Legenda ITIHIX (110).
+
+#### Level dan kepercayaan pelapor
+
+Level bukan hanya hiasan. Level menunjukkan **seberapa bisa dipercaya** seorang pelapor:
+
+- **Bagi pembaca:** level dan gelar di samping nama pelapor membantu menilai laporan. Laporan dari *Pakar Anti-Penipuan* atau *Tameng Digital* punya rekam jejak yang lebih panjang daripada akun yang baru bergabung.
+- **Bagi moderator:** level membantu melihat sekilas riwayat pelapor saat meninjau antrean moderasi, dan menjadi bahan pertimbangan sebelum memberi status Terpercaya.
+- **Sulit dipalsukan:** karena bobot XP terbesar ada pada laporan yang disetujui (+20) dan XP harian dibatasi 250, level tinggi tidak bisa diraih lewat spam.
+
+Level berbeda dengan status **Terpercaya**. Level naik otomatis lewat aktivitas, sedangkan status Terpercaya (laporan langsung terbit dan lencana *Pelapor Terverifikasi*) tetap diberikan manual oleh moderator atau admin. Level tinggi tidak otomatis membuat laporan terbit tanpa moderasi.
 
 ### Misi Harian (Quest)
 
@@ -397,25 +407,86 @@ flowchart LR
 
 ### Menu di sidebar
 
-| Kelompok | Menu | Fungsi |
-|---|---|---|
-| **Menu utama** | Beranda | Feed laporan (tab Untuk kamu, Terbaru, Mengikuti) |
-| | Jelajahi | Cari lewat hashtag, kategori, jenis modus |
-| | SafeSnaps | Feed ringkas bergaya reels untuk edukasi dan peringatan |
-| **Perlindungan Digital** | ItihScan AI | Periksa pesan atau gambar mencurigakan |
-| | iTISTANT AI | Chat AI soal keamanan digital |
-| | Scam or Real? | Kuis membedakan pesan asli dan palsu |
-| | Mask of Deception 2P | Game tebak penipu untuk 2 pemain |
-| **Komunitas** | Buat laporan | Kirim laporan penipuan |
-| | Pesan | Pesan langsung (DM) |
-| | Notifikasi | Pemberitahuan aktivitas |
-| **Moderasi** | Antrean moderasi | Setujui, minta klarifikasi, atau tolak laporan (moderator dan admin) |
-| | Dashboard admin | Kelola pengguna, peran, postingan, dan log (admin) |
-| **Akun** | Profil saya | Profil, level, XP, dan riwayat |
-| | Pengaturan | Privasi dan preferensi |
-| | Keluar | Logout |
+Sidebar dibagi menjadi lima kelompok. Menu yang tampil menyesuaikan peran: Guest hanya melihat Beranda, kelompok **Moderasi** hanya tampil untuk moderator dan admin, dan **Dashboard admin** khusus admin.
 
-Kelompok **Moderasi** hanya tampil untuk moderator dan admin.
+```text
+ITIHIX
+│
+├── MENU UTAMA
+│   ├── Beranda
+│   ├── Jelajahi
+│   └── SafeSnaps
+│
+├── PERLINDUNGAN DIGITAL
+│   ├── ItihScan AI
+│   ├── iTISTANT AI
+│   ├── Scam or Real?
+│   └── Mask of Deception 2P
+│
+├── KOMUNITAS
+│   ├── Buat laporan
+│   ├── Pesan
+│   └── Notifikasi
+│
+├── MODERASI                      ← hanya moderator dan admin
+│   ├── Antrean moderasi
+│   └── Dashboard admin           ← hanya admin
+│
+└── AKUN
+    ├── Profil saya
+    ├── Pengaturan
+    └── Keluar
+```
+
+#### 🏠 Menu utama
+
+Tempat membaca dan mencari laporan komunitas.
+
+| Menu | Fungsi | Tampil untuk |
+|---|---|---|
+| **Beranda** | Feed laporan dengan tab *Untuk kamu*, *Terbaru*, dan *Mengikuti* | Semua, termasuk Guest |
+| **Jelajahi** | Cari lewat hashtag, kategori, dan jenis modus | User ke atas |
+| **SafeSnaps** | Feed ringkas bergaya reels untuk edukasi dan peringatan | User ke atas |
+
+#### 🛡️ Perlindungan Digital
+
+Empat fitur unggulan: dua untuk melindungi diri sekarang, dua untuk berlatih.
+
+| Menu | Fungsi | Tampil untuk |
+|---|---|---|
+| **ItihScan AI** | Periksa pesan atau gambar mencurigakan | User ke atas |
+| **iTISTANT AI** | Chat AI soal keamanan digital | User ke atas |
+| **Scam or Real?** | Kuis membedakan pesan asli dan palsu | User ke atas |
+| **Mask of Deception 2P** | Game tebak penipu untuk 2 pemain | User ke atas |
+
+#### 👥 Komunitas
+
+Berkontribusi dan berinteraksi dengan pengguna lain.
+
+| Menu | Fungsi | Tampil untuk |
+|---|---|---|
+| **Buat laporan** | Kirim laporan penipuan | User ke atas |
+| **Pesan** | Pesan langsung (DM) | User ke atas |
+| **Notifikasi** | Pemberitahuan aktivitas | User ke atas |
+
+#### ⚖️ Moderasi
+
+Kelompok ini tidak muncul untuk Guest, User, maupun Terpercaya.
+
+| Menu | Fungsi | Tampil untuk |
+|---|---|---|
+| **Antrean moderasi** | Setujui, minta klarifikasi, atau tolak laporan | Moderator dan Admin |
+| **Dashboard admin** | Kelola pengguna, peran, postingan, dan log | Admin |
+
+#### 👤 Akun
+
+Pengelolaan identitas dan preferensi pribadi.
+
+| Menu | Fungsi | Tampil untuk |
+|---|---|---|
+| **Profil saya** | Profil, level, XP, dan riwayat | User ke atas |
+| **Pengaturan** | Privasi dan preferensi | User ke atas |
+| **Keluar** | Logout | User ke atas |
 
 ### Ringkasan langkah
 
