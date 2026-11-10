@@ -141,8 +141,6 @@ Agar tetap sehat, XP dari semua fitur dibatasi maksimal 250 per hari. Jadi yang 
 
 ### Level dan XP
 
-XP untuk naik dari level L = `100 + 10×(L−1)`.
-
 | Aktivitas | XP |
 |---|---|
 | Laporan terkirim | +5 (maks. 5/hari) |
