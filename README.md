@@ -23,6 +23,7 @@ Komunitas yang saling mengabari penipuan terbaru, dilengkapi ItihScan AI untuk m
 
 Cukup buka website, daftar akun (atau masuk dengan Google), dan semua fitur bisa langsung dipakai. Ini versi uji coba, jadi jangan mengunggah data pribadi yang sensitif.
 
+Baru pertama kali? Baca [Coba yuk ITIHIX!](#coba-yuk-itihix) untuk tur singkat, lalu [Panduan pengguna](#panduan-pengguna) untuk langkah rinci membuat laporan, memantau statusnya, berkirim pesan, dan bermain Mask of Deception 2P.
 
 ---
 
@@ -30,6 +31,7 @@ Cukup buka website, daftar akun (atau masuk dengan Google), dan semua fitur bisa
 
 - [Coba sekarang](#coba-sekarang)
 - [Apa itu ITIHIX?](#apa-itu-itihix)
+- [Istilah yang dipakai](#istilah-yang-dipakai)
 - [Kenapa ITIHIX dibuat?](#kenapa-itihix-dibuat)
 - [Inspirasi ITIHIX](#inspirasi-itihix)
 - [Asal nama ITIHIX](#asal-nama-itihix)
@@ -37,6 +39,12 @@ Cukup buka website, daftar akun (atau masuk dengan Google), dan semua fitur bisa
 - [Fitur](#fitur)
 - [Alur pemakaian](#alur-pemakaian)
 - [Coba yuk ITIHIX!](#coba-yuk-itihix)
+- [Panduan pengguna](#panduan-pengguna)
+  - [Membuat laporan](#membuat-laporan)
+  - [Memantau status dan merevisi laporan](#memantau-status-dan-merevisi-laporan)
+  - [Aturan pesan langsung (DM)](#aturan-pesan-langsung-dm)
+  - [Cara main Mask of Deception 2P](#cara-main-mask-of-deception-2p)
+  - [Kalau ada masalah](#kalau-ada-masalah)
 - [Keamanan](#keamanan)
   - [Keamanan pengguna](#keamanan-pengguna)
   - [Keamanan website](#keamanan-website)
@@ -63,11 +71,27 @@ Di website ini kamu bisa:
 
 - **Membaca dan mencari** laporan penipuan terbaru, lengkap dengan kategori, jenis modus, dan label.
 - **Melapor** modus yang kamu temui supaya orang lain tidak jadi korban berikutnya.
-- **Memeriksa** pesan atau gambar yang mencurigakan dengan bantuan AI, atau bertanya soal keamanan digital.
+- **Memeriksa** pesan atau gambar yang mencurigakan dengan bantuan AI (ItihScan AI), atau bertanya soal keamanan digital (iTISTANT AI).
 - **Berlatih** mengenali penipuan lewat kuis dan game, sambil mengumpulkan XP dan naik level.
 - **Berinteraksi** dengan pengguna lain lewat komentar, follow, dan pesan langsung.
 
 Tanpa akun pun, siapa saja bisa membaca laporan yang sudah terbit. Fitur lainnya terbuka setelah daftar atau masuk.
+
+## Istilah yang dipakai
+
+Supaya tidak bingung, dokumen ini memakai satu istilah untuk satu hal:
+
+| Istilah | Artinya |
+|---|---|
+| **Laporan** | Satu unggahan tentang penipuan di feed (teks, boleh dengan foto atau video). Kata "postingan" tidak dipakai lagi. |
+| **Label** | Penilaian pada laporan: *Penipuan*, *Mencurigakan*, *Klarifikasi*, atau *Edukasi*. Ada juga label khusus *ItihScan AI* untuk laporan yang berasal dari hasil pemeriksaan ItihScan AI. |
+| **ItihScan AI** | Pemeriksa satu pesan atau gambar yang baru kamu terima. |
+| **iTISTANT AI** | Asisten obrolan untuk bertanya soal keamanan digital. |
+| **Scam or Real?** | Kuis menebak pesan asli atau penipuan. |
+| **Mask of Deception 2P** | Game tebak penipu untuk 2 pemain. |
+| **Terpercaya** | Status pelapor yang laporannya langsung terbit. Diberikan manual oleh moderator atau admin. Tidak sama dengan level. |
+| **Level dan XP** | Poin keaktifan yang naik otomatis lewat aktivitas. |
+| **Antrean moderasi** | Daftar laporan yang menunggu keputusan moderator. |
 
 ---
 
@@ -100,7 +124,7 @@ Nama **ITIHIX** terdiri dari dua bagian:
 | **ITIHI** | Dari bahasa Banjar (bahasa daerah Kalimantan Selatan): artinya **"perhatikan dengan teliti"**. |
 | **X** | Huruf penutup yang memberi kesan **kuat dan tegas**. |
 
-Pesannya sejalan dengan tujuan aplikasi ini: sebelum percaya pada pesan, tautan, atau tawaran yang masuk, perhatikan dengan teliti dulu. Nama fitur unggulan **ItihScan** juga memakai akar kata yang sama.
+Pesannya sejalan dengan tujuan aplikasi ini: sebelum percaya pada pesan, tautan, atau tawaran yang masuk, perhatikan dengan teliti dulu. Nama fitur unggulan **ItihScan AI** juga memakai akar kata yang sama.
 
 ## Untuk siapa?
 
@@ -116,14 +140,14 @@ Pesannya sejalan dengan tujuan aplikasi ini: sebelum percaya pada pesan, tautan,
 
 ### Fitur unggulan
 
-Empat fitur ini adalah inti ITIHIX: dua untuk **melindungi diri sekarang** (ItihScan AI dan iTISTANT) dan dua untuk **berlatih agar tidak tertipu nanti** (Scam or Real? dan Mask of Deception 2P).
+Empat fitur ini adalah inti ITIHIX: dua untuk **melindungi diri sekarang** (ItihScan AI dan iTISTANT AI) dan dua untuk **berlatih agar tidak tertipu nanti** (Scam or Real? dan Mask of Deception 2P).
 
 | | Fitur | Penjelasan |
 |:---:|---|---|
-| <img src="docs/icons/itihscan.png" alt="ItihScan AI" width="110"> | **ItihScan AI**<br>*Periksa pesan mencurigakan* | **Apa itu:** pemeriksa penipuan untuk pesan yang baru kamu terima.<br><br>**Cara pakai:** tempel teks pesan, atau unggah gambar (tangkapan layar chat, SMS, atau poster).<br><br>**Hasil:** penilaian *Penipuan*, *Mencurigakan*, atau *Aman*, lengkap dengan alasan dan langkah yang sebaiknya kamu lakukan.<br><br>**Setelahnya:** hasil otomatis menjadi caption yang bisa kamu edit, lalu diterbitkan sebagai laporan berlabel *ItihScan AI* supaya orang lain ikut waspada.<br><br>**Perlu diingat:** tanpa API key AI, ItihScan memakai mesin aturan lokal (deteksi kata kunci dan pola modus) yang lebih sederhana. Hasilnya bantuan, bukan kepastian, jadi tetap verifikasi lewat sumber resmi. |
-| <img src="docs/icons/itistant.png" alt="iTISTANT" width="110"> | **iTISTANT (Chat AI)**<br>*Tanya soal keamanan digital* | **Apa itu:** asisten obrolan untuk pertanyaan seputar keamanan digital dan penipuan.<br><br>**Cara pakai:** ketik pertanyaanmu, misalnya *"Bagaimana cara tahu link bank palsu?"*. Kamu juga bisa melampirkan file atau gambar sebagai bahan pertanyaan.<br><br>**Hasil:** jawaban dan saran yang bisa langsung dipraktikkan. Riwayat obrolan tersimpan, jadi bisa dibuka lagi kapan saja.<br><br>**Bedanya dengan ItihScan:** ItihScan menilai satu pesan tertentu, iTISTANT untuk bertanya dan berdiskusi secara umum. |
-| <img src="docs/icons/scam-or-real.png" alt="Scam or Real?" width="110"> | **Kuis Scam or Real?**<br>*Asli atau Palsu* | **Apa itu:** latihan mengenali penipuan lewat pesan bergaya chat WhatsApp.<br><br>**Soal dibuat AI:** soal di-generate oleh AI sehingga selalu **bervariasi** dan tidak monoton, dengan skenario dan modus yang berbeda tiap sesi. Jika AI sedang tidak tersedia, soal diambil dari bank soal bawaan.<br><br>**Cara main:** baca pesannya, lalu tebak: *asli* atau *penipuan*.<br><br>**Hasil:** setiap soal dilengkapi penjelasan dan tanda bahaya yang perlu diwaspadai, sehingga kamu belajar dari jawaban benar maupun salah.<br><br>**Hadiah:** +10 sampai +20 XP per jawaban benar, ditambah streak dan riwayat. Mengerjakan 5 soal menyelesaikan salah satu Misi Harian. |
-| <img src="docs/icons/mask-of-deception.png" alt="Mask of Deception 2P" width="110"> | **Mask of Deception 2P**<br>*Game tebak penipu* | **Apa itu:** game chat untuk 2 pemain yang melatih kepekaan terhadap gaya bicara penipu.<br><br>**Cara main:** satu pemain berperan sebagai penipu atau bukan (peran dirahasiakan), pemain lain mengobrol lalu menebak.<br><br>**Mencari lawan:** otomatis, atau lewat ruangan publik dan privat untuk bermain bersama teman.<br><br>**Aturan:** main bergiliran dengan batas waktu tiap giliran. Riwayat match tersimpan, dan menyelesaikan 1 ronde menyelesaikan salah satu Misi Harian. |
+| <img src="docs/icons/itihscan.png" alt="ItihScan AI" width="110"> | **ItihScan AI**<br>*Periksa pesan mencurigakan* | **Apa itu:** pemeriksa penipuan untuk pesan yang baru kamu terima.<br><br>**Cara pakai:** tempel teks pesan, atau unggah gambar (tangkapan layar chat, SMS, atau poster).<br><br>**Hasil:** penilaian *Penipuan*, *Mencurigakan*, atau *Aman*, lengkap dengan alasan dan langkah yang sebaiknya kamu lakukan.<br><br>**Setelahnya:** hasil otomatis menjadi caption yang bisa kamu edit, lalu diterbitkan sebagai laporan berlabel *ItihScan AI* supaya orang lain ikut waspada.<br><br>**Perlu diingat:** tanpa API key AI, ItihScan AI memakai mesin aturan lokal (deteksi kata kunci dan pola modus) yang lebih sederhana. Hasilnya bantuan, bukan kepastian, jadi tetap verifikasi lewat sumber resmi. |
+| <img src="docs/icons/itistant.png" alt="iTISTANT AI" width="110"> | **iTISTANT AI**<br>*Tanya soal keamanan digital* | **Apa itu:** asisten obrolan untuk pertanyaan seputar keamanan digital dan penipuan.<br><br>**Cara pakai:** ketik pertanyaanmu, misalnya *"Bagaimana cara tahu link bank palsu?"*. Kamu juga bisa melampirkan file atau gambar sebagai bahan pertanyaan.<br><br>**Hasil:** jawaban dan saran yang bisa langsung dipraktikkan. Riwayat obrolan tersimpan, jadi bisa dibuka lagi kapan saja.<br><br>**Bedanya dengan ItihScan AI:** ItihScan AI menilai satu pesan tertentu, iTISTANT AI untuk bertanya dan berdiskusi secara umum. |
+| <img src="docs/icons/scam-or-real.png" alt="Scam or Real?" width="110"> | **Kuis Scam or Real?**<br>*Asli atau Palsu* | **Apa itu:** latihan mengenali penipuan lewat pesan bergaya chat WhatsApp.<br><br>**Soal dibuat AI:** soal di-generate oleh AI sehingga selalu **bervariasi** dan tidak monoton, dengan skenario dan modus yang berbeda tiap sesi. Jika AI sedang tidak tersedia, soal diambil dari bank soal bawaan.<br><br>**Cara main:** baca pesannya, lalu tebak: *asli* atau *penipuan*.<br><br>**Hasil:** setiap soal dilengkapi penjelasan dan tanda bahaya yang perlu diwaspadai, sehingga kamu belajar dari jawaban benar maupun salah.<br><br>**Hadiah:** +10, +15, atau +20 XP per jawaban benar, sesuai tingkat kesulitan soal (tingkat naik seiring streak jawaban benar), ditambah riwayat. Mengerjakan 5 soal menyelesaikan salah satu Misi Harian. |
+| <img src="docs/icons/mask-of-deception.png" alt="Mask of Deception 2P" width="110"> | **Mask of Deception 2P**<br>*Game tebak penipu* | **Apa itu:** game chat untuk 2 pemain yang melatih kepekaan terhadap gaya bicara penipu.<br><br>**Cara main singkat:** satu pemain menjadi *pengirim* (peran rahasia: penipu atau bukan) dan pemain lain menjadi *penebak*. Mereka mengobrol maksimal 5 chat, lalu penebak memutuskan: *penipuan* atau *bukan*. Peran bertukar tiap ronde, satu ruangan terdiri dari 4 ronde.<br><br>**Mencari lawan:** otomatis, atau lewat ruangan publik dan privat (dengan kode) untuk bermain bersama teman.<br><br>**Hadiah:** tebakan benar memberi **+15 XP untuk kedua pemain**. Riwayat match tersimpan, dan menyelesaikan 1 ronde menyelesaikan salah satu Misi Harian.<br><br>**Langkah lengkap dan batas waktu:** lihat [Cara main Mask of Deception 2P](#cara-main-mask-of-deception-2p). |
 
 ### Fitur lainnya
 
@@ -131,8 +155,8 @@ Empat fitur ini adalah inti ITIHIX: dua untuk **melindungi diri sekarang** (Itih
 |:---:|---|---|
 | <img src="docs/icons/home.svg" alt="Beranda" width="64"> | **Beranda (feed komunitas)** | Laporan yang sudah terbit dalam tiga tab: *Untuk kamu*, *Terbaru*, dan *Mengikuti*. Laporan yang diperiksa moderator bertanda terverifikasi. Bisa disukai, di-repost, disimpan, dibagikan, dan dikomentari. |
 | <img src="docs/icons/compass.svg" alt="Jelajahi" width="64"> | **Jelajahi** | Cari laporan lewat top hashtag, kategori, jenis modus, atau pencarian. Label bisa diklik seperti hashtag. |
-| <img src="docs/icons/film.svg" alt="SafeSnaps" width="64"> | **SafeSnaps** | Feed ringkas bergaya reels untuk konten edukasi dan peringatan. Unggahan masuk antrean moderasi lebih dulu. |
-| <img src="docs/icons/flag.svg" alt="Laporan" width="64"> | **Laporan dan label** | Kirim laporan lengkap dengan kategori dan jenis modus. Satu laporan boleh punya beberapa label: **Penipuan**, **Mencurigakan**, **Klarifikasi**, dan **Edukasi**. Moderator memberi label akhir dan tanda "✓ Diverifikasi moderator". Laporan yang sudah dikirim bisa diedit. |
+| <img src="docs/icons/film.svg" alt="SafeSnaps" width="64"> | **SafeSnaps** | Feed ringkas bergaya reels untuk konten edukasi dan peringatan. Video yang diunggah masuk antrean moderasi lebih dulu. |
+| <img src="docs/icons/flag.svg" alt="Laporan" width="64"> | **Laporan dan label** | Kirim laporan lengkap dengan kategori dan jenis modus. Satu laporan boleh punya beberapa label: **Penipuan**, **Mencurigakan**, **Klarifikasi**, dan **Edukasi**. Moderator memberi label akhir dan tanda "✓ Diverifikasi moderator". Laporan yang sudah dikirim bisa diedit. Langkah lengkap: [Membuat laporan](#membuat-laporan). |
 | <img src="docs/icons/trophy.svg" alt="Profil" width="64"> | **Profil, level, dan XP** | Setiap aktivitas menambah XP. Level maksimal 110 dengan gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Level juga menjadi tanda kepercayaan pelapor yang terlihat oleh pembaca dan moderator. Ada profil, follow, pesan langsung (DM), notifikasi, dan pengaturan privasi. |
 | <img src="docs/icons/target.svg" alt="Misi Harian" width="64"> | **Misi Harian (Quest)** | Tiga misi yang di-reset tiap hari: 5 soal kuis, 1 ronde Mask of Deception 2P, dan 1 laporan. Selesaikan ketiganya untuk bonus **+250 XP**. Kemajuannya tampil di kartu *Misi hari ini* pada kolom kanan. |
 | <img src="docs/icons/key.svg" alt="Akun" width="64"> | **Akun** | Daftar dengan email (kode verifikasi 6 digit) atau Google, plus fitur lupa dan reset kata sandi. |
@@ -146,7 +170,7 @@ Empat fitur ini adalah inti ITIHIX: dua untuk **melindungi diri sekarang** (Itih
 | <img src="docs/icons/user.svg" alt="User" width="64"> | User | Semua fitur komunitas. Laporan masuk antrean moderasi. |
 | <img src="docs/icons/trusted.svg" alt="Terpercaya" width="64"> | Terpercaya (`trusted`) | Fitur user, tetapi laporannya **langsung terbit** tanpa antrean dan diberi lencana *Pelapor Terverifikasi*. XP "laporan disetujui" langsung didapat. |
 | <img src="docs/icons/moderator.svg" alt="Moderator" width="64"> | Moderator | Fitur user + antrean moderasi. Laporannya langsung terbit. Bisa memberi atau mencabut status Terpercaya pada user. |
-| <img src="docs/icons/admin.svg" alt="Admin" width="64"> | Admin | Fitur moderator + dashboard, kelola akun dan peran, hapus/pulihkan postingan, lihat seluruh log. |
+| <img src="docs/icons/admin.svg" alt="Admin" width="64"> | Admin | Fitur moderator + dashboard, kelola akun dan peran, hapus/pulihkan laporan, lihat seluruh log. |
 
 Status Terpercaya diberikan oleh moderator atau admin lewat halaman profil pengguna atau halaman moderasi, dan bisa dicabut kapan saja.
 
@@ -156,8 +180,8 @@ Komunitas hanya hidup kalau penggunanya aktif, dan hanya berguna kalau isinya bi
 
 | Mekanisme | Tujuan |
 |---|---|
-| **Level dan XP** | Memberi **semangat** bagi pengguna untuk aktif mengunggah laporan dan memakai berbagai fitur. Setiap aktivitas yang berguna (melapor, belajar lewat kuis, memeriksa pesan dengan ItihScan, berkomentar) dihargai dengan XP, lalu naik level dan mendapat gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Pengguna merasa usahanya diakui, sehingga lebih termotivasi menjaga komunitas. |
-| **Level sebagai tanda kepercayaan pelapor** | Level juga menjadi **gambaran rekam jejak** pelapor. Level dan gelar tampil di profil dan di postingan (kecuali pengguna menyembunyikannya lewat pengaturan privasi), sehingga pembaca dan moderator bisa menilai seberapa berpengalaman seorang pelapor. XP terbesar datang dari laporan yang **disetujui moderator**, jadi level tinggi umumnya berarti pelapor aktif dan laporannya sering terbukti benar. |
+| **Level dan XP** | Memberi **semangat** bagi pengguna untuk aktif mengunggah laporan dan memakai berbagai fitur. Setiap aktivitas yang berguna (melapor, belajar lewat kuis, memeriksa pesan dengan ItihScan AI, berkomentar) dihargai dengan XP, lalu naik level dan mendapat gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Pengguna merasa usahanya diakui, sehingga lebih termotivasi menjaga komunitas. |
+| **Level sebagai tanda kepercayaan pelapor** | Level juga menjadi **gambaran rekam jejak** pelapor. Level dan gelar tampil di profil dan di laporan (kecuali pengguna menyembunyikannya lewat pengaturan privasi), sehingga pembaca dan moderator bisa menilai seberapa berpengalaman seorang pelapor. XP terbesar datang dari laporan yang **disetujui moderator**, jadi level tinggi umumnya berarti pelapor aktif dan laporannya sering terbukti benar. |
 | **Misi Harian (Quest)** | Mendorong pengguna **berkunjung ke website setiap hari** dan mencoba fitur yang ada: kuis, game, dan membuat laporan. Misi di-reset tiap hari dan ada bonus +250 XP bila ketiganya selesai, sehingga muncul kebiasaan harian yang membuat pengguna rutin belajar dan melapor. |
 
 Agar tetap sehat, XP dari semua fitur dibatasi maksimal 250 per hari. Jadi yang dihargai adalah keaktifan yang konsisten, bukan spam.
@@ -168,8 +192,9 @@ Agar tetap sehat, XP dari semua fitur dibatasi maksimal 250 per hari. Jadi yang 
 |---|---|
 | Laporan terkirim | +5 (maks. 5/hari) |
 | Laporan disetujui | +20 |
-| Kuis benar | +10 sampai +20 |
-| Analisis AI | +5 (maks. 5/hari) |
+| Kuis Scam or Real? benar | +10, +15, atau +20 sesuai tingkat kesulitan soal |
+| Mask of Deception 2P, tebakan benar | +15 untuk kedua pemain (maks. 6 ronde ber-XP per hari per pemain) |
+| Analisis ItihScan AI | +5 (maks. 5/hari) |
 | Komentar | +2 (maks. 5/hari) |
 | Moderasi | +2 |
 | Misi Harian lengkap (kuis 5 soal, 1 ronde game, 1 laporan) | +250 (sekali per hari, di luar batas harian) |
@@ -184,7 +209,7 @@ Level bukan hanya hiasan. Level menunjukkan **seberapa bisa dipercaya** seorang 
 
 - **Bagi pembaca:** level dan gelar di samping nama pelapor membantu menilai laporan. Laporan dari *Pakar Anti-Penipuan* atau *Tameng Digital* punya rekam jejak yang lebih panjang daripada akun yang baru bergabung.
 - **Bagi moderator:** level membantu melihat sekilas riwayat pelapor saat meninjau antrean moderasi, dan menjadi bahan pertimbangan sebelum memberi status Terpercaya.
-- **Bisa disembunyikan:** pengguna boleh mematikan tampilan level di postingan lewat *Pengaturan > Privasi*, jadi level adalah petunjuk tambahan, bukan satu-satunya dasar menilai laporan.
+- **Bisa disembunyikan:** pengguna boleh mematikan tampilan level di laporan lewat *Pengaturan > Privasi*, jadi level adalah petunjuk tambahan, bukan satu-satunya dasar menilai laporan.
 - **Sulit dipalsukan:** karena bobot XP terbesar ada pada laporan yang disetujui (+20) dan XP harian dibatasi 250, level tinggi tidak bisa diraih lewat spam.
 
 Level berbeda dengan status **Terpercaya**. Level naik otomatis lewat aktivitas, sedangkan status Terpercaya (laporan langsung terbit dan lencana *Pelapor Terverifikasi*) tetap diberikan manual oleh moderator atau admin. Level tinggi tidak otomatis membuat laporan terbit tanpa moderasi.
@@ -195,11 +220,11 @@ Kartu **Misi hari ini** di kolom kanan menampilkan tiga misi. Kemajuan dihitung 
 
 | Misi | Syarat selesai |
 |---|---|
-| Mainkan kuis keamanan | Kerjakan 5 soal di **Scam or Real?** (+10 XP per jawaban benar) |
-| Mainkan Mask of Deception | Selesaikan 1 ronde bersama pemain lain |
+| Mainkan kuis keamanan | Kerjakan 5 soal di **Scam or Real?** (jawaban benar maupun salah dihitung; XP hanya untuk yang benar) |
+| Mainkan Mask of Deception 2P | Selesaikan 1 ronde bersama pemain lain |
 | Buat 1 laporan | Kirim 1 laporan (+5 XP, +20 XP bila disetujui) |
 
-Kalau ketiganya selesai, kamu mendapat bonus **+250 XP** satu kali per hari. Bonus ini terpisah dari batas XP harian: XP dari semua fitur (laporan, kuis, ItihScan, komentar, game) dibatasi maksimal **250 per hari**.
+Kalau ketiganya selesai, kamu mendapat bonus **+250 XP** satu kali per hari. Bonus ini terpisah dari batas XP harian: XP dari semua fitur (laporan, kuis, ItihScan AI, komentar, game) dibatasi maksimal **250 per hari**.
 
 ---
 
@@ -247,17 +272,17 @@ Guest adalah pengunjung yang belum masuk. Dari kiri ke kanan, kemampuan bertamba
 | Membaca laporan terbit di Beranda dan halaman detail | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Mendaftar atau masuk | ✓ | – | – | – | – |
 | Suka, komentar, tab Mengikuti, Jelajahi, SafeSnaps | – | ✓ | ✓ | ✓ | ✓ |
-| DM, kuis, game, ItihScan, iTISTANT | – | ✓ | ✓ | ✓ | ✓ |
+| DM (syarat: [saling mengikuti](#aturan-pesan-langsung-dm)), kuis, game, ItihScan AI, iTISTANT AI | – | ✓ | ✓ | ✓ | ✓ |
 | Mengirim laporan | – | ✓ | ✓ | ✓ | ✓ |
 | Laporan langsung terbit (tanpa antrean) | – | – | ✓ | ✓ | ✓ |
 | Lencana pada laporan | – | – | Pelapor Terverifikasi | Oleh Moderator | Oleh Admin |
 | Meninjau antrean moderasi | – | – | – | ✓ | ✓ |
 | Memberi atau mencabut status Terpercaya | – | – | – | ✓ | ✓ |
 | Menangguhkan atau mengaktifkan akun | – | – | – | User dan Terpercaya | Semua akun |
-| Menghapus postingan dan komentar orang lain | – | – | – | User dan Terpercaya | Semua |
+| Menghapus laporan dan komentar orang lain | – | – | – | User dan Terpercaya | Semua |
 | Menangani laporan pengguna dan komentar | – | – | – | ✓ | ✓ |
 | Mengubah peran dan membuat akun | – | – | – | – | ✓ |
-| Dashboard, semua postingan (hapus/pulihkan), log aktivitas | – | – | – | – | ✓ |
+| Dashboard, semua laporan (hapus/pulihkan), log aktivitas | – | – | – | – | ✓ |
 
 #### Alur Guest
 
@@ -297,7 +322,7 @@ flowchart LR
     C --> C1[Cari lewat hashtag,<br/>kategori, jenis<br/>modus]
     D --> D1[Tonton video<br/>edukasi]
     D --> D2[Unggah video,<br/>masuk antrean<br/>moderasi]
-    E --> E1[Kirim DM ke<br/>pengguna lain]
+    E --> E1[Kirim DM ke<br/>pengguna yang<br/>saling mengikuti]
     F --> F1[Lihat suka, komentar,<br/>keputusan moderator]
     G --> G1[Follow pengguna,<br/>lihat level dan XP]
     classDef user fill:#dbeafe,stroke:#1d4ed8,color:#111111
@@ -330,13 +355,14 @@ flowchart LR
     A[Scam or Real?] --> B[Baca pesan bergaya<br/>chat WhatsApp]
     B --> C[Tebak: asli<br/>atau penipuan]
     C --> D[Penjelasan dan<br/>tanda bahaya]
-    D --> E[+10 sampai +20 XP,<br/>streak dan riwayat]
+    D --> E[+10, +15, atau +20 XP<br/>per jawaban benar,<br/>streak dan riwayat]
     F[Mask of Deception 2P] --> G[Cari lawan otomatis<br/>atau ruangan<br/>publik dan privat]
-    G --> H[Main bergiliran<br/>dengan batas waktu]
-    H --> I[Satu pemain jadi<br/>penipu atau bukan,<br/>lawan menebak]
-    I --> J[Riwayat match]
+    G --> H[Pengirim membuka chat,<br/>maks. 5 chat bergiliran<br/>dengan batas waktu]
+    H --> I[Penebak memilih<br/>penipuan atau bukan]
+    I --> J[Benar: +15 XP<br/>untuk kedua pemain,<br/>peran bertukar]
+    J --> K[4 ronde,<br/>lalu riwayat match]
     classDef user fill:#dbeafe,stroke:#1d4ed8,color:#111111
-    class A,B,C,D,E,F,G,H,I,J user
+    class A,B,C,D,E,F,G,H,I,J,K user
 ```
 
 **4. Buat laporan dan laporkan pengguna**
@@ -412,7 +438,7 @@ Moderator hanya bisa mengelola akun User dan Terpercaya, tidak bisa menyentuh se
 flowchart LR
     A[Buka Dashboard admin] --> B[Dashboard<br/>perlu moderasi,<br/>laporan terbuka,<br/>login gagal 24 jam,<br/>akun ditangguhkan]
     A --> C[Pengguna dan moderator<br/>ubah peran, tangguhkan,<br/>buat akun]
-    A --> D[Semua postingan<br/>hapus atau pulihkan,<br/>tinjau yang menunggu]
+    A --> D[Semua laporan<br/>hapus atau pulihkan,<br/>tinjau yang menunggu]
     A --> E[Log aktivitas<br/>audit semua aksi]
     A --> F[Antrean moderasi<br/>semua kemampuan moderator]
     classDef adm fill:#fee2e2,stroke:#b91c1c,color:#111111
@@ -469,7 +495,7 @@ Empat fitur unggulan: dua untuk melindungi diri sekarang, dua untuk berlatih.
 | Menu | Fungsi | Tampil untuk |
 |---|---|---|
 | **ItihScan AI** | Periksa pesan atau gambar mencurigakan | User ke atas |
-| **iTISTANT AI** | Chat AI soal keamanan digital | User ke atas |
+| **iTISTANT AI** | Asisten obrolan soal keamanan digital | User ke atas |
 | **Scam or Real?** | Kuis membedakan pesan asli dan palsu | User ke atas |
 | **Mask of Deception 2P** | Game tebak penipu untuk 2 pemain | User ke atas |
 
@@ -479,9 +505,9 @@ Berkontribusi dan berinteraksi dengan pengguna lain.
 
 | Menu | Fungsi | Tampil untuk |
 |---|---|---|
-| **Buat laporan** | Kirim laporan penipuan | User ke atas |
-| **Pesan** | Pesan langsung (DM) | User ke atas |
-| **Notifikasi** | Pemberitahuan aktivitas | User ke atas |
+| **Buat laporan** | Kirim laporan penipuan ([langkah lengkap](#membuat-laporan)) | User ke atas |
+| **Pesan** | Pesan langsung (DM), hanya antar pengguna yang [saling mengikuti](#aturan-pesan-langsung-dm) | User ke atas |
+| **Notifikasi** | Pemberitahuan aktivitas, termasuk keputusan moderator | User ke atas |
 
 #### Moderasi
 
@@ -490,7 +516,7 @@ Kelompok ini tidak muncul untuk Guest, User, maupun Terpercaya.
 | Menu | Fungsi | Tampil untuk |
 |---|---|---|
 | **Antrean moderasi** | Setujui, minta klarifikasi, atau tolak laporan | Moderator dan Admin |
-| **Dashboard admin** | Kelola pengguna, peran, postingan, dan log | Admin |
+| **Dashboard admin** | Kelola pengguna, peran, laporan, dan log | Admin |
 
 #### Akun
 
@@ -498,7 +524,7 @@ Pengelolaan identitas dan preferensi pribadi.
 
 | Menu | Fungsi | Tampil untuk |
 |---|---|---|
-| **Profil saya** | Profil, level, XP, dan riwayat | User ke atas |
+| **Profil saya** | Profil, level, XP, riwayat, dan status laporanmu (tab *Pending*) | User ke atas |
 | **Pengaturan** | Privasi dan preferensi | User ke atas |
 | **Keluar** | Logout | User ke atas |
 
@@ -506,7 +532,7 @@ Pengelolaan identitas dan preferensi pribadi.
 
 1. Pengguna mendaftar atau masuk, lalu membaca laporan terbaru di **Beranda**.
 2. Kalau menerima pesan mencurigakan, pengguna memeriksanya lewat **ItihScan AI**. Kalau hanya ingin bertanya, pakai **iTISTANT AI**. Untuk berlatih, ada **Scam or Real?** dan **Mask of Deception 2P**.
-3. Hasil ItihScan otomatis menjadi caption laporan. Pengguna bisa mengeditnya, atau membuat laporan sendiri lewat **Buat laporan**.
+3. Hasil ItihScan AI otomatis menjadi caption laporan. Pengguna bisa mengeditnya, atau membuat laporan sendiri lewat **Buat laporan**.
 4. Laporan dari User masuk **Antrean moderasi**. Laporan dari pengguna Terpercaya, Moderator, dan Admin langsung terbit.
 5. Moderator memilih: **setujui** (laporan terbit dengan label akhir dan tanda terverifikasi), **minta klarifikasi** (pelapor merevisi, lalu laporan masuk antrean lagi), atau **tolak** (tidak terbit, pelapor diberi tahu).
 6. Setiap aktivitas (laporan, kuis, game, komentar) menambah XP sehingga pengguna naik level.
@@ -515,12 +541,136 @@ Pengelolaan identitas dan preferensi pribadi.
 
 1. Buka [itihix.my.id](https://itihix.my.id), lalu **daftar** akun baru (email dikirimi kode 6 digit) atau masuk dengan Google.
 2. Di **Beranda**, lihat tab *Untuk kamu* dan *Terbaru*. Laporan yang sudah diperiksa moderator bertanda terverifikasi. Tanpa akun pun kamu bisa membaca Beranda sebagai tamu.
-3. Buka **ItihScan**, tempel pesan seperti *"Selamat! Anda menang undian Rp50 juta. Klik link ini dan transfer biaya admin"*, lalu lihat hasil analisis dan caption otomatisnya.
-4. Edit caption, pilih kategori dan label, lalu kirim sebagai laporan. Laporan masuk antrean moderasi.
+3. Buka **ItihScan AI**, tempel pesan seperti *"Selamat! Anda menang undian Rp50 juta. Klik link ini dan transfer biaya admin"*, lalu lihat hasil analisis dan caption otomatisnya.
+4. Edit caption, pilih kategori dan label, lalu kirim sebagai laporan. Laporan masuk antrean moderasi. Rincian isian dan batas file ada di [Membuat laporan](#membuat-laporan), dan cara mengecek statusnya ada di [Memantau status dan merevisi laporan](#memantau-status-dan-merevisi-laporan).
 5. Di **Jelajahi**, coba cari lewat hashtag atau klik label *Penipuan*.
-6. Coba **Kuis Scam or Real?** untuk mendapatkan XP, lalu ajak temanmu main **Mask of Deception 2P**. Pantau kemajuanmu di kartu **Misi hari ini** (kolom kanan), dan selesaikan ketiga misi untuk bonus +250 XP.
-7. Tanya **iTISTANT** hal seperti "Bagaimana cara tahu link bank palsu?".
-8. Untuk mencoba `moderator.php` dan `admin.php`, ubah peran akunmu lewat database (lihat langkah 8 di bagian [Menjalankan di komputer sendiri](#menjalankan-di-komputer-sendiri)).
+6. Coba **Kuis Scam or Real?** untuk mendapatkan XP, lalu ajak temanmu main **Mask of Deception 2P** (lihat [cara mainnya](#cara-main-mask-of-deception-2p)). Pantau kemajuanmu di kartu **Misi hari ini** (kolom kanan), dan selesaikan ketiga misi untuk bonus +250 XP.
+7. Tanya **iTISTANT AI** hal seperti "Bagaimana cara tahu link bank palsu?".
+8. Ingin mencoba DM? Follow temanmu dan minta dia follow balik dulu ([aturannya](#aturan-pesan-langsung-dm)).
+9. **Khusus instalasi lokal:** untuk mencoba `moderator.php` dan `admin.php`, ubah peran akunmu lewat database (lihat langkah 8 di bagian [Menjalankan di komputer sendiri](#menjalankan-di-komputer-sendiri)). Langkah ini **tidak bisa dilakukan di website online** karena peran di sana hanya diatur admin ITIHIX.
+
+---
+
+## Panduan pengguna
+
+Bagian ini untuk kamu yang memakai website (online maupun lokal). Hal-hal yang sering ditanyakan dan sebelumnya tersebar di bagian lain dikumpulkan di sini.
+
+### Membuat laporan
+
+Ada dua jalan:
+
+- **Dari menu Buat laporan** (kelompok *Komunitas* di sidebar): formulir kosong.
+- **Dari ItihScan AI:** setelah hasil keluar, pilih terbitkan sebagai laporan. Formulir terisi otomatis dari hasil pemeriksaan, laporan diberi label *ItihScan AI*, dan teks yang diperiksa ikut ditampilkan. Gambar dari pemeriksaan dipakai sebagai bukti kalau kamu tidak memilih file lain. Semua isian masih bisa kamu edit.
+
+Isian formulir:
+
+| Isian | Wajib? | Aturan |
+|---|:---:|---|
+| Judul laporan | Ya | 5 sampai 160 karakter. Contoh: *Modus hadiah palsu mengatasnamakan bank*. |
+| Kategori | Ya | Pilih 1 sampai 3 kategori. |
+| Jenis modus | Tidak | Maksimal 5. |
+| Label | Ya | Pilih minimal satu: *Penipuan*, *Mencurigakan*, *Klarifikasi*, atau *Edukasi*. Untuk User, ini hanya **saran** untuk moderator. Untuk Terpercaya, Moderator, dan Admin, ini label laporan. |
+| Ceritakan apa yang terjadi | Ya | Maksimal 4.000 karakter. Jelaskan isi pesan, cara pelaku menghubungi, dan tanda yang membuatmu curiga. Tulis hashtag dengan `#` (misalnya `#WaspadaAPK`), dan saran hashtag akan muncul. |
+| Bukti pendukung atau poster | Tidak | Foto atau video, maksimal **10 file** per laporan. Format: JPG, PNG, WebP, GIF, MP4, WebM, MOV. Ukuran maksimal **8 MB per gambar** dan **40 MB per video**. |
+| Catatan untuk moderator | Tidak | Maksimal 255 karakter. Isi dengan sumber informasi atau konteks tambahan. |
+
+Tips sebelum mengirim:
+
+- **Sensor data pribadi** (nomor rekening, telepon, alamat) di teks dan di tangkapan layar. Moderator akan memintamu menyensor kalau masih terlihat.
+- Batas kirim: **8 laporan per jam**. Kalau terlampaui, tunggu satu jam.
+
+Setelah dikirim, laporan User masuk antrean moderasi dengan status *Menunggu*. Laporan Terpercaya, Moderator, dan Admin langsung terbit.
+
+### Memantau status dan merevisi laporan
+
+**Di mana mengecek status?** Buka **Profil saya**, lalu tab **Pending** (angkanya menunjukkan jumlah laporan yang belum terbit). Di dalamnya ada filter:
+
+| Filter | Artinya | Yang perlu kamu lakukan |
+|---|---|---|
+| *Menunggu* | Belum ditinjau moderator. | Tunggu. Kamu tidak perlu mengirim ulang. |
+| *Perlu klarifikasi* | Moderator meminta perbaikan atau informasi tambahan. Ada penanda titik di tab Pending. | Revisi laporan (langkah di bawah). |
+| *Ditolak* | Laporan tidak diterbitkan. Alasannya ada di notifikasi dan catatan moderator. | Kalau kamu punya bukti baru, buat laporan baru. |
+
+Laporan yang disetujui hilang dari Pending dan tampil di Beranda dengan label akhir dan tanda terverifikasi. Kamu juga mendapat **notifikasi** untuk setiap keputusan moderator (menu *Notifikasi*).
+
+**Cara merevisi setelah moderator meminta klarifikasi:**
+
+1. Buka notifikasi *Moderator meminta klarifikasi*, atau buka **Profil saya > Pending > Perlu klarifikasi** lalu pilih laporannya.
+2. Baca **Catatan moderator** yang tampil di laporan.
+3. Tekan **Revisi & kirim ulang**. Formulir yang sama dengan Buat laporan terbuka dengan isi laporanmu.
+4. Perbaiki sesuai catatan (misalnya sensor nomor rekening, tambahkan bukti, atau perjelas kronologi), lalu kirim.
+5. Laporan kembali ke antrean moderasi dengan status *Menunggu*.
+
+### Aturan pesan langsung (DM)
+
+Pesan langsung sengaja dibatasi untuk mencegah spam dan penipuan lewat DM. Pesan hanya bisa **dikirim** bila semua syarat ini terpenuhi:
+
+1. **Kalian saling mengikuti.** Kamu mengikuti dia **dan** dia mengikuti kamu. Kalau hanya satu arah, kamu akan melihat pesan *"Kamu dan @nama harus saling mengikuti untuk bisa berkirim pesan."*
+2. **Penerima mengizinkan pesan.** Kalau dia mematikannya di *Pengaturan*, kamu akan melihat *"@nama sedang tidak menerima pesan."*
+3. Isi pesan **1 sampai 1.000 karakter**, dan tidak bisa mengirim ke diri sendiri.
+4. Tidak melewati batas **20 pesan per menit**.
+
+Cara mulai: buka profil temanmu, tekan **Follow**, minta dia follow balik, lalu buka **Pesan**. Riwayat percakapan tetap bisa dibaca walaupun salah satu dari kalian kemudian berhenti mengikuti, tetapi pesan baru tidak bisa dikirim sampai kalian saling mengikuti lagi.
+
+Kamu bisa mematikan penerimaan pesan di **Pengaturan > Privasi**.
+
+### Cara main Mask of Deception 2P
+
+Game chat untuk 2 pemain. Satu ruangan terdiri dari **4 ronde**, dan peran **bertukar tiap ronde** supaya kalian sama-sama jadi pengirim dan penebak.
+
+**Peran**
+
+| Peran | Tugas |
+|---|---|
+| **Pengirim** | Mendapat peran rahasia: penipu atau bukan. Memilih kategori yang tersedia, lalu menulis pesan pembuka (maksimal 600 karakter) dan membalas penebak (maksimal 300 karakter per balasan). |
+| **Penebak** | Menguji lawan lewat pertanyaan, lalu memutuskan apakah pesan dari pengirim itu *penipuan* atau *bukan*. |
+
+**Langkah bermain**
+
+1. Buka menu **Mask of Deception 2P**. Tekan ikon info untuk membaca ringkasan cara bermain kapan saja.
+2. **Masuk ruangan** dengan salah satu cara:
+   - **Cari lawan otomatis:** sistem mencarikan pemain lain. Kalau belum ada yang ketemu, batalkan pencarian lalu buat ruangan privat dan ajak temanmu.
+   - **Buat ruangan publik:** tampil di daftar *Ruangan publik* sehingga pemain lain bisa bergabung. Kodenya juga bisa dibagikan.
+   - **Buat ruangan privat:** tidak tampil di daftar. Bagikan **kode ruangan** (maksimal 8 karakter, contoh `K7M2P`) ke temanmu. Temanmu memasukkannya di kolom *Gabung dengan kode*.
+3. Setelah dua pemain masuk, ada **undian** yang menentukan siapa jadi pengirim lebih dulu.
+4. **Ngobrol maksimal 5 chat** bergantian dengan urutan: pengirim, penebak, pengirim, penebak, pengirim. Jadi pengirim punya 3 pesan dan penebak 2 balasan.
+5. **Menebak:** penebak boleh mengunci tebakan kapan saja setelah ada pesan pertama, atau menunggu sampai jatah chat habis. Pilih *penipuan* atau *bukan*, isi alasan kalau mau (opsional, maksimal 300 karakter), lalu tekan **Kunci tebakan**.
+6. **Hasil ronde:** jawaban ditampilkan beserta alasan. Tebakan benar berarti **kalian berdua menang** dan masing-masing mendapat **+15 XP**. Tebakan salah berarti tanpa XP.
+7. Tekan **Siap lanjut** untuk ronde berikutnya. Hitung mundur 20 detik mulai setelah salah satu pemain menekan siap. Kalau habis, ronde berikutnya mulai otomatis.
+8. Setelah ronde terakhir, hasil akhir ditampilkan dan match masuk **riwayat** (30 match terakhir). Tombol **Akhiri match** menghentikan permainan kapan saja.
+
+**Batas waktu**
+
+| Situasi | Batas | Kalau waktu habis |
+|---|---|---|
+| Pengirim membuka chat | 2 menit | Ronde dilewati, tanpa XP. |
+| Membalas chat | 45 detik | Giliran dilewati, dan jatah chat tetap terpakai. |
+| Penebak mengunci tebakan setelah jatah chat habis | 45 detik | Dianggap salah, tanpa XP. |
+| Ruangan menunggu lawan | sekitar 2 menit tanpa host aktif | Ruangan kedaluwarsa. |
+| Ruangan berjalan tanpa aktivitas kedua pemain | 10 menit | Match berakhir. |
+
+**Batas XP (anti-spam):** XP game maksimal **6 ronde per hari** untuk tiap pemain, dan maksimal **3 ronde ber-XP per hari untuk pasangan pemain yang sama**. Kalau batas tercapai, tebakan benar tetap menang tetapi tanpa XP. Menyelesaikan 1 ronde sudah cukup untuk Misi Harian.
+
+### Kalau ada masalah
+
+Panduan ini untuk pengguna website. Kalau kamu memasang sendiri di komputer, lihat [Masalah saat memasang di komputer sendiri](#masalah-saat-memasang-di-komputer-sendiri).
+
+| Yang kamu lihat | Artinya | Yang bisa dilakukan |
+|---|---|---|
+| *"Terlalu banyak percobaan. Coba lagi dalam beberapa menit."* (saat masuk) | Terlalu banyak percobaan masuk yang gagal: batasnya 8 per akun dan 30 per perangkat/IP dalam 10 menit. | Tunggu sekitar 10 menit lalu coba lagi. Kalau lupa kata sandi, pakai **Lupa kata sandi**. |
+| *"Terlalu banyak pendaftaran dari perangkat ini."* | Batas pendaftaran 5 per jam per perangkat. | Tunggu satu jam. |
+| *"Terlalu banyak permintaan kode. Coba lagi nanti."* | Kamu meminta kode verifikasi terlalu sering (batas 5 per jam). | Tunggu, lalu minta sekali saja dan tunggu emailnya. |
+| *"Kode salah. Sisa percobaan: n."* | Kode salah. Maksimal 5 kali salah. | Periksa angka. Kalau sisa 0 atau muncul *"Terlalu banyak kode salah"*, tekan **Kirim ulang kode** untuk kode baru. |
+| Kode email tidak sampai | Email belum terkirim atau masuk folder lain. | 1) Cek folder **Spam** atau **Promosi**. 2) Pastikan alamat email benar. 3) Tunggu **60 detik** lalu tekan **Kirim ulang kode** (jeda kirim ulang 60 detik, batas 5 per jam). 4) Pakai kode yang terbaru, karena kode berlaku **10 menit**. 5) Kalau tetap gagal, coba masuk dengan Google. |
+| *"Terlalu cepat, tunggu sebentar."*, *"Terlalu banyak pesan, tunggu sebentar."*, atau *"Terlalu banyak komentar, tunggu sebentar."* | Kamu menekan terlalu cepat. Ada batas per menit (komentar 10, DM 20, iTISTANT AI 15). | Tunggu satu menit lalu coba lagi. |
+| *"Kamu mengirim terlalu banyak laporan."* | Batas 8 laporan per jam. | Tunggu satu jam. |
+| *"Kamu mengunggah terlalu banyak video."* | Batas 6 unggahan SafeSnaps per jam. | Tunggu satu jam. |
+| ItihScan AI atau kuis tidak bisa dipakai beruntun | Ada batas pemakaian: ItihScan AI 12 per 5 menit, soal kuis AI 8 per 5 menit. | Tunggu beberapa menit. |
+| *"Ukuran file melebihi batas ..."* atau upload ditolak | Gambar lebih dari 8 MB, video lebih dari 40 MB, lebih dari 10 file, atau format tidak didukung. | Kecilkan atau kompres file, dan pakai JPG, PNG, WebP, GIF, MP4, WebM, atau MOV. |
+| DM tidak bisa dikirim | Belum saling mengikuti, atau penerima mematikan pesan. | Lihat [Aturan pesan langsung](#aturan-pesan-langsung-dm). |
+| Hasil ItihScan AI atau iTISTANT AI terasa singkat dan sederhana | Layanan AI sedang tidak aktif, sehingga dipakai mesin aturan lokal. | Tetap bisa dipakai sebagai bantuan awal. Verifikasi lewat sumber resmi. |
+| Kamu keluar sendiri dan tidak bisa masuk | Akun bisa ditangguhkan oleh moderator atau admin. Akun yang ditangguhkan langsung dikeluarkan dari sesinya. | Hubungi pengelola ITIHIX untuk menanyakan statusnya. |
+| Menu Moderasi atau Dashboard admin tidak ada | Menu itu hanya untuk moderator dan admin. | Itu normal untuk akun User atau Terpercaya. |
 
 ---
 
@@ -545,9 +695,9 @@ Dibagi dua: apa yang melindungi **akun dan data pengguna**, dan apa yang melindu
 **Privasi dan kendali atas datamu**
 
 - Di *Pengaturan > Privasi* kamu bisa menyembunyikan tab Repost, Disukai, dan Komentar (hanya kamu yang bisa melihat), mengatur tampilan level, dan mematikan penerimaan pesan.
-- Pesan langsung (DM) hanya bisa dikirim antar pengguna yang **saling mengikuti**, dan penerima masih bisa menolak pesan lewat pengaturannya.
-- Kamu bisa menghapus postingan sendiri dan riwayat analisis ItihScan milikmu.
-- Kamu bisa melaporkan pengguna atau komentar (penipuan, penyamaran, spam, pelecehan, konten tidak pantas). Laporan ditangani moderator.
+- Pesan langsung (DM) hanya bisa dikirim antar pengguna yang **saling mengikuti**, dan penerima masih bisa menolak pesan lewat pengaturannya. Rincian: [Aturan pesan langsung (DM)](#aturan-pesan-langsung-dm).
+- Kamu bisa menghapus laporan sendiri dan riwayat analisis ItihScan AI milikmu.
+- Kamu bisa melaporkan pengguna atau komentar (penipuan, penyamaran, spam, pelecehan, konten tidak pantas). Laporan pengguna ditangani moderator.
 - Moderator meminta pelapor menyensor data pribadi (nomor rekening, telepon, alamat) sebelum laporan diterbitkan.
 
 **Yang perlu kamu lakukan**
@@ -555,7 +705,7 @@ Dibagi dua: apa yang melindungi **akun dan data pengguna**, dan apa yang melindu
 - Jangan membagikan kode verifikasi 6 digit ke siapa pun, termasuk yang mengaku admin ITIHIX.
 - Pakai kata sandi yang unik, bukan yang sama dengan akun lain.
 - Sensor data pribadi di tangkapan layar sebelum mengunggah laporan.
-- Jika AI aktif, teks atau gambar yang kamu kirim ke ItihScan dan iTISTANT diteruskan ke penyedia AI yang dipakai server. Jangan kirim data yang sangat sensitif.
+- Jika AI aktif, teks atau gambar yang kamu kirim ke ItihScan AI dan iTISTANT AI diteruskan ke penyedia AI yang dipakai server. Jangan kirim data yang sangat sensitif.
 
 ### Keamanan website
 
@@ -570,7 +720,7 @@ Dibagi dua: apa yang melindungi **akun dan data pengguna**, dan apa yang melindu
 | Spam dan serangan otomatis | Pembatas laju berbasis database per IP atau per pengguna (tabel di bawah). |
 | Penyalahgunaan upload | Tipe file dicek dari isinya (bukan ekstensi) dan hanya JPG, PNG, WebP, GIF, MP4, WebM, dan MOV yang diterima. Nama file diacak, gambar maksimal 8 MB, video 40 MB, 10 file per laporan, dan gambar raksasa ditolak. Gambar dikompres ulang di server. |
 | Eksekusi file upload | Folder `uploads/` punya `.htaccess` yang menolak PHP. Lampiran chat dikirim dengan `Content-Security-Policy: sandbox`. |
-| Jejak penyalahgunaan | Aktivitas penting (masuk, gagal masuk, perubahan, moderasi) dicatat di log aktivitas beserta IP. Postingan memakai soft-delete sehingga bisa dipulihkan admin. |
+| Jejak penyalahgunaan | Aktivitas penting (masuk, gagal masuk, perubahan, moderasi) dicatat di log aktivitas beserta IP. Laporan memakai soft-delete sehingga bisa dipulihkan admin. |
 
 **Pembatas laju (rate limit)**
 
@@ -584,8 +734,8 @@ Dibagi dua: apa yang melindungi **akun dan data pengguna**, dan apa yang melindu
 | Unggah SafeSnaps | 6 per jam |
 | Komentar | 10 per menit |
 | Pesan langsung | 20 per menit |
-| iTISTANT (chat AI) | 15 per menit |
-| ItihScan | 12 per 5 menit |
+| iTISTANT AI | 15 per menit |
+| ItihScan AI | 12 per 5 menit |
 | Soal kuis AI | 8 per 5 menit |
 | Laporkan pengguna | 5 per jam |
 
@@ -614,7 +764,7 @@ flowchart LR
 - Satu aplikasi PHP melayani halaman dan endpoint AJAX (`api/*.php`).
 - API key dan kata sandi hanya ada di server (`.env`), tidak pernah dikirim ke browser.
 - Data disimpan di MySQL. Perubahan skema dikelola lewat `migrations/`.
-- Penyedia AI bisa diganti lewat `.env` (`AI_PROVIDER`, `AI_BASE_URL`, `AI_MODEL`) tanpa ubah kode. Tanpa API key, ItihScan dan Chat AI memakai mesin aturan lokal.
+- Penyedia AI bisa diganti lewat `.env` (`AI_PROVIDER`, `AI_BASE_URL`, `AI_MODEL`) tanpa ubah kode. Tanpa API key, ItihScan AI dan iTISTANT AI memakai mesin aturan lokal.
 
 ---
 
@@ -659,6 +809,8 @@ itihix/
 
 ## Menjalankan di komputer sendiri
 
+Bagian ini untuk yang ingin memasang ITIHIX sendiri (developer, penguji, atau penilai). Pengguna website online tidak perlu membacanya.
+
 Yang kamu butuhkan:
 
 - **XAMPP atau Laragon** (sudah termasuk PHP 8.1+, Apache, dan MySQL/MariaDB). Unduh di [apachefriends.org](https://www.apachefriends.org) atau [laragon.org](https://laragon.org).
@@ -681,13 +833,13 @@ Yang kamu butuhkan:
    - **Lebih aman:** simpan sebagai `../itihix.env` (satu tingkat di atas folder aplikasi, di luar web root), atau tunjuk lewat variabel `ITIHIX_ENV_FILE`.
 6. **Pastikan folder `uploads/` bisa ditulis** oleh web server.
 7. Buka **http://localhost/itihix/** di browser, lalu daftar akun baru.
-8. **(Opsional) Jadikan akunmu admin atau moderator** lewat phpMyAdmin, tab SQL:
+8. **(Opsional, hanya untuk instalasi lokal) Jadikan akunmu admin atau moderator** lewat phpMyAdmin, tab SQL:
 
    ```sql
    UPDATE users SET role = 'admin' WHERE email = 'emailkamu@contoh.com';
    ```
 
-   Nilai peran yang tersedia: `user`, `trusted` (Terpercaya), `moderator`, `admin`.
+   Nilai peran yang tersedia: `user`, `trusted` (Terpercaya), `moderator`, `admin`. Di website online, peran hanya bisa diubah oleh admin ITIHIX lewat dashboard.
 
 ### Isi file `.env`
 
@@ -724,14 +876,16 @@ MAIL_DEV_LOG=0
 |---|---|---|
 | `ITIHIX_DB_*` | Koneksi database | Ya |
 | `ITIHIX_BASE_URL` | Folder URL aplikasi, tanpa slash di akhir. Kosongkan jika di root domain | Ya |
-| `AI_API_KEY`, `AI_PROVIDER`, `AI_BASE_URL`, `AI_MODEL` | AI sungguhan untuk ItihScan dan Chat AI (nama lama `ANTHROPIC_*` tetap dikenali) | Tidak |
+| `AI_API_KEY`, `AI_PROVIDER`, `AI_BASE_URL`, `AI_MODEL` | AI sungguhan untuk ItihScan AI dan iTISTANT AI (nama lama `ANTHROPIC_*` tetap dikenali) | Tidak |
 | `GOOGLE_*` | Login Google. Redirect URI = `https://DOMAIN/google_callback.php` (contoh di server kami: `https://itihix.my.id/google_callback.php`) | Tidak |
 | `SMTP_*` | Kode verifikasi email. Untuk Gmail pakai *App Password* (butuh verifikasi 2 langkah) | Tidak |
 | `MAIL_DEV_LOG` | `1` = kode verifikasi ditulis ke `includes/mail.log` (hanya untuk uji lokal) | Tidak |
 
 **Jangan pernah membagikan atau meng-commit file `.env`**, karena isinya kata sandi dan API key. File ini sudah ada di `.gitignore`.
 
-### Kalau ada masalah
+### Masalah saat memasang di komputer sendiri
+
+Untuk masalah saat memakai website (kode email, "terlalu banyak percobaan", DM gagal, dan sebagainya), lihat [Kalau ada masalah](#kalau-ada-masalah) di Panduan pengguna.
 
 | Masalah | Yang bisa dicoba |
 |---|---|
@@ -739,7 +893,7 @@ MAIL_DEV_LOG=0
 | Error koneksi database | Pastikan MySQL menyala, `database.sql` sudah diimpor ke database `itihix`, dan `ITIHIX_DB_USER` dan `ITIHIX_DB_PASS` benar. |
 | Upload gambar gagal | Pastikan folder `uploads/` bisa ditulis dan ukuran file tidak terlalu besar. |
 | Kode verifikasi email tidak sampai | Cek isi `SMTP_*`. Untuk uji lokal isi `MAIL_DEV_LOG=1`, lalu baca kodenya di `includes/mail.log`. |
-| ItihScan hanya memberi jawaban singkat | `AI_API_KEY` kosong atau salah, jadi dipakai mesin aturan lokal. |
+| ItihScan AI hanya memberi jawaban singkat | `AI_API_KEY` kosong atau salah, jadi dipakai mesin aturan lokal. |
 
 ---
 
@@ -767,12 +921,12 @@ ITIHIX adalah aplikasi PHP + MySQL dengan file upload, jadi butuh hosting yang m
 
 ## Keterbatasan
 
-- Tanpa API key, ItihScan dan Chat AI memakai mesin aturan lokal yang lebih sederhana dan tidak sepintar model AI.
+- Tanpa API key, ItihScan AI dan iTISTANT AI memakai mesin aturan lokal yang lebih sederhana dan tidak sepintar model AI.
 - Hasil analisis AI adalah **bantuan**, bukan kepastian. Selalu verifikasi lewat sumber resmi (bank, instansi, atau nomor resmi) sebelum mengambil tindakan.
 - Penyedia AI punya batas permintaan, dan ITIHIX membatasi pemakaian per hari lewat rate limit.
 - Pengiriman email bergantung pada konfigurasi SMTP (mis. Gmail App Password).
 - Belum ada verifikasi dua langkah (2FA) untuk login.
-- Belum ada tes otomatis; alur utama (login, unggah, kuis, ItihScan) diuji manual.
+- Belum ada tes otomatis; alur utama (login, unggah, kuis, ItihScan AI) diuji manual.
 
 ---
 
@@ -786,7 +940,7 @@ Penggunaan template, framework, library, aset, maupun kode sumber pihak ketiga d
 | [Font Awesome Free 6](https://fontawesome.com) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline (`includes/icons.php`, `assets/js/icons.js`) | Ikon: [CC BY 4.0](https://fontawesome.com/license/free) | Atribusi: Font Awesome by Fonticons, Inc. Ikon dipilih sebagian dan diwarnai lewat `currentColor`. Ikon fitur dan ikon peran di README (`docs/icons/*.svg`) juga berasal dari sini, diberi warna hitam dan latar putih |
 | [Lucide](https://lucide.dev) | Pustaka ikon. Ikon yang dipakai disalin sebagai SVG inline di SafeSnaps (`safesnaps.php`) | [ISC](https://github.com/lucide-icons/lucide/blob/main/LICENSE) | Hak cipta: Lucide Contributors (dan Cole Bemis untuk bagian turunan Feather) |
 | Google OAuth 2.0 / OpenID Connect | Login dengan Google (opsional) | Ketentuan layanan Google | Layanan eksternal via API |
-| Penyedia AI kompatibel OpenAI atau Anthropic | ItihScan AI dan Chat AI (opsional) | Ketentuan penyedia API | Layanan eksternal |
+| Penyedia AI kompatibel OpenAI atau Anthropic | ItihScan AI dan iTISTANT AI (opsional) | Ketentuan penyedia API | Layanan eksternal |
 | SMTP (mis. Gmail) | Kode verifikasi email (opsional) | Ketentuan penyedia | Layanan eksternal |
 
 Catatan:
@@ -795,12 +949,12 @@ Catatan:
 - **Pengecualian: ikon.** Ikon Font Awesome dan Lucide tetap pustaka pihak ketiga. Bedanya, ikon yang dipakai disalin ke kode sebagai SVG inline, bukan dimuat dari luar, jadi lisensi dan atribusinya dicantumkan di tabel di atas.
 - Pengiriman email (SMTP), migrasi, rate limit, dan seluruh logika aplikasi ditulis sendiri oleh tim.
 - Logo dan ikon fitur di `docs/icons/*.png` adalah salinan kecil dari `assets/img/` (diberi latar putih supaya terlihat di tema gelap GitHub).
-- Aset gambar di `assets/img/` (`logo.png`, `iTIHSCAN.png`, `iTISTANT_Ai.png`, `mod2p.png`, `sor.png`): **[ISI: dibuat sendiri oleh tim / sumber dan lisensi bila dari pihak lain]**
-- Alat bantu pengembangan (mis. asisten AI) yang dipakai membuat kode atau aset: **[ISI: sebutkan alat yang dipakai, atau hapus baris ini bila tidak ada]**
+- Aset gambar di `assets/img/` (`logo.png`, `iTIHSCAN.png`, `iTISTANT_Ai.png`, `mod2p.png`, `sor.png`): **[dibuat sendiri oleh tim]**
+- Alat bantu pengembangan (mis. asisten AI) yang dipakai membuat kode atau aset: **Claude untuk Asisten Kode, Chat GPT untuk Asisten UI/UX, Gemini untuk Asisten brainstorming**
 
 Kode ITIHIX sendiri dirilis dengan lisensi [MIT](LICENSE).
 
 ## Dokumentasi
 
-- `README.md` (file ini): fitur utama, cara menjalankan, petunjuk penggunaan, peran, level, dan keamanan.
+- `README.md` (file ini): fitur utama, cara menjalankan, panduan penggunaan, peran, level, dan keamanan.
 - Dokumentasi teknis pendukung: `database.sql` (skema basis data), `migrations/` (riwayat skema), `docs/nginx.conf.example` (konfigurasi Nginx), serta `.env.example` dan `config.local.php.example` (contoh konfigurasi).
