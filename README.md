@@ -94,35 +94,37 @@ Pesannya sejalan dengan tujuan aplikasi ini: sebelum percaya pada pesan, tautan,
 
 ### Fitur unggulan
 
-| | Fitur | Penjelasan singkat |
+Empat fitur ini adalah inti ITIHIX: dua untuk **melindungi diri sekarang** (ItihScan AI dan iTISTANT) dan dua untuk **berlatih agar tidak tertipu nanti** (Scam or Real? dan Mask of Deception 2P).
+
+| | Fitur | Penjelasan |
 |:---:|---|---|
-| <img src="docs/icons/itihscan.png" alt="ItihScan AI" width="40"> | **ItihScan AI** | Periksa pesan teks atau gambar (tangkapan layar chat, SMS, poster). Hasilnya: penipuan, mencurigakan, atau aman, lengkap dengan alasan dan langkah yang disarankan. Hasil otomatis jadi caption laporan berlabel *ItihScan AI* yang bisa diedit lalu diterbitkan. Tanpa API key AI, tetap jalan dengan mesin aturan lokal. |
-| <img src="docs/icons/itistant.png" alt="iTISTANT" width="40"> | **iTISTANT (Chat AI)** | Asisten untuk bertanya soal keamanan digital, bisa melampirkan file atau gambar. Riwayat obrolan tersimpan. |
-| <img src="docs/icons/scam-or-real.png" alt="Scam or Real?" width="40"> | **Kuis Scam or Real? (Asli/Palsu)** | Latihan membedakan pesan asli dan palsu bergaya chat WhatsApp, lengkap dengan penjelasan dan tanda bahayanya, plus streak dan riwayat. |
-| <img src="docs/icons/mask-of-deception.png" alt="Mask of Deception 2P" width="40"> | **Mask of Deception 2P** | Game chat untuk 2 pemain: satu pemain berperan sebagai penipu atau bukan, pemain lain menebak. Ada pencarian lawan otomatis, ruangan publik atau privat, batas waktu tiap giliran, dan riwayat match. |
+| <img src="docs/icons/itihscan.png" alt="ItihScan AI" width="110"> | **ItihScan AI**<br>*Periksa pesan mencurigakan* | **Apa itu:** pemeriksa penipuan untuk pesan yang baru kamu terima.<br><br>**Cara pakai:** tempel teks pesan, atau unggah gambar (tangkapan layar chat, SMS, atau poster).<br><br>**Hasil:** penilaian *Penipuan*, *Mencurigakan*, atau *Aman*, lengkap dengan alasan dan langkah yang sebaiknya kamu lakukan.<br><br>**Setelahnya:** hasil otomatis menjadi caption yang bisa kamu edit, lalu diterbitkan sebagai laporan berlabel *ItihScan AI* supaya orang lain ikut waspada.<br><br>**Perlu diingat:** tanpa API key AI, ItihScan memakai mesin aturan lokal (deteksi kata kunci dan pola modus) yang lebih sederhana. Hasilnya bantuan, bukan kepastian, jadi tetap verifikasi lewat sumber resmi. |
+| <img src="docs/icons/itistant.png" alt="iTISTANT" width="110"> | **iTISTANT (Chat AI)**<br>*Tanya soal keamanan digital* | **Apa itu:** asisten obrolan untuk pertanyaan seputar keamanan digital dan penipuan.<br><br>**Cara pakai:** ketik pertanyaanmu, misalnya *"Bagaimana cara tahu link bank palsu?"*. Kamu juga bisa melampirkan file atau gambar sebagai bahan pertanyaan.<br><br>**Hasil:** jawaban dan saran yang bisa langsung dipraktikkan. Riwayat obrolan tersimpan, jadi bisa dibuka lagi kapan saja.<br><br>**Bedanya dengan ItihScan:** ItihScan menilai satu pesan tertentu, iTISTANT untuk bertanya dan berdiskusi secara umum. |
+| <img src="docs/icons/scam-or-real.png" alt="Scam or Real?" width="110"> | **Kuis Scam or Real?**<br>*Asli atau Palsu* | **Apa itu:** latihan mengenali penipuan lewat pesan bergaya chat WhatsApp.<br><br>**Cara main:** baca pesannya, lalu tebak: *asli* atau *penipuan*.<br><br>**Hasil:** setiap soal dilengkapi penjelasan dan tanda bahaya yang perlu diwaspadai, sehingga kamu belajar dari jawaban benar maupun salah.<br><br>**Hadiah:** +10 sampai +20 XP per jawaban benar, ditambah streak dan riwayat. Mengerjakan 5 soal menyelesaikan salah satu Misi Harian. |
+| <img src="docs/icons/mask-of-deception.png" alt="Mask of Deception 2P" width="110"> | **Mask of Deception 2P**<br>*Game tebak penipu* | **Apa itu:** game chat untuk 2 pemain yang melatih kepekaan terhadap gaya bicara penipu.<br><br>**Cara main:** satu pemain berperan sebagai penipu atau bukan (peran dirahasiakan), pemain lain mengobrol lalu menebak.<br><br>**Mencari lawan:** otomatis, atau lewat ruangan publik dan privat untuk bermain bersama teman.<br><br>**Aturan:** main bergiliran dengan batas waktu tiap giliran. Riwayat match tersimpan, dan menyelesaikan 1 ronde menyelesaikan salah satu Misi Harian. |
 
 ### Fitur lainnya
 
 | | Fitur | Penjelasan singkat |
 |:---:|---|---|
-| <img src="docs/icons/home.svg" alt="Beranda" width="40"> | **Beranda (feed komunitas)** | Laporan yang sudah terbit dalam tiga tab: *Untuk kamu*, *Terbaru*, dan *Mengikuti*. Laporan yang diperiksa moderator bertanda terverifikasi. Bisa disukai, di-repost, disimpan, dibagikan, dan dikomentari. |
-| <img src="docs/icons/compass.svg" alt="Jelajahi" width="40"> | **Jelajahi** | Cari laporan lewat top hashtag, kategori, jenis modus, atau pencarian. Label bisa diklik seperti hashtag. |
-| <img src="docs/icons/film.svg" alt="SafeSnaps" width="40"> | **SafeSnaps** | Feed ringkas bergaya reels untuk konten edukasi dan peringatan. Unggahan masuk antrean moderasi lebih dulu. |
-| <img src="docs/icons/flag.svg" alt="Laporan" width="40"> | **Laporan dan label** | Kirim laporan lengkap dengan kategori dan jenis modus. Satu laporan boleh punya beberapa label: **Penipuan**, **Mencurigakan**, **Klarifikasi**, dan **Edukasi**. Moderator memberi label akhir dan tanda "✓ Diverifikasi moderator". Laporan yang sudah dikirim bisa diedit. |
-| <img src="docs/icons/trophy.svg" alt="Profil" width="40"> | **Profil, level, dan XP** | Setiap aktivitas menambah XP. Level maksimal 110 dengan gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Ada profil, follow, pesan langsung (DM), notifikasi, dan pengaturan privasi. |
-| <img src="docs/icons/target.svg" alt="Misi Harian" width="40"> | **Misi Harian (Quest)** | Tiga misi yang di-reset tiap hari: 5 soal kuis, 1 ronde Mask of Deception 2P, dan 1 laporan. Selesaikan ketiganya untuk bonus **+250 XP**. Kemajuannya tampil di kartu *Misi hari ini* pada kolom kanan. |
-| <img src="docs/icons/key.svg" alt="Akun" width="40"> | **Akun** | Daftar dengan email (kode verifikasi 6 digit) atau Google, plus fitur lupa dan reset kata sandi. |
-| <img src="docs/icons/square-check.svg" alt="Moderasi" width="40"> | **Moderasi dan admin** | Antrean moderasi (setujui, minta klarifikasi, atau tolak), dashboard admin, kelola pengguna dan peran, serta log aktivitas. |
+| <img src="docs/icons/home.svg" alt="Beranda" width="64"> | **Beranda (feed komunitas)** | Laporan yang sudah terbit dalam tiga tab: *Untuk kamu*, *Terbaru*, dan *Mengikuti*. Laporan yang diperiksa moderator bertanda terverifikasi. Bisa disukai, di-repost, disimpan, dibagikan, dan dikomentari. |
+| <img src="docs/icons/compass.svg" alt="Jelajahi" width="64"> | **Jelajahi** | Cari laporan lewat top hashtag, kategori, jenis modus, atau pencarian. Label bisa diklik seperti hashtag. |
+| <img src="docs/icons/film.svg" alt="SafeSnaps" width="64"> | **SafeSnaps** | Feed ringkas bergaya reels untuk konten edukasi dan peringatan. Unggahan masuk antrean moderasi lebih dulu. |
+| <img src="docs/icons/flag.svg" alt="Laporan" width="64"> | **Laporan dan label** | Kirim laporan lengkap dengan kategori dan jenis modus. Satu laporan boleh punya beberapa label: **Penipuan**, **Mencurigakan**, **Klarifikasi**, dan **Edukasi**. Moderator memberi label akhir dan tanda "✓ Diverifikasi moderator". Laporan yang sudah dikirim bisa diedit. |
+| <img src="docs/icons/trophy.svg" alt="Profil" width="64"> | **Profil, level, dan XP** | Setiap aktivitas menambah XP. Level maksimal 110 dengan gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Ada profil, follow, pesan langsung (DM), notifikasi, dan pengaturan privasi. |
+| <img src="docs/icons/target.svg" alt="Misi Harian" width="64"> | **Misi Harian (Quest)** | Tiga misi yang di-reset tiap hari: 5 soal kuis, 1 ronde Mask of Deception 2P, dan 1 laporan. Selesaikan ketiganya untuk bonus **+250 XP**. Kemajuannya tampil di kartu *Misi hari ini* pada kolom kanan. |
+| <img src="docs/icons/key.svg" alt="Akun" width="64"> | **Akun** | Daftar dengan email (kode verifikasi 6 digit) atau Google, plus fitur lupa dan reset kata sandi. |
+| <img src="docs/icons/square-check.svg" alt="Moderasi" width="64"> | **Moderasi dan admin** | Antrean moderasi (setujui, minta klarifikasi, atau tolak), dashboard admin, kelola pengguna dan peran, serta log aktivitas. |
 
 ### Peran
 
 | | Peran | Bisa apa |
 |:---:|---|---|
-| <img src="docs/icons/guest.svg" alt="Guest" width="40"> | Guest (tamu) | Belum masuk. Hanya bisa membaca laporan yang sudah terbit di Beranda dan halaman detail laporan, serta mendaftar atau masuk. |
-| <img src="docs/icons/user.svg" alt="User" width="40"> | User | Semua fitur komunitas. Laporan masuk antrean moderasi. |
-| <img src="docs/icons/trusted.svg" alt="Terpercaya" width="40"> | Terpercaya (`trusted`) | Fitur user, tetapi laporannya **langsung terbit** tanpa antrean dan diberi lencana *Pelapor Terverifikasi*. XP "laporan disetujui" langsung didapat. |
-| <img src="docs/icons/moderator.svg" alt="Moderator" width="40"> | Moderator | Fitur user + antrean moderasi. Laporannya langsung terbit. Bisa memberi atau mencabut status Terpercaya pada user. |
-| <img src="docs/icons/admin.svg" alt="Admin" width="40"> | Admin | Fitur moderator + dashboard, kelola akun dan peran, hapus/pulihkan postingan, lihat seluruh log. |
+| <img src="docs/icons/guest.svg" alt="Guest" width="64"> | Guest (tamu) | Belum masuk. Hanya bisa membaca laporan yang sudah terbit di Beranda dan halaman detail laporan, serta mendaftar atau masuk. |
+| <img src="docs/icons/user.svg" alt="User" width="64"> | User | Semua fitur komunitas. Laporan masuk antrean moderasi. |
+| <img src="docs/icons/trusted.svg" alt="Terpercaya" width="64"> | Terpercaya (`trusted`) | Fitur user, tetapi laporannya **langsung terbit** tanpa antrean dan diberi lencana *Pelapor Terverifikasi*. XP "laporan disetujui" langsung didapat. |
+| <img src="docs/icons/moderator.svg" alt="Moderator" width="64"> | Moderator | Fitur user + antrean moderasi. Laporannya langsung terbit. Bisa memberi atau mencabut status Terpercaya pada user. |
+| <img src="docs/icons/admin.svg" alt="Admin" width="64"> | Admin | Fitur moderator + dashboard, kelola akun dan peran, hapus/pulihkan postingan, lihat seluruh log. |
 
 Status Terpercaya diberikan oleh moderator atau admin lewat halaman profil pengguna atau halaman moderasi, dan bisa dicabut kapan saja.
 
