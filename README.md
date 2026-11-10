@@ -128,6 +128,17 @@ Empat fitur ini adalah inti ITIHIX: dua untuk **melindungi diri sekarang** (Itih
 
 Status Terpercaya diberikan oleh moderator atau admin lewat halaman profil pengguna atau halaman moderasi, dan bisa dicabut kapan saja.
 
+### Kenapa ada level dan Misi Harian?
+
+Komunitas hanya hidup kalau penggunanya aktif. Karena itu ITIHIX memakai dua mekanisme yang sudah terbukti membuat orang betah di media sosial dan game, tetapi diarahkan ke hal yang bermanfaat:
+
+| Mekanisme | Tujuan |
+|---|---|
+| **Level dan XP** | Memberi **semangat** bagi pengguna untuk aktif mengunggah laporan dan memakai berbagai fitur. Setiap aktivitas yang berguna (melapor, belajar lewat kuis, memeriksa pesan dengan ItihScan, berkomentar) dihargai dengan XP, lalu naik level dan mendapat gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Pengguna merasa usahanya diakui, sehingga lebih termotivasi menjaga komunitas. |
+| **Misi Harian (Quest)** | Mendorong pengguna **berkunjung ke website setiap hari** dan mencoba fitur yang ada: kuis, game, dan membuat laporan. Misi di-reset tiap hari dan ada bonus +250 XP bila ketiganya selesai, sehingga muncul kebiasaan harian yang membuat pengguna rutin belajar dan melapor. |
+
+Agar tetap sehat, XP dari semua fitur dibatasi maksimal 250 per hari. Jadi yang dihargai adalah keaktifan yang konsisten, bukan spam.
+
 ### Level dan XP
 
 XP untuk naik dari level L = `100 + 10×(L−1)`.
