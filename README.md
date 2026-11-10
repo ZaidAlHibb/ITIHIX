@@ -438,7 +438,7 @@ ITIHIX
     └── Keluar
 ```
 
-#### 🏠 Menu utama
+#### Menu utama
 
 Tempat membaca dan mencari laporan komunitas.
 
@@ -448,7 +448,7 @@ Tempat membaca dan mencari laporan komunitas.
 | **Jelajahi** | Cari lewat hashtag, kategori, dan jenis modus | User ke atas |
 | **SafeSnaps** | Feed ringkas bergaya reels untuk edukasi dan peringatan | User ke atas |
 
-#### 🛡️ Perlindungan Digital
+#### Perlindungan Digital
 
 Empat fitur unggulan: dua untuk melindungi diri sekarang, dua untuk berlatih.
 
@@ -459,7 +459,7 @@ Empat fitur unggulan: dua untuk melindungi diri sekarang, dua untuk berlatih.
 | **Scam or Real?** | Kuis membedakan pesan asli dan palsu | User ke atas |
 | **Mask of Deception 2P** | Game tebak penipu untuk 2 pemain | User ke atas |
 
-#### 👥 Komunitas
+#### Komunitas
 
 Berkontribusi dan berinteraksi dengan pengguna lain.
 
@@ -469,7 +469,7 @@ Berkontribusi dan berinteraksi dengan pengguna lain.
 | **Pesan** | Pesan langsung (DM) | User ke atas |
 | **Notifikasi** | Pemberitahuan aktivitas | User ke atas |
 
-#### ⚖️ Moderasi
+#### Moderasi
 
 Kelompok ini tidak muncul untuk Guest, User, maupun Terpercaya.
 
@@ -478,7 +478,7 @@ Kelompok ini tidak muncul untuk Guest, User, maupun Terpercaya.
 | **Antrean moderasi** | Setujui, minta klarifikasi, atau tolak laporan | Moderator dan Admin |
 | **Dashboard admin** | Kelola pengguna, peran, postingan, dan log | Admin |
 
-#### 👤 Akun
+#### Akun
 
 Pengelolaan identitas dan preferensi pribadi.
 
