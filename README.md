@@ -29,6 +29,7 @@ Cukup buka website, daftar akun (atau masuk dengan Google), dan semua fitur bisa
 ## Daftar isi
 
 - [Coba sekarang](#coba-sekarang)
+- [Apa itu ITIHIX?](#apa-itu-itihix)
 - [Kenapa ITIHIX dibuat?](#kenapa-itihix-dibuat)
 - [Inspirasi ITIHIX](#inspirasi-itihix)
 - [Asal nama ITIHIX](#asal-nama-itihix)
@@ -36,6 +37,9 @@ Cukup buka website, daftar akun (atau masuk dengan Google), dan semua fitur bisa
 - [Fitur](#fitur)
 - [Alur pemakaian](#alur-pemakaian)
 - [Coba yuk ITIHIX!](#coba-yuk-itihix)
+- [Keamanan](#keamanan)
+  - [Keamanan pengguna](#keamanan-pengguna)
+  - [Keamanan website](#keamanan-website)
 - [Cara kerjanya](#cara-kerjanya)
 - [Teknologi](#teknologi)
 - [Isi folder](#isi-folder)
@@ -46,6 +50,24 @@ Cukup buka website, daftar akun (atau masuk dengan Google), dan semua fitur bisa
 - [Sumber daya pihak ketiga dan lisensi](#sumber-daya-pihak-ketiga-dan-lisensi)
 - [Dokumentasi](#dokumentasi)
 - [Tim](#tim)
+
+---
+
+## Apa itu ITIHIX?
+
+ITIHIX adalah website komunitas untuk melawan penipuan digital bersama-sama. Di sini warga bisa membaca laporan penipuan terbaru, melapor saat menemukan atau mengalami modus penipuan, dan memeriksa pesan mencurigakan sebelum terlanjur percaya.
+
+Tampilannya akrab seperti media sosial (feed, suka, komentar, follow, pesan langsung), tetapi isinya dijaga ketat: hanya laporan dan konten edukasi tentang penipuan yang boleh diunggah. Laporan dari pengguna biasa ditinjau moderator lebih dulu, lalu diberi label dan tanda terverifikasi, sehingga pembaca tahu mana yang bisa dipegang.
+
+Di website ini kamu bisa:
+
+- **Membaca dan mencari** laporan penipuan terbaru, lengkap dengan kategori, jenis modus, dan label.
+- **Melapor** modus yang kamu temui supaya orang lain tidak jadi korban berikutnya.
+- **Memeriksa** pesan atau gambar yang mencurigakan dengan bantuan AI, atau bertanya soal keamanan digital.
+- **Berlatih** mengenali penipuan lewat kuis dan game, sambil mengumpulkan XP dan naik level.
+- **Berinteraksi** dengan pengguna lain lewat komentar, follow, dan pesan langsung.
+
+Tanpa akun pun, siapa saja bisa membaca laporan yang sudah terbit. Fitur lainnya terbuka setelah daftar atau masuk.
 
 ---
 
@@ -135,7 +157,7 @@ Komunitas hanya hidup kalau penggunanya aktif, dan hanya berguna kalau isinya bi
 | Mekanisme | Tujuan |
 |---|---|
 | **Level dan XP** | Memberi **semangat** bagi pengguna untuk aktif mengunggah laporan dan memakai berbagai fitur. Setiap aktivitas yang berguna (melapor, belajar lewat kuis, memeriksa pesan dengan ItihScan, berkomentar) dihargai dengan XP, lalu naik level dan mendapat gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Pengguna merasa usahanya diakui, sehingga lebih termotivasi menjaga komunitas. |
-| **Level sebagai tanda kepercayaan pelapor** | Level juga menjadi **gambaran rekam jejak** pelapor. Level dan gelar tampil di profil dan laporan, sehingga pembaca dan moderator bisa menilai seberapa berpengalaman seorang pelapor. XP terbesar datang dari laporan yang **disetujui moderator**, jadi level tinggi umumnya berarti pelapor aktif dan laporannya sering terbukti benar. |
+| **Level sebagai tanda kepercayaan pelapor** | Level juga menjadi **gambaran rekam jejak** pelapor. Level dan gelar tampil di profil dan di postingan (kecuali pengguna menyembunyikannya lewat pengaturan privasi), sehingga pembaca dan moderator bisa menilai seberapa berpengalaman seorang pelapor. XP terbesar datang dari laporan yang **disetujui moderator**, jadi level tinggi umumnya berarti pelapor aktif dan laporannya sering terbukti benar. |
 | **Misi Harian (Quest)** | Mendorong pengguna **berkunjung ke website setiap hari** dan mencoba fitur yang ada: kuis, game, dan membuat laporan. Misi di-reset tiap hari dan ada bonus +250 XP bila ketiganya selesai, sehingga muncul kebiasaan harian yang membuat pengguna rutin belajar dan melapor. |
 
 Agar tetap sehat, XP dari semua fitur dibatasi maksimal 250 per hari. Jadi yang dihargai adalah keaktifan yang konsisten, bukan spam.
@@ -162,6 +184,7 @@ Level bukan hanya hiasan. Level menunjukkan **seberapa bisa dipercaya** seorang 
 
 - **Bagi pembaca:** level dan gelar di samping nama pelapor membantu menilai laporan. Laporan dari *Pakar Anti-Penipuan* atau *Tameng Digital* punya rekam jejak yang lebih panjang daripada akun yang baru bergabung.
 - **Bagi moderator:** level membantu melihat sekilas riwayat pelapor saat meninjau antrean moderasi, dan menjadi bahan pertimbangan sebelum memberi status Terpercaya.
+- **Bisa disembunyikan:** pengguna boleh mematikan tampilan level di postingan lewat *Pengaturan > Privasi*, jadi level adalah petunjuk tambahan, bukan satu-satunya dasar menilai laporan.
 - **Sulit dipalsukan:** karena bobot XP terbesar ada pada laporan yang disetujui (+20) dan XP harian dibatasi 250, level tinggi tidak bisa diraih lewat spam.
 
 Level berbeda dengan status **Terpercaya**. Level naik otomatis lewat aktivitas, sedangkan status Terpercaya (laporan langsung terbit dan lencana *Pelapor Terverifikasi*) tetap diberikan manual oleh moderator atau admin. Level tinggi tidak otomatis membuat laporan terbit tanpa moderasi.
@@ -177,15 +200,6 @@ Kartu **Misi hari ini** di kolom kanan menampilkan tiga misi. Kemajuan dihitung 
 | Buat 1 laporan | Kirim 1 laporan (+5 XP, +20 XP bila disetujui) |
 
 Kalau ketiganya selesai, kamu mendapat bonus **+250 XP** satu kali per hari. Bonus ini terpisah dari batas XP harian: XP dari semua fitur (laporan, kuis, ItihScan, komentar, game) dibatasi maksimal **250 per hari**.
-
-### Keamanan
-
-- Prepared statements PDO (anti SQL injection) dan `password_hash` untuk sandi.
-- Token CSRF di semua permintaan POST.
-- Validasi tipe MIME dan ukuran file upload; folder `uploads/` tidak bisa menjalankan PHP.
-- Rate limit berbasis database per IP, pengguna, dan akun (login, chat, deteksi, komentar, laporan).
-- `.htaccess` menolak akses ke `.env`, `.sql`, `.md`, dan folder internal lain, plus header keamanan.
-- Cookie sesi `Secure` di HTTPS, soft-delete, dan log audit.
 
 ---
 
@@ -510,6 +524,88 @@ Pengelolaan identitas dan preferensi pribadi.
 
 ---
 
+## Keamanan
+
+Dibagi dua: apa yang melindungi **akun dan data pengguna**, dan apa yang melindungi **website dan servernya**.
+
+### Keamanan pengguna
+
+**Akun dan masuk**
+
+| Perlindungan | Cara kerjanya |
+|---|---|
+| Verifikasi email | Akun baru baru dibuat setelah kamu memasukkan kode 6 digit dari email. Kode berlaku 10 menit, salah maksimal 5 kali (lalu harus minta kode baru), dan kirim ulang diberi jeda 60 detik. |
+| Kata sandi | Minimal 8 karakter. Disimpan sebagai hash (`password_hash`), tidak pernah sebagai teks asli. Kode verifikasi juga hanya disimpan sebagai hash. |
+| Batas percobaan masuk | Maksimal 8 percobaan per akun dan 30 per IP dalam 10 menit. Pesan galat sengaja dibuat sama, jadi orang luar tidak bisa menebak apakah suatu akun ada. Percobaan gagal dicatat di log. |
+| Ubah sandi dan email | Mengganti kata sandi atau email meminta kata sandi saat ini. Email baru harus diverifikasi dengan kode lebih dulu. |
+| Lupa sandi | Lewat kode 6 digit yang dikirim ke email, dengan batas permintaan per IP. |
+| Login Google | Memakai `state` acak untuk mencegah pemalsuan permintaan, dan hanya menerima email yang sudah diverifikasi Google. |
+| Sesi | Cookie sesi `HttpOnly`, `SameSite=Lax`, dan `Secure` di HTTPS. ID sesi diganti setiap kali masuk. Akun yang ditangguhkan langsung dikeluarkan dari sesinya. |
+
+**Privasi dan kendali atas datamu**
+
+- Di *Pengaturan > Privasi* kamu bisa menyembunyikan tab Repost, Disukai, dan Komentar (hanya kamu yang bisa melihat), mengatur tampilan level, dan mematikan penerimaan pesan.
+- Pesan langsung (DM) hanya bisa dikirim antar pengguna yang **saling mengikuti**, dan penerima masih bisa menolak pesan lewat pengaturannya.
+- Kamu bisa menghapus postingan sendiri dan riwayat analisis ItihScan milikmu.
+- Kamu bisa melaporkan pengguna atau komentar (penipuan, penyamaran, spam, pelecehan, konten tidak pantas). Laporan ditangani moderator.
+- Moderator meminta pelapor menyensor data pribadi (nomor rekening, telepon, alamat) sebelum laporan diterbitkan.
+
+**Yang perlu kamu lakukan**
+
+- Jangan membagikan kode verifikasi 6 digit ke siapa pun, termasuk yang mengaku admin ITIHIX.
+- Pakai kata sandi yang unik, bukan yang sama dengan akun lain.
+- Sensor data pribadi di tangkapan layar sebelum mengunggah laporan.
+- Jika AI aktif, teks atau gambar yang kamu kirim ke ItihScan dan iTISTANT diteruskan ke penyedia AI yang dipakai server. Jangan kirim data yang sangat sensitif.
+
+### Keamanan website
+
+**Aplikasi**
+
+| Ancaman | Perlindungan |
+|---|---|
+| SQL injection | Semua query memakai parameter lewat PDO. |
+| XSS | Teks yang tampil di halaman di-escape dengan `htmlspecialchars`. |
+| CSRF | Token acak per sesi diperiksa (`hash_equals`) di semua form dan endpoint API yang mengubah data. |
+| Akses tanpa izin | Setiap halaman dan API memeriksa peran di sisi server (`require_login`, `require_role`). Halaman moderator hanya untuk moderator dan admin, dashboard hanya untuk admin, dan moderator tidak bisa mengelola sesama moderator atau admin. |
+| Spam dan serangan otomatis | Pembatas laju berbasis database per IP atau per pengguna (tabel di bawah). |
+| Penyalahgunaan upload | Tipe file dicek dari isinya (bukan ekstensi) dan hanya JPG, PNG, WebP, GIF, MP4, WebM, dan MOV yang diterima. Nama file diacak, gambar maksimal 8 MB, video 40 MB, 10 file per laporan, dan gambar raksasa ditolak. Gambar dikompres ulang di server. |
+| Eksekusi file upload | Folder `uploads/` punya `.htaccess` yang menolak PHP. Lampiran chat dikirim dengan `Content-Security-Policy: sandbox`. |
+| Jejak penyalahgunaan | Aktivitas penting (masuk, gagal masuk, perubahan, moderasi) dicatat di log aktivitas beserta IP. Postingan memakai soft-delete sehingga bisa dipulihkan admin. |
+
+**Pembatas laju (rate limit)**
+
+| Aksi | Batas |
+|---|---|
+| Masuk | 8 per akun dan 30 per IP, per 10 menit |
+| Daftar | 5 per jam |
+| Kirim ulang kode email | 5 per jam |
+| Reset kata sandi | 10 per jam per IP |
+| Kirim laporan | 8 per jam |
+| Unggah SafeSnaps | 6 per jam |
+| Komentar | 10 per menit |
+| Pesan langsung | 20 per menit |
+| iTISTANT (chat AI) | 15 per menit |
+| ItihScan | 12 per 5 menit |
+| Soal kuis AI | 8 per 5 menit |
+| Laporkan pengguna | 5 per jam |
+
+**Server dan konfigurasi**
+
+- `.htaccess` mematikan daftar isi folder (`Options -Indexes`), menolak akses ke file tersembunyi, `.sql`, `.md`, `.log`, `.bak`, `.ini`, dan memblokir folder internal (`migrations`, `docs`, `tests`, `vendor`).
+- Header keamanan: `X-Content-Type-Options: nosniff`, `X-Frame-Options: SAMEORIGIN`, `Referrer-Policy`, dan `Permissions-Policy` (kamera, mikrofon, dan lokasi dimatikan).
+- Kata sandi database, API key, dan kredensial SMTP hanya ada di `.env` di server (idealnya di luar web root), tidak pernah dikirim ke browser, dan tidak ikut Git (`.gitignore`).
+- Untuk Nginx tersedia contoh pengaman di `docs/nginx.conf.example`.
+
+**Belum tersedia**
+
+- Verifikasi dua langkah (2FA) untuk login.
+- Content Security Policy untuk seluruh situs (saat ini hanya untuk lampiran chat).
+- Audit keamanan oleh pihak ketiga dan tes otomatis.
+
+Menemukan celah keamanan? Mohon jangan dipublikasikan dulu. Kabari tim ITIHIX secara langsung supaya bisa diperbaiki lebih dulu.
+
+---
+
 ## Cara kerjanya
 
 ```mermaid
@@ -683,6 +779,7 @@ ITIHIX adalah aplikasi PHP + MySQL dengan file upload, jadi butuh hosting yang m
 - Hasil analisis AI adalah **bantuan**, bukan kepastian. Selalu verifikasi lewat sumber resmi (bank, instansi, atau nomor resmi) sebelum mengambil tindakan.
 - Penyedia AI punya batas permintaan, dan ITIHIX membatasi pemakaian per hari lewat rate limit.
 - Pengiriman email bergantung pada konfigurasi SMTP (mis. Gmail App Password).
+- Belum ada verifikasi dua langkah (2FA) untuk login.
 - Belum ada tes otomatis; alur utama (login, unggah, kuis, ItihScan) diuji manual.
 
 ---
