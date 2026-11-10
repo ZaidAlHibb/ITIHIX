@@ -30,7 +30,6 @@ Cukup buka website, daftar akun (atau masuk dengan Google), dan semua fitur bisa
 
 - [Coba sekarang](#coba-sekarang)
 - [Kenapa ITIHIX dibuat?](#kenapa-itihix-dibuat)
-- [Inspirasi ITIHIX](#inspirasi-itihix)
 - [Asal nama ITIHIX](#asal-nama-itihix)
 - [Untuk siapa?](#untuk-siapa)
 - [Fitur](#fitur)
@@ -61,14 +60,6 @@ Masalah yang kami lihat:
 
 Karena itu kami membuat ITIHIX: tempat warga saling melapor, saling memverifikasi, dan belajar mengenali penipuan. Laporan diperiksa moderator dan diberi label, sehingga pembaca tahu mana yang sudah terverifikasi. Kalau masih ragu, ItihScan AI bisa langsung menganalisis pesan atau gambar yang kamu terima.
 
-## Inspirasi ITIHIX
-
-ITIHIX terinspirasi dari kebiasaan banyak orang yang sangat betah, bahkan candu, memakai media sosial seperti **Reddit, X (Twitter), Instagram**, dan sejenisnya. Kekuatan platform-platform itu ada pada **komunitasnya**: orang kembali terus karena merasa ada teman yang saling berbagi, menanggapi, dan menjaga satu sama lain.
-
-Kami mengambil daya tarik yang sama, tetapi mengarahkannya ke hal yang berguna. ITIHIX dibuat dengan format yang akrab (feed, suka, komentar, repost, follow, DM), namun dengan aturan yang **ketat dan syarat khusus**: konten yang boleh diunggah hanya **laporan atau hal yang berkaitan dengan penipuan**. Tidak ada tempat untuk konten acak, sehingga setiap isi feed relevan dan bernilai.
-
-Dengan begitu, kebiasaan "scroll dan berinteraksi" berubah menjadi kebiasaan saling menjaga. Antar pengguna menjadi **guardian (penjaga) di dunia digital**: yang satu melapor, yang lain memverifikasi dan mengingatkan, sehingga calon korban berikutnya bisa terselamatkan.
-
 ## Asal nama ITIHIX
 
 Nama **ITIHIX** terdiri dari dua bagian:
@@ -92,54 +83,192 @@ Pesannya sejalan dengan tujuan aplikasi ini: sebelum percaya pada pesan, tautan,
 
 ## Fitur
 
-### Fitur unggulan
+<table>
+<tr>
+<td width="80" align="center" valign="top">
 
-Empat fitur ini adalah inti ITIHIX: dua untuk **melindungi diri sekarang** (ItihScan AI dan iTISTANT) dan dua untuk **berlatih agar tidak tertipu nanti** (Scam or Real? dan Mask of Deception 2P).
+<img src="docs/icons/home.svg" alt="Beranda" width="56">
 
-| | Fitur | Penjelasan |
-|:---:|---|---|
-| <img src="docs/icons/itihscan.png" alt="ItihScan AI" width="110"> | **ItihScan AI**<br>*Periksa pesan mencurigakan* | **Apa itu:** pemeriksa penipuan untuk pesan yang baru kamu terima.<br><br>**Cara pakai:** tempel teks pesan, atau unggah gambar (tangkapan layar chat, SMS, atau poster).<br><br>**Hasil:** penilaian *Penipuan*, *Mencurigakan*, atau *Aman*, lengkap dengan alasan dan langkah yang sebaiknya kamu lakukan.<br><br>**Setelahnya:** hasil otomatis menjadi caption yang bisa kamu edit, lalu diterbitkan sebagai laporan berlabel *ItihScan AI* supaya orang lain ikut waspada.<br><br>**Perlu diingat:** tanpa API key AI, ItihScan memakai mesin aturan lokal (deteksi kata kunci dan pola modus) yang lebih sederhana. Hasilnya bantuan, bukan kepastian, jadi tetap verifikasi lewat sumber resmi. |
-| <img src="docs/icons/itistant.png" alt="iTISTANT" width="110"> | **iTISTANT (Chat AI)**<br>*Tanya soal keamanan digital* | **Apa itu:** asisten obrolan untuk pertanyaan seputar keamanan digital dan penipuan.<br><br>**Cara pakai:** ketik pertanyaanmu, misalnya *"Bagaimana cara tahu link bank palsu?"*. Kamu juga bisa melampirkan file atau gambar sebagai bahan pertanyaan.<br><br>**Hasil:** jawaban dan saran yang bisa langsung dipraktikkan. Riwayat obrolan tersimpan, jadi bisa dibuka lagi kapan saja.<br><br>**Bedanya dengan ItihScan:** ItihScan menilai satu pesan tertentu, iTISTANT untuk bertanya dan berdiskusi secara umum. |
-| <img src="docs/icons/scam-or-real.png" alt="Scam or Real?" width="110"> | **Kuis Scam or Real?**<br>*Asli atau Palsu* | **Apa itu:** latihan mengenali penipuan lewat pesan bergaya chat WhatsApp.<br><br>**Soal dibuat AI:** soal di-generate oleh AI sehingga selalu **bervariasi** dan tidak monoton, dengan skenario dan modus yang berbeda tiap sesi. Jika AI sedang tidak tersedia, soal diambil dari bank soal bawaan.<br><br>**Cara main:** baca pesannya, lalu tebak: *asli* atau *penipuan*.<br><br>**Hasil:** setiap soal dilengkapi penjelasan dan tanda bahaya yang perlu diwaspadai, sehingga kamu belajar dari jawaban benar maupun salah.<br><br>**Hadiah:** +10 sampai +20 XP per jawaban benar, ditambah streak dan riwayat. Mengerjakan 5 soal menyelesaikan salah satu Misi Harian. |
-| <img src="docs/icons/mask-of-deception.png" alt="Mask of Deception 2P" width="110"> | **Mask of Deception 2P**<br>*Game tebak penipu* | **Apa itu:** game chat untuk 2 pemain yang melatih kepekaan terhadap gaya bicara penipu.<br><br>**Cara main:** satu pemain berperan sebagai penipu atau bukan (peran dirahasiakan), pemain lain mengobrol lalu menebak.<br><br>**Mencari lawan:** otomatis, atau lewat ruangan publik dan privat untuk bermain bersama teman.<br><br>**Aturan:** main bergiliran dengan batas waktu tiap giliran. Riwayat match tersimpan, dan menyelesaikan 1 ronde menyelesaikan salah satu Misi Harian. |
+</td>
+<td valign="top">
 
-### Fitur lainnya
+**Beranda (feed komunitas)**
 
-| | Fitur | Penjelasan singkat |
-|:---:|---|---|
-| <img src="docs/icons/home.svg" alt="Beranda" width="64"> | **Beranda (feed komunitas)** | Laporan yang sudah terbit dalam tiga tab: *Untuk kamu*, *Terbaru*, dan *Mengikuti*. Laporan yang diperiksa moderator bertanda terverifikasi. Bisa disukai, di-repost, disimpan, dibagikan, dan dikomentari. |
-| <img src="docs/icons/compass.svg" alt="Jelajahi" width="64"> | **Jelajahi** | Cari laporan lewat top hashtag, kategori, jenis modus, atau pencarian. Label bisa diklik seperti hashtag. |
-| <img src="docs/icons/film.svg" alt="SafeSnaps" width="64"> | **SafeSnaps** | Feed ringkas bergaya reels untuk konten edukasi dan peringatan. Unggahan masuk antrean moderasi lebih dulu. |
-| <img src="docs/icons/flag.svg" alt="Laporan" width="64"> | **Laporan dan label** | Kirim laporan lengkap dengan kategori dan jenis modus. Satu laporan boleh punya beberapa label: **Penipuan**, **Mencurigakan**, **Klarifikasi**, dan **Edukasi**. Moderator memberi label akhir dan tanda "✓ Diverifikasi moderator". Laporan yang sudah dikirim bisa diedit. |
-| <img src="docs/icons/trophy.svg" alt="Profil" width="64"> | **Profil, level, dan XP** | Setiap aktivitas menambah XP. Level maksimal 110 dengan gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Ada profil, follow, pesan langsung (DM), notifikasi, dan pengaturan privasi. |
-| <img src="docs/icons/target.svg" alt="Misi Harian" width="64"> | **Misi Harian (Quest)** | Tiga misi yang di-reset tiap hari: 5 soal kuis, 1 ronde Mask of Deception 2P, dan 1 laporan. Selesaikan ketiganya untuk bonus **+250 XP**. Kemajuannya tampil di kartu *Misi hari ini* pada kolom kanan. |
-| <img src="docs/icons/key.svg" alt="Akun" width="64"> | **Akun** | Daftar dengan email (kode verifikasi 6 digit) atau Google, plus fitur lupa dan reset kata sandi. |
-| <img src="docs/icons/square-check.svg" alt="Moderasi" width="64"> | **Moderasi dan admin** | Antrean moderasi (setujui, minta klarifikasi, atau tolak), dashboard admin, kelola pengguna dan peran, serta log aktivitas. |
+Laporan penipuan yang sudah terbit dalam tiga tab: *Untuk kamu*, *Terbaru*, dan *Mengikuti* (khusus yang sudah masuk). Laporan yang sudah diperiksa moderator bertanda terverifikasi. Setiap laporan bisa disukai, di-repost, disimpan, dibagikan, dan dikomentari.
+
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/compass.svg" alt="Jelajahi" width="56">
+
+</td>
+<td valign="top">
+
+**Jelajahi**
+
+Cari laporan lewat top hashtag, kategori, jenis modus, atau pencarian. Label bisa diklik seperti hashtag.
+
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/itihscan.png" alt="ItihScan AI" width="56">
+
+</td>
+<td valign="top">
+
+**ItihScan AI**
+
+Fitur unggulan. Tempel teks pesan atau unggah gambar (tangkapan layar chat, SMS, poster), lalu ItihScan menganalisisnya: apakah ini penipuan, mencurigakan, atau aman, lengkap dengan alasan dan langkah yang sebaiknya kamu lakukan. Hasilnya otomatis jadi caption yang bisa kamu edit lalu terbitkan sebagai laporan berlabel *ItihScan AI*. Tanpa API key AI, ItihScan tetap berjalan memakai mesin aturan lokal (deteksi kata kunci dan pola modus).
+
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/itistant.png" alt="iTISTANT" width="56">
+
+</td>
+<td valign="top">
+
+**iTISTANT (Chat AI)**
+
+Asisten untuk bertanya soal keamanan digital, bisa melampirkan file atau gambar. Riwayat obrolan tersimpan.
+
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/film.svg" alt="SafeSnaps" width="56">
+
+</td>
+<td valign="top">
+
+**SafeSnaps**
+
+Feed ringkas bergaya reels untuk konten edukasi dan peringatan. Unggahan masuk antrean moderasi lebih dulu.
+
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/flag.svg" alt="Laporan" width="56">
+
+</td>
+<td valign="top">
+
+**Laporan dan label**
+
+Kirim laporan lengkap dengan kategori dan jenis modus. Satu laporan boleh punya beberapa label: **Penipuan**, **Mencurigakan**, **Klarifikasi**, dan **Edukasi**. Moderator memberi label akhir dan tanda "✓ Diverifikasi moderator". Laporan yang sudah dikirim bisa diedit.
+
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/scam-or-real.png" alt="Scam or Real?" width="56">
+
+</td>
+<td valign="top">
+
+**Kuis Scam or Real? (Asli/Palsu)**
+
+Latihan membedakan pesan asli dan palsu bergaya chat WhatsApp, lengkap dengan penjelasan dan tanda bahayanya, plus streak dan riwayat.
+
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/mask-of-deception.png" alt="Mask of Deception 2P" width="56">
+
+</td>
+<td valign="top">
+
+**Mask of Deception 2P**
+
+Game 2 pemain berbentuk chat: satu pemain berperan sebagai penipu atau bukan, pemain lain menebak. Ada pencarian lawan otomatis, ruangan publik atau privat, batas waktu tiap giliran, dan riwayat match.
+
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/trophy.svg" alt="Profil" width="56">
+
+</td>
+<td valign="top">
+
+**Profil, level, dan XP**
+
+Setiap aktivitas menambah XP. Level maksimal 110 dengan gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Ada profil, follow, pesan langsung (DM), notifikasi, dan pengaturan privasi.
+
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/target.svg" alt="Misi Harian" width="56">
+
+</td>
+<td valign="top">
+
+**Misi Harian (Quest)**
+
+Tiga misi yang di-reset tiap hari: kerjakan 5 soal kuis, selesaikan 1 ronde Mask of Deception 2P, dan buat 1 laporan. Selesaikan ketiganya untuk bonus **+250 XP**. Kemajuannya tampil di kartu *Misi hari ini* pada kolom kanan.
+
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/key.svg" alt="Akun" width="56">
+
+</td>
+<td valign="top">
+
+**Akun**
+
+Daftar dengan email (kode verifikasi 6 digit) atau Google, plus fitur lupa dan reset kata sandi.
+
+</td>
+</tr>
+<tr>
+<td width="80" align="center" valign="top">
+
+<img src="docs/icons/square-check.svg" alt="Moderasi" width="56">
+
+</td>
+<td valign="top">
+
+**Moderasi dan admin**
+
+Antrean moderasi (setujui, minta klarifikasi, atau tolak), dashboard admin, kelola pengguna dan peran, serta log aktivitas.
+
+</td>
+</tr>
+</table>
 
 ### Peran
 
 | | Peran | Bisa apa |
 |:---:|---|---|
-| <img src="docs/icons/guest.svg" alt="Guest" width="64"> | Guest (tamu) | Belum masuk. Hanya bisa membaca laporan yang sudah terbit di Beranda dan halaman detail laporan, serta mendaftar atau masuk. |
-| <img src="docs/icons/user.svg" alt="User" width="64"> | User | Semua fitur komunitas. Laporan masuk antrean moderasi. |
-| <img src="docs/icons/trusted.svg" alt="Terpercaya" width="64"> | Terpercaya (`trusted`) | Fitur user, tetapi laporannya **langsung terbit** tanpa antrean dan diberi lencana *Pelapor Terverifikasi*. XP "laporan disetujui" langsung didapat. |
-| <img src="docs/icons/moderator.svg" alt="Moderator" width="64"> | Moderator | Fitur user + antrean moderasi. Laporannya langsung terbit. Bisa memberi atau mencabut status Terpercaya pada user. |
-| <img src="docs/icons/admin.svg" alt="Admin" width="64"> | Admin | Fitur moderator + dashboard, kelola akun dan peran, hapus/pulihkan postingan, lihat seluruh log. |
+| <img src="docs/icons/guest.svg" alt="Guest" width="40"> | Guest (tamu) | Belum masuk. Hanya bisa membaca laporan yang sudah terbit di Beranda dan halaman detail laporan, serta mendaftar atau masuk. |
+| <img src="docs/icons/user.svg" alt="User" width="40"> | User | Semua fitur komunitas. Laporan masuk antrean moderasi. |
+| <img src="docs/icons/trusted.svg" alt="Terpercaya" width="40"> | Terpercaya (`trusted`) | Fitur user, tetapi laporannya **langsung terbit** tanpa antrean dan diberi lencana *Pelapor Terverifikasi*. XP "laporan disetujui" langsung didapat. |
+| <img src="docs/icons/moderator.svg" alt="Moderator" width="40"> | Moderator | Fitur user + antrean moderasi. Laporannya langsung terbit. Bisa memberi atau mencabut status Terpercaya pada user. |
+| <img src="docs/icons/admin.svg" alt="Admin" width="40"> | Admin | Fitur moderator + dashboard, kelola akun dan peran, hapus/pulihkan postingan, lihat seluruh log. |
 
 Status Terpercaya diberikan oleh moderator atau admin lewat halaman profil pengguna atau halaman moderasi, dan bisa dicabut kapan saja.
 
-### Kenapa ada level dan Misi Harian?
-
-Komunitas hanya hidup kalau penggunanya aktif. Karena itu ITIHIX memakai dua mekanisme yang sudah terbukti membuat orang betah di media sosial dan game, tetapi diarahkan ke hal yang bermanfaat:
-
-| Mekanisme | Tujuan |
-|---|---|
-| **Level dan XP** | Memberi **semangat** bagi pengguna untuk aktif mengunggah laporan dan memakai berbagai fitur. Setiap aktivitas yang berguna (melapor, belajar lewat kuis, memeriksa pesan dengan ItihScan, berkomentar) dihargai dengan XP, lalu naik level dan mendapat gelar dari *Pemula Waspada* sampai *Legenda ITIHIX*. Pengguna merasa usahanya diakui, sehingga lebih termotivasi menjaga komunitas. |
-| **Misi Harian (Quest)** | Mendorong pengguna **berkunjung ke website setiap hari** dan mencoba fitur yang ada: kuis, game, dan membuat laporan. Misi di-reset tiap hari dan ada bonus +250 XP bila ketiganya selesai, sehingga muncul kebiasaan harian yang membuat pengguna rutin belajar dan melapor. |
-
-Agar tetap sehat, XP dari semua fitur dibatasi maksimal 250 per hari. Jadi yang dihargai adalah keaktifan yang konsisten, bukan spam.
-
 ### Level dan XP
+
+XP untuk naik dari level L = `100 + 10×(L−1)`.
 
 | Aktivitas | XP |
 |---|---|
@@ -151,8 +280,7 @@ Agar tetap sehat, XP dari semua fitur dibatasi maksimal 250 per hari. Jadi yang 
 | Moderasi | +2 |
 | Misi Harian (kuis 5 soal, 1 ronde game, 1 laporan) | +250 (sekali per hari) |
 
-XP dari semua fitur dibatasi maksimal 250 per hari. Hadiah Misi Harian dihitung di luar batas itu.
-| Misi Harian lengkap | +250 (sekali per hari, di luar batas harian) |
+XP dari semua fitur dibatasi maksimal 250 per hari. Hadiah Misi Harian (+250) dihitung di luar batas itu.
 
 Gelar: Pemula Waspada → Penjaga Komunitas (10) → Pelindung Siber (30) → Pakar Anti-Penipuan (60) → Tameng Digital (90) → Legenda ITIHIX (110).
 
@@ -489,7 +617,7 @@ itihix/
 ├── migrations/                            Riwayat perubahan skema database
 ├── uploads/                               File unggahan pengguna (isinya tidak ikut di Git)
 ├── docs/                                  Contoh konfigurasi Nginx, catatan CSS, dan ikon untuk README (docs/icons)
-├── database.sql                           Skema database terbaru
+├── Database.sql                           Skema database terbaru
 ├── config.php                             Konfigurasi utama (membaca .env)
 ├── config.local.php.example               Contoh konfigurasi lokal
 ├── migrate.php                            Menjalankan migrasi secara manual
@@ -516,7 +644,7 @@ Yang kamu butuhkan:
 
 2. **Taruh di web root.** Ekstrak dan salin foldernya ke `htdocs` (XAMPP) atau `www` (Laragon), sehingga namanya `htdocs/itihix`.
 3. **Nyalakan Apache dan MySQL** lewat panel XAMPP/Laragon.
-4. **Buat database dan impor skema.** Buka `http://localhost/phpmyadmin`, buat database baru bernama `itihix` dengan collation `utf8mb4_unicode_ci`, pilih database itu, lalu **Import** file `database.sql`.
+4. **Buat database dan impor skema.** Buka `http://localhost/phpmyadmin`, buat database baru bernama `itihix` dengan collation `utf8mb4_unicode_ci`, pilih database itu, lalu **Import** file `Database.sql`.
 5. **Buat file `.env`.** Salin `.env.example` menjadi `.env`, lalu isi `ITIHIX_DB_USER`, `ITIHIX_DB_PASS`, dan `ITIHIX_BASE_URL` (di XAMPP biasanya user `root`, sandi kosong, base URL `/itihix`).
    - Windows: pastikan namanya benar-benar `.env`, bukan `.env.txt`.
    - **Lebih aman:** simpan sebagai `../itihix.env` (satu tingkat di atas folder aplikasi, di luar web root), atau tunjuk lewat variabel `ITIHIX_ENV_FILE`.
@@ -577,7 +705,7 @@ MAIL_DEV_LOG=0
 | Masalah | Yang bisa dicoba |
 |---|---|
 | Halaman tidak ditemukan atau CSS tidak muncul | Cek `ITIHIX_BASE_URL` di `.env`, harus sama dengan nama folder (mis. `/itihix`). |
-| Error koneksi database | Pastikan MySQL menyala, `database.sql` sudah diimpor ke database `itihix`, dan `ITIHIX_DB_USER` dan `ITIHIX_DB_PASS` benar. |
+| Error koneksi database | Pastikan MySQL menyala, `Database.sql` sudah diimpor ke database `itihix`, dan `ITIHIX_DB_USER` dan `ITIHIX_DB_PASS` benar. |
 | Upload gambar gagal | Pastikan folder `uploads/` bisa ditulis dan ukuran file tidak terlalu besar. |
 | Kode verifikasi email tidak sampai | Cek isi `SMTP_*`. Untuk uji lokal isi `MAIL_DEV_LOG=1`, lalu baca kodenya di `includes/mail.log`. |
 | ItihScan hanya memberi jawaban singkat | `AI_API_KEY` kosong atau salah, jadi dipakai mesin aturan lokal. |
@@ -588,8 +716,8 @@ MAIL_DEV_LOG=0
 
 - Perubahan skema = tambah file `migrations/NNN_deskripsi.php` (idempoten), lalu naikkan `SCHEMA_VERSION` di `config.php`.
 - Migrasi tertunda dijalankan otomatis (sekali per sesi baru) atau manual: `php migrate.php`.
-- `database.sql` berisi skema terbaru untuk instalasi baru.
-- Soal kuis tidak ada di `database.sql`; aplikasi menyiapkannya sendiri saat fitur kuis dipakai (`api/quiz.php`).
+- `Database.sql` berisi skema terbaru untuk instalasi baru.
+- Soal kuis tidak ada di `Database.sql`; aplikasi menyiapkannya sendiri saat fitur kuis dipakai (`api/quiz.php`).
 
 ---
 
@@ -597,7 +725,7 @@ MAIL_DEV_LOG=0
 
 ITIHIX adalah aplikasi PHP + MySQL dengan file upload, jadi butuh hosting yang mendukung PHP dan database MySQL (shared hosting, VPS, atau container Docker PHP). Platform serverless seperti Vercel tidak cocok karena tidak menjalankan PHP secara native dan tidak menyimpan file upload secara permanen.
 
-1. Buat database di hosting dengan **user khusus** (jangan `root`) dan sandi kuat, lalu impor `database.sql`.
+1. Buat database di hosting dengan **user khusus** (jangan `root`) dan sandi kuat, lalu impor `Database.sql`.
 2. Upload kode (tanpa `.env`).
 3. Buat `.env` **langsung di server**, idealnya di luar web root sebagai `../itihix.env`. Pastikan `MAIL_DEV_LOG=0`.
 4. Pastikan `uploads/` bisa ditulis dan `uploads/.htaccess` ikut ter-upload.
@@ -643,4 +771,4 @@ Kode ITIHIX sendiri dirilis dengan lisensi [MIT](LICENSE).
 ## Dokumentasi
 
 - `README.md` (file ini): fitur utama, cara menjalankan, petunjuk penggunaan, peran, level, dan keamanan.
-- Dokumentasi teknis pendukung: `database.sql` (skema basis data), `migrations/` (riwayat skema), `docs/nginx.conf.example` (konfigurasi Nginx), serta `.env.example` dan `config.local.php.example` (contoh konfigurasi).
+- Dokumentasi teknis pendukung: `Database.sql` (skema basis data), `migrations/` (riwayat skema), `docs/nginx.conf.example` (konfigurasi Nginx), serta `.env.example` dan `config.local.php.example` (contoh konfigurasi).
