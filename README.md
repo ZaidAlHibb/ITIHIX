@@ -596,14 +596,6 @@ Dibagi dua: apa yang melindungi **akun dan data pengguna**, dan apa yang melindu
 - Kata sandi database, API key, dan kredensial SMTP hanya ada di `.env` di server (idealnya di luar web root), tidak pernah dikirim ke browser, dan tidak ikut Git (`.gitignore`).
 - Untuk Nginx tersedia contoh pengaman di `docs/nginx.conf.example`.
 
-**Belum tersedia**
-
-- Verifikasi dua langkah (2FA) untuk login.
-- Content Security Policy untuk seluruh situs (saat ini hanya untuk lampiran chat).
-- Audit keamanan oleh pihak ketiga dan tes otomatis.
-
-Menemukan celah keamanan? Mohon jangan dipublikasikan dulu. Kabari tim ITIHIX secara langsung supaya bisa diperbaiki lebih dulu.
-
 ---
 
 ## Cara kerjanya
